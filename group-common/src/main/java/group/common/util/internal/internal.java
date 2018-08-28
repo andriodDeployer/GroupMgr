@@ -1,0 +1,11 @@
+package group.common.util.internal;/**
+ * Created by DELL on 2018/8/28.
+ */
+
+/**
+ * user is
+ **/
+
+
+public class internal {
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/GroupMgr.iml" filepath="$PROJECT_DIR$/GroupMgr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/group-client/group-client.iml" filepath="$PROJECT_DIR$/group-client/group-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/group-common/group-common.iml" filepath="$PROJECT_DIR$/group-common/group-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/group-serialization/group-serialization.iml" filepath="$PROJECT_DIR$/group-serialization/group-serialization.iml" />
+      <module fileurl="file://$PROJECT_DIR$/group-serialization/group-serialization-api/group-serialization-api.iml" filepath="$PROJECT_DIR$/group-serialization/group-serialization-api/group-serialization-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/group-serialization/group-serialization-java/group-serialization-java.iml" filepath="$PROJECT_DIR$/group-serialization/group-serialization-java/group-serialization-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/group-server/group-server.iml" filepath="$PROJECT_DIR$/group-server/group-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/group-transport/group-transport.iml" filepath="$PROJECT_DIR$/group-transport/group-transport.iml" />
+      <module fileurl="file://$PROJECT_DIR$/group-transport/group-transport-api/group-transport-api.iml" filepath="$PROJECT_DIR$/group-transport/group-transport-api/group-transport-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/group-transport/group-transport-netty/group-transport-netty.iml" filepath="$PROJECT_DIR$/group-transport/group-transport-netty/group-transport-netty.iml" />
+    </modules>
+  </component>
+</project>
