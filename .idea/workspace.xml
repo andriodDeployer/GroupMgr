@@ -2,89 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e3771e3-318a-4a98-98c2-c1ae451c37c7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_lmax_disruptor_unknown.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_unknown.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_openhft_affinity_unknown.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjdk_jmh_jmh_core_unknown.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjdk_jmh_jmh_generator_annprocess_unknown.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_unknown.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/preferred-vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GroupMgr.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-client/group-client.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-client/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/group-common.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/dd.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/util/Function.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/util/Ints.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/util/JServiceLoader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/util/Lists.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/util/Pair.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/util/Preconditions.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/util/SpiMetadata.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/util/StackTraceUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/util/ThrowUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/util/collection/ByteObjectHashMap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/util/collection/ByteObjectMap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/util/collection/IntObjectHashMap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/util/collection/IntObjectMap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/util/collection/LongObjectHashMap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/util/collection/LongObjectMap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/UnsafeIntegerFieldUpdater.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/UnsafeLongFieldUpdater.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/UnsafeReferenceFieldUpdater.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/UnsafeUpdater.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/UnsafeUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/internal.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/logging/AbstractInternalLogger.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/logging/FormattingTuple.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/logging/InternalLogLevel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/logging/InternalLogger.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/logging/InternalLoggerFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/logging/JdkLogger.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/logging/JdkLoggerFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/logging/MessageFormatter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/logging/Slf4JLogger.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/logging/Slf4JLoggerFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/logging/package-info.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/util/util.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-serialization/group-serialization-api/group-serialization-api.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-serialization/group-serialization-api/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-serialization/group-serialization-api/src/main/java/group/serialization/Serializer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-serialization/group-serialization-api/src/main/java/group/serialization/SerializerFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-serialization/group-serialization-api/src/main/java/group/serialization/SerializerType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-serialization/group-serialization-api/src/main/java/group/serialization/io/InputBuf.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-serialization/group-serialization-api/src/main/java/group/serialization/io/OutputBuf.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-serialization/group-serialization-api/src/main/java/group/serialization/io/OutputStreams.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-serialization/group-serialization-api/src/main/java/group/serialization/iotest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-serialization/group-serialization-java/group-serialization-java.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-serialization/group-serialization-java/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-serialization/group-serialization-java/src/main/java/group/serialization/java/JavaSerializer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-serialization/group-serialization-java/src/main/java/group/serialization/java/io/Inputs.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-serialization/group-serialization-java/src/main/java/group/serialization/java/io/Outputs.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-serialization/group-serialization-java/src/main/resources/services/group.seralization.Serializer" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-serialization/group-serialization.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-serialization/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-server/group-server.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-server/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-api/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/group-transport-netty.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GroupMgr.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -114,116 +32,7 @@
     <favorites_list name="GroupMgr" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="JavaSerializer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/group-serialization/group-serialization-java/src/main/java/group/serialization/java/JavaSerializer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="94" column="30" selection-start-line="94" selection-start-column="30" selection-end-line="94" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ThrowUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/ThrowUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="27" column="2" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="2" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UnsafeUpdater.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/UnsafeUpdater.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="37" column="56" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UnsafeUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/UnsafeUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2442">
-              <caret line="53" column="79" selection-start-line="53" selection-start-column="79" selection-end-line="53" selection-end-column="79" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StackTraceUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/StackTraceUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UnsafeIntegerFieldUpdater.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/UnsafeIntegerFieldUpdater.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UnsafeLongFieldUpdater.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/UnsafeLongFieldUpdater.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UnsafeReferenceFieldUpdater.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/UnsafeReferenceFieldUpdater.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="29" column="54" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Inputs.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/group-serialization/group-serialization-java/src/main/java/group/serialization/java/io/Inputs.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Outputs.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/group-serialization/group-serialization-java/src/main/java/group/serialization/java/io/Outputs.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -793,12 +602,19 @@
       <option name="project" value="LOCAL" />
       <updated>1535452151907</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="dd">
+      <created>1535452335845</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1535452335845</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="1592" y="-244" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -1294,8 +1110,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/group-serialization/group-serialization-java/src/main/java/group/serialization/java/io/Outputs.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+        <state relative-caret-position="264">
+          <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
