@@ -16,7 +16,8 @@
 
 package group.common.atomic;
 
-import org.jupiter.common.util.internal.UnsafeUtil;
+
+import group.common.util.internal.UnsafeUtil;
 
 import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
 

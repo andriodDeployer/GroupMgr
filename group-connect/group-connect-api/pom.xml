@@ -11,5 +11,9 @@
 
     <artifactId>group-connect-api</artifactId>
 
+    <dependencies>
+
+    </dependencies>
+
 
 </project>

@@ -11,7 +11,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="group-common" />
     <orderEntry type="module" module-name="group-serialization-api" />
     <orderEntry type="module" module-name="group-transport-netty" />
     <orderEntry type="module" module-name="group-transport-api" />
@@ -25,6 +24,7 @@
     <orderEntry type="library" name="Maven: io.netty:netty-transport-native-unix-common:4.1.19.Final" level="project" />
     <orderEntry type="library" name="Maven: io.netty:netty-transport-native-kqueue:osx-x86_64:4.1.19.Final" level="project" />
     <orderEntry type="module" module-name="group-connect-api" />
+    <orderEntry type="module" module-name="group-common" />
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.12" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.hamcrest:hamcrest-core:1.3" level="project" />
   </component>
