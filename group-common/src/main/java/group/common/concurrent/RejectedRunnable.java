@@ -14,32 +14,15 @@
  * limitations under the License.
  */
 
-package group.transport.processor;
-
-
-import group.transport.Status;
-import group.transport.channel.JChannel;
-import group.transport.payload.JRequestPayload;
+package group.common.concurrent;
 
 /**
- * Provider's processor.
- *
  * jupiter
- * org.jupiter.transport.processor
+ * org.jupiter.common.concurrent
  *
  * @author jiachun.fjc
  */
-public interface ProviderProcessor {
+public interface RejectedRunnable extends Runnable {
 
-    /**
-     * 处理正常请求
-     */
-    void handleRequest(JChannel channel, JRequestPayload request) throws Exception;
-
-    /**
-     * 处理异常
-     */
-    void handleException(JChannel channel, JRequestPayload request, Status status, Throwable cause);
-
-    void shutdown();
+    void rejected();
 }

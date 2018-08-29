@@ -14,32 +14,33 @@
  * limitations under the License.
  */
 
-package group.transport.processor;
+package group.transport.netty;
 
-
-import group.transport.Status;
-import group.transport.channel.JChannel;
-import group.transport.payload.JRequestPayload;
+import io.netty.channel.epoll.Epoll;
+import io.netty.channel.kqueue.KQueue;
 
 /**
- * Provider's processor.
+ * Netty provides the native socket transport using JNI.
+ * This transport has higher performance and produces less garbage.
  *
  * jupiter
- * org.jupiter.transport.processor
+ * org.jupiter.transport.netty
  *
  * @author jiachun.fjc
  */
-public interface ProviderProcessor {
+public final class NativeSupport {
 
     /**
-     * 处理正常请求
+     * The native socket transport for Linux using JNI.
      */
-    void handleRequest(JChannel channel, JRequestPayload request) throws Exception;
+    public static boolean isNativeEPollAvailable() {
+        return Epoll.isAvailable();
+    }
 
     /**
-     * 处理异常
+     * The native socket transport for BSD systems such as MacOS using JNI.
      */
-    void handleException(JChannel channel, JRequestPayload request, Status status, Throwable cause);
-
-    void shutdown();
+    public static boolean isNativeKQueueAvailable() {
+        return KQueue.isAvailable();
+    }
 }

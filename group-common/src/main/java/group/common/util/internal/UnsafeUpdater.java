@@ -16,8 +16,7 @@
 
 package group.common.util.internal;
 
-
-import group.common.util.ThrowUtil;
+import org.jupiter.common.util.ThrowUtil;
 
 /**
  * jupiter

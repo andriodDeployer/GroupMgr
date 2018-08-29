@@ -14,32 +14,17 @@
  * limitations under the License.
  */
 
-package group.transport.processor;
+package group.transport.netty.handler;
 
-
-import group.transport.Status;
-import group.transport.channel.JChannel;
-import group.transport.payload.JRequestPayload;
+import io.netty.channel.ChannelHandler;
 
 /**
- * Provider's processor.
- *
  * jupiter
- * org.jupiter.transport.processor
+ * org.jupiter.transport.netty.handler
  *
  * @author jiachun.fjc
  */
-public interface ProviderProcessor {
+public interface ChannelHandlerHolder {
 
-    /**
-     * 处理正常请求
-     */
-    void handleRequest(JChannel channel, JRequestPayload request) throws Exception;
-
-    /**
-     * 处理异常
-     */
-    void handleException(JChannel channel, JRequestPayload request, Status status, Throwable cause);
-
-    void shutdown();
+    ChannelHandler[] handlers();
 }

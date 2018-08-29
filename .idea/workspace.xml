@@ -2,34 +2,73 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e3771e3-318a-4a98-98c2-c1ae451c37c7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/Acknowledge.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/CodecConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/Directory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/JAcceptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/JConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/JConfigGroup.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/JConnection.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/JConnectionManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/JConnector.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/JOption.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/JProtocolHeader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/Status.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/Transporter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/UnresolvedAddress.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/channel/CopyOnWriteGroupList.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/channel/DirectoryJChannelGroup.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/channel/JChannel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/channel/JChannelGroup.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/channel/JFutureListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/exception/ConnectFailedException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/exception/IoSignals.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/payload/JRequestPayload.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/payload/JResponsePayload.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/payload/PayloadHolder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/processor/ConsumerProcessor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/processor/ProviderProcessor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_19_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_19_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_19_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_19_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_19_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_19_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_epoll_linux_x86_64_4_1_19_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_kqueue_osx_x86_64_4_1_19_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_unix_common_4_1_19_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/concurrent/AbstractRejectedExecutionHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/concurrent/AffinityNamedThreadFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/concurrent/BlockingProducersPolicyWithReport.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/concurrent/CallerRunsPolicyWithReport.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/concurrent/DiscardTaskPolicyWithReport.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/concurrent/NamedThreadFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/concurrent/RejectedRunnable.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/concurrent/RejectedTaskPolicyWithReport.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/concurrent/collection/AbstractEntry.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/concurrent/collection/ConcurrentAutoTable.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/concurrent/collection/ConcurrentSet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/concurrent/collection/NonBlockingHashMap.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/concurrent/collection/NonBlockingHashMapLong.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/util/JConstants.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/util/SystemPropertyUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/InternalForkJoinWorkerThread.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/InternalThread.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/InternalThreadLocal.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/InternalThreadLocalMap.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/InternalThreadLocalRunnable.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/UnsafeDirectBufferUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/UnsafeUtf8Util.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/AffinityNettyThreadFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/Heartbeats.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/JNettyConnection.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/JNettyTcpAcceptor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/JNettyTcpConnector.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/NativeSupport.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/NettyAcceptor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/NettyConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/NettyConnector.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/NettyTcpAcceptor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/NettyTcpConnector.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/TcpChannelProvider.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/alloc/AdaptiveOutputBufAllocator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/channel/NettyChannel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/channel/NettyChannelGroup.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/estimator/JMessageSizeEstimator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/AcknowledgeEncoder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/ChannelHandlerHolder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/IdleStateChecker.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/LowCopyProtocolDecoder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/LowCopyProtocolEncoder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/ProtocolDecoder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/ProtocolEncoder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/acceptor/AcceptorHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/acceptor/AcceptorIdleStateTrigger.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/ConnectionWatchdog.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/ConnectorHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/ConnectorIdleStateTrigger.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-transport/group-transport-api/pom.xml" afterPath="$PROJECT_DIR$/group-transport/group-transport-api/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/UnsafeUpdater.java" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/UnsafeUpdater.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/UnsafeUtil.java" afterPath="$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/UnsafeUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/JAcceptor.java" afterPath="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/JAcceptor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/processor/ProviderProcessor.java" afterPath="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/processor/ProviderProcessor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-transport/group-transport-netty/group-transport-netty.iml" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/group-transport-netty.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-transport/group-transport-netty/pom.xml" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/pom.xml" />
     </list>
     <ignored path="GroupMgr.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,59 +99,90 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="JOption.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/JOption.java">
+      <file leaf-file-name="InternalThreadLocalMap.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/InternalThreadLocalMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Transporter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/Transporter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DirectoryJChannelGroup.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/channel/DirectoryJChannelGroup.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IoSignals.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/exception/IoSignals.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="-1698">
+              <caret line="69" column="17" selection-start-line="69" selection-start-column="17" selection-end-line="69" selection-end-column="17" />
               <folding>
-                <element signature="e#0#1452#0" expanded="false" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JConnection.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/JConnection.java">
+      <file leaf-file-name="SystemPropertyUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/SystemPropertyUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="-2979">
+              <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NamedThreadFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/concurrent/NamedThreadFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1672">
+              <caret line="100" column="26" selection-start-line="100" selection-start-column="26" selection-end-line="100" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NettyAcceptor.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/NettyAcceptor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1307">
+              <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
+              <folding>
+                <element signature="e#3094#3095#0" expanded="true" />
+                <element signature="e#3126#3127#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JAcceptor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/JAcceptor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/group-transport/group-transport-netty/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Status.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ProviderProcessor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/processor/ProviderProcessor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Status.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/Status.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="264">
@@ -122,53 +192,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConnectFailedException.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/exception/ConnectFailedException.java">
+      <file leaf-file-name="JConstants.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/JConstants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#1195#0" expanded="false" />
-                <element signature="e#896#897#0" expanded="false" />
-                <element signature="e#919#920#0" expanded="false" />
-                <element signature="e#972#973#0" expanded="false" />
-                <element signature="e#1002#1003#0" expanded="false" />
-                <element signature="e#1072#1073#0" expanded="false" />
-                <element signature="e#1109#1110#0" expanded="false" />
-                <element signature="e#1163#1164#0" expanded="false" />
-                <element signature="e#1191#1192#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JConnectionManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/JConnectionManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="-215">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JChannel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/channel/JChannel.java">
+      <file leaf-file-name="StackTraceUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/StackTraceUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/group-transport/group-transport-api/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+            <state relative-caret-position="264">
+              <caret line="28" column="33" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -199,7 +237,6 @@
         <option value="$PROJECT_DIR$/group-common/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/logging/FormattingTuple.java" />
-        <option value="$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/InternalThread.java" />
         <option value="$PROJECT_DIR$/group-serialization/group-serialization-api/src/main/java/group/serialization/iotest.java" />
         <option value="$PROJECT_DIR$/group-serialization/group-serialization-api/pom.xml" />
         <option value="$PROJECT_DIR$/group-common/src/main/java/group/common/util/Pair.java" />
@@ -219,13 +256,24 @@
         <option value="$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/UnsafeReferenceFieldUpdater.java" />
         <option value="$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/UnsafeLongFieldUpdater.java" />
         <option value="$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/UnsafeUpdater.java" />
-        <option value="$PROJECT_DIR$/group-common/src/main/java/group/common/util/StackTraceUtil.java" />
         <option value="$PROJECT_DIR$/group-common/src/main/java/group/common/util/ThrowUtil.java" />
         <option value="$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/UnsafeUtil.java" />
         <option value="$PROJECT_DIR$/group-serialization/group-serialization-java/src/main/java/group/serialization/java/JavaSerializer.java" />
         <option value="$PROJECT_DIR$/group-serialization/group-serialization-java/src/main/java/group/serialization/java/io/Inputs.java" />
         <option value="$PROJECT_DIR$/group-transport/group-transport-api/pom.xml" />
         <option value="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/channel/JChannel.java" />
+        <option value="$PROJECT_DIR$/group-transport/group-transport-netty/pom.xml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/group-common/src/main/java/group/common/collection/NonBlockingHashMapLong.java" />
+        <option value="$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/InternalThread.java" />
+        <option value="$PROJECT_DIR$/group-common/src/main/java/group/common/util/StackTraceUtil.java" />
+        <option value="$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/InternalThreadLocalMap.java" />
+        <option value="$PROJECT_DIR$/group-common/src/main/java/group/common/util/SystemPropertyUtil.java" />
+        <option value="$PROJECT_DIR$/group-common/src/main/java/group/common/concurrent/NamedThreadFactory.java" />
+        <option value="$PROJECT_DIR$/group-common/src/main/java/group/common/util/JConstants.java" />
+        <option value="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/processor/ProviderProcessor.java" />
+        <option value="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/JAcceptor.java" />
+        <option value="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/NettyAcceptor.java" />
       </list>
     </option>
   </component>
@@ -330,7 +378,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -460,6 +508,40 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="group-transport-netty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GroupMgr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GroupMgr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="group-transport" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="group-transport-api" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -483,6 +565,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -580,135 +666,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="channel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="group-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="group-serialization" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="group-serialization" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="group-serialization-api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="group-serialization" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="group-serialization-api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="group-serialization" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="group-serialization-api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="group-serialization" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="group-serialization-api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="serialization" />
+              <option name="myItemId" value="processor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -735,11 +693,11 @@
       <recent name="group.serialization.java" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\workRequire\workspace\ideaWorkSpace\GroupMgr\group-transport\group-transport-api\src\main\java\group\transport" />
       <recent name="D:\workRequire\workspace\ideaWorkSpace\GroupMgr\group-common\src\main\java\group\common\util\internal" />
-      <recent name="D:\workRequire\workspace\ideaWorkSpace\GroupMgr\group-serialization\group-serialization-java\src\main\java\group\serialization\java\io" />
-      <recent name="D:\workRequire\workspace\ideaWorkSpace\GroupMgr\group-serialization\group-serialization-api\src\main\java\group\serialization\io" />
-      <recent name="D:\workRequire\workspace\ideaWorkSpace\GroupMgr\group-serialization\group-serialization-java\src\main\resources" />
+      <recent name="D:\workRequire\workspace\ideaWorkSpace\GroupMgr\group-common\src\main\java\group\common\concurrent" />
+      <recent name="D:\workRequire\workspace\ideaWorkSpace\GroupMgr\group-common\src\main\java\group\common" />
+      <recent name="D:\workRequire\workspace\ideaWorkSpace\GroupMgr\group-transport\group-transport-netty\src\main\java\group\transport\netty" />
+      <recent name="D:\workRequire\workspace\ideaWorkSpace\GroupMgr\group-transport\group-transport-api\src\main\java\group\transport" />
     </key>
   </component>
   <component name="RunManager">
@@ -1060,12 +1018,19 @@
       <option name="project" value="LOCAL" />
       <updated>1535453130552</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="dd">
+      <created>1535513830849</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1535513830849</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="1592" y="-244" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1077,7 +1042,7 @@
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33315566" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29264393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1109,378 +1074,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/internal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/logging/AbstractInternalLogger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="44" column="22" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/logging/FormattingTuple.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="39" column="6" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/logging/JdkLoggerFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/logging/MessageFormatter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1605">
-          <caret line="105" column="12" selection-start-line="105" selection-start-column="12" selection-end-line="105" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/logging/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-127">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#1456#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/logging/Slf4JLogger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="30" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-serialization/group-serialization-api/src/main/java/group/serialization/iotest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-serialization/group-serialization-api/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/Pair.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#1402#0" expanded="false" />
-            <element signature="e#860#861#0" expanded="false" />
-            <element signature="e#908#909#0" expanded="false" />
-            <element signature="e#1051#1052#0" expanded="false" />
-            <element signature="e#1079#1080#0" expanded="false" />
-            <element signature="e#1120#1121#0" expanded="false" />
-            <element signature="e#1154#1155#0" expanded="false" />
-            <element signature="e#1187#1188#0" expanded="false" />
-            <element signature="e#1216#1217#0" expanded="false" />
-            <element signature="e#1260#1261#0" expanded="false" />
-            <element signature="e#1296#1297#0" expanded="false" />
-            <element signature="e#1342#1343#0" expanded="false" />
-            <element signature="e#1398#1399#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/SpiMetadata.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#911#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/Preconditions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#3065#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/JServiceLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-902">
-          <caret line="121" column="30" selection-start-line="121" selection-start-column="30" selection-end-line="121" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#10451#0" expanded="false" />
-            <element signature="e#2045#2556#0" expanded="false" />
-            <element signature="e#2555#2556#0" expanded="false" />
-            <element signature="e#2613#2614#0" expanded="false" />
-            <element signature="e#2649#2650#0" expanded="false" />
-            <element signature="e#5983#6007#0" expanded="false" />
-            <element signature="e#7136#7137#0" expanded="false" />
-            <element signature="e#7227#7228#0" expanded="false" />
-            <element signature="e#7973#7974#0" expanded="false" />
-            <element signature="e#8046#8047#0" expanded="false" />
-            <element signature="e#10175#10176#0" expanded="false" />
-            <element signature="e#10240#10241#0" expanded="false" />
-            <element signature="e#10357#10358#0" expanded="false" />
-            <element signature="e#10447#10448#0" expanded="false" />
-            <marker date="1535447833216" expanded="true" signature="643:858" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/Function.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="34" column="66" selection-start-line="34" selection-start-column="66" selection-end-line="34" selection-end-column="66" />
-          <folding>
-            <element signature="e#0#1026#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/Ints.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/Lists.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="599">
-          <caret line="237" column="19" selection-start-line="237" selection-start-column="19" selection-end-line="237" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/collection/IntObjectMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/collection/IntObjectHashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/collection/LongObjectHashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/collection/LongObjectMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/collection/ByteObjectHashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/collection/ByteObjectMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-serialization/group-serialization-api/src/main/java/group/serialization/SerializerFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-serialization/group-serialization-api/src/main/java/group/serialization/SerializerType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-serialization/group-serialization-api/src/main/java/group/serialization/io/OutputStreams.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-serialization/group-serialization-api/src/main/java/group/serialization/io/OutputBuf.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-serialization/group-serialization-api/src/main/java/group/serialization/io/InputBuf.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="26" column="3" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-serialization/group-serialization-java/src/main/resources/services/group.seralization.Serializer">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-serialization/group-serialization-java/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-serialization/group-serialization-api/src/main/java/group/serialization/Serializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-127">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/UnsafeReferenceFieldUpdater.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="29" column="54" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/UnsafeIntegerFieldUpdater.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/UnsafeLongFieldUpdater.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/UnsafeUpdater.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="37" column="56" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/StackTraceUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/ThrowUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="27" column="2" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/UnsafeUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2442">
-          <caret line="53" column="79" selection-start-line="53" selection-start-column="79" selection-end-line="53" selection-end-column="79" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-serialization/group-serialization-java/src/main/java/group/serialization/java/JavaSerializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="94" column="30" selection-start-line="94" selection-start-column="30" selection-end-line="94" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-serialization/group-serialization-java/src/main/java/group/serialization/java/io/Inputs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-serialization/group-serialization-java/src/main/java/group/serialization/java/io/Outputs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/payload/JResponsePayload.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1570,8 +1163,367 @@
         <state relative-caret-position="396">
           <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
           <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/IdleStateChecker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/channel/NettyChannel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#8173#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2622#2623#0" expanded="false" />
+            <element signature="e#2660#2661#0" expanded="false" />
+            <element signature="e#2692#2693#0" expanded="false" />
+            <element signature="e#2722#2723#0" expanded="false" />
+            <element signature="e#2762#2763#0" expanded="false" />
+            <element signature="e#2839#2840#0" expanded="false" />
+            <element signature="e#2886#2887#0" expanded="false" />
+            <element signature="e#2927#2928#0" expanded="false" />
+            <element signature="e#2976#2977#0" expanded="false" />
+            <element signature="e#3032#3033#0" expanded="false" />
+            <element signature="e#3089#3090#0" expanded="false" />
+            <element signature="e#3134#3135#0" expanded="false" />
+            <element signature="e#3192#3193#0" expanded="false" />
+            <element signature="e#3238#3239#0" expanded="false" />
+            <element signature="e#3287#3288#0" expanded="false" />
+            <element signature="e#3330#3331#0" expanded="false" />
+            <element signature="e#3586#3587#0" expanded="false" />
+            <element signature="e#3638#3639#0" expanded="false" />
+            <element signature="e#3701#3702#0" expanded="false" />
+            <element signature="e#3755#3756#0" expanded="false" />
+            <element signature="e#4015#4389#0" expanded="false" />
+            <element signature="e#4388#4389#0" expanded="false" />
+            <element signature="e#4765#5211#0" expanded="false" />
+            <element signature="e#5210#5211#0" expanded="false" />
+            <element signature="e#5298#5299#0" expanded="false" />
+            <element signature="e#5369#5370#0" expanded="false" />
+            <element signature="e#5582#5583#0" expanded="false" />
+            <element signature="e#5623#5624#0" expanded="false" />
+            <element signature="e#5669#5670#0" expanded="false" />
+            <element signature="e#5710#5711#0" expanded="false" />
+            <element signature="e#7494#7495#0" expanded="false" />
+            <element signature="e#7551#7552#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/NettyTcpConnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/NettyConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/ChannelHandlerHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#848#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/LowCopyProtocolDecoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#6798#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#5991#5992#0" expanded="false" />
+            <element signature="e#6037#6038#0" expanded="false" />
+            <element signature="e#6263#6264#0" expanded="false" />
+            <element signature="e#6352#6353#0" expanded="false" />
+            <element signature="e#6399#6400#0" expanded="false" />
+            <element signature="e#6453#6454#0" expanded="false" />
+            <element signature="e#6516#6517#0" expanded="false" />
+            <element signature="e#6573#6574#0" expanded="false" />
+            <element signature="e#6627#6628#0" expanded="false" />
+            <element signature="e#6675#6676#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/AffinityNettyThreadFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/acceptor/AcceptorHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#5188#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#5052#5053#0" expanded="false" />
+            <element signature="e#5084#5085#0" expanded="false" />
+            <element signature="e#5142#5143#0" expanded="false" />
+            <element signature="e#5184#5185#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/JNettyTcpAcceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/concurrent/collection/ConcurrentAutoTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/concurrent/collection/AbstractEntry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/concurrent/collection/ConcurrentSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/concurrent/collection/NonBlockingHashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/concurrent/collection/NonBlockingHashMapLong.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2556">
+          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/concurrent/AffinityNamedThreadFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/concurrent/AbstractRejectedExecutionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/concurrent/DiscardTaskPolicyWithReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/concurrent/RejectedTaskPolicyWithReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/concurrent/CallerRunsPolicyWithReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/concurrent/BlockingProducersPolicyWithReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/concurrent/RejectedRunnable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/UnsafeUpdater.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/UnsafeUtf8Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/InternalThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/InternalThreadLocal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/InternalForkJoinWorkerThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/UnsafeIntegerFieldUpdater.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/UnsafeLongFieldUpdater.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/UnsafeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/UnsafeReferenceFieldUpdater.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="29" column="54" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/InternalThreadLocalMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1698">
+          <caret line="69" column="17" selection-start-line="69" selection-start-column="17" selection-end-line="69" selection-end-column="17" />
+          <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/StackTraceUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="28" column="33" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/SystemPropertyUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2979">
+          <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/concurrent/NamedThreadFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1672">
+          <caret line="100" column="26" selection-start-line="100" selection-start-column="26" selection-end-line="100" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/JConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-215">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-transport/group-transport-netty/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1580,6 +1532,37 @@
         <state relative-caret-position="264">
           <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/processor/ProviderProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/JAcceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/NettyAcceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1307">
+          <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
+          <folding>
+            <element signature="e#3094#3095#0" expanded="true" />
+            <element signature="e#3126#3127#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
