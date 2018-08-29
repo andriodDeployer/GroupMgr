@@ -16,18 +16,19 @@
 
 package group.common.concurrent;
 
+import group.common.util.ClassUtil;
+import group.common.util.internal.InternalThread;
+import group.common.util.internal.logging.InternalLogger;
+import group.common.util.internal.logging.InternalLoggerFactory;
 import net.openhft.affinity.AffinityLock;
 import net.openhft.affinity.AffinityStrategies;
 import net.openhft.affinity.AffinityStrategy;
-import org.jupiter.common.util.ClassUtil;
-import org.jupiter.common.util.internal.InternalThread;
-import org.jupiter.common.util.internal.logging.InternalLogger;
-import org.jupiter.common.util.internal.logging.InternalLoggerFactory;
 
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import static org.jupiter.common.util.Preconditions.checkNotNull;
+import static group.common.util.Preconditions.checkNotNull;
+
 
 /**
  * This is a ThreadFactory which assigns threads based the strategies provided.

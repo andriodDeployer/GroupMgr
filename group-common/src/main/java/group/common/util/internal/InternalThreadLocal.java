@@ -16,7 +16,8 @@
 
 package group.common.util.internal;
 
-import org.jupiter.common.util.ThrowUtil;
+
+import group.common.util.ThrowUtil;
 
 import java.util.Collections;
 import java.util.IdentityHashMap;

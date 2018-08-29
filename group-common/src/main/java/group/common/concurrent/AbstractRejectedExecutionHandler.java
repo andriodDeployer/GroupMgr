@@ -16,10 +16,11 @@
 
 package group.common.concurrent;
 
-import org.jupiter.common.util.JConstants;
-import org.jupiter.common.util.JvmTools;
-import org.jupiter.common.util.internal.logging.InternalLogger;
-import org.jupiter.common.util.internal.logging.InternalLoggerFactory;
+
+import group.common.util.JConstants;
+import group.common.util.JvmTools;
+import group.common.util.internal.logging.InternalLogger;
+import group.common.util.internal.logging.InternalLoggerFactory;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -30,7 +31,8 @@ import java.util.List;
 import java.util.concurrent.RejectedExecutionHandler;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-import static org.jupiter.common.util.StackTraceUtil.stackTrace;
+import static group.common.util.StackTraceUtil.stackTrace;
+
 
 /**
  * Jupiter

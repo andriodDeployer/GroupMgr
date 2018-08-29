@@ -16,7 +16,8 @@
 
 package group.common.util.internal;
 
-import static org.jupiter.common.util.Preconditions.checkNotNull;
+
+import static group.common.util.Preconditions.checkNotNull;
 
 /**
  * jupiter

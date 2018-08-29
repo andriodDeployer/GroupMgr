@@ -16,8 +16,9 @@
 
 package group.common.util.internal;
 
-import org.jupiter.common.util.internal.logging.InternalLogger;
-import org.jupiter.common.util.internal.logging.InternalLoggerFactory;
+
+import group.common.util.internal.logging.InternalLogger;
+import group.common.util.internal.logging.InternalLoggerFactory;
 import sun.misc.Unsafe;
 
 import java.lang.reflect.Field;
@@ -26,7 +27,7 @@ import java.nio.ByteBuffer;
 import java.security.AccessController;
 import java.security.PrivilegedAction;
 
-import static org.jupiter.common.util.StackTraceUtil.stackTrace;
+import static group.common.util.StackTraceUtil.stackTrace;
 
 /**
  * For the {@link Unsafe} access.

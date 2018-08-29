@@ -16,14 +16,14 @@
 
 package group.serialization.io;
 
-import org.jupiter.common.util.internal.InternalThreadLocal;
-import org.jupiter.common.util.internal.UnsafeReferenceFieldUpdater;
-import org.jupiter.common.util.internal.UnsafeUpdater;
+import group.common.util.internal.InternalThreadLocal;
+import group.common.util.internal.UnsafeReferenceFieldUpdater;
+import group.common.util.internal.UnsafeUpdater;
 
 import java.io.ByteArrayOutputStream;
 
-import static org.jupiter.serialization.Serializer.DEFAULT_BUF_SIZE;
-import static org.jupiter.serialization.Serializer.MAX_CACHED_BUF_SIZE;
+import static group.serialization.Serializer.DEFAULT_BUF_SIZE;
+import static group.serialization.Serializer.MAX_CACHED_BUF_SIZE;
 
 /**
  * jupiter

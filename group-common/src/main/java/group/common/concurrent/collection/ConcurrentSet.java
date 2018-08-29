@@ -16,7 +16,8 @@
 
 package group.common.concurrent.collection;
 
-import org.jupiter.common.util.Maps;
+
+import group.common.util.Maps;
 
 import java.io.Serializable;
 import java.util.AbstractSet;

@@ -24,6 +24,7 @@
         <processorPath useClasspath="true" />
         <module name="group-client" />
         <module name="group-common" />
+        <module name="group-Im" />
         <module name="group-serialization-api" />
         <module name="group-serialization-java" />
         <module name="group-server" />
@@ -34,6 +35,7 @@
     <bytecodeTargetLevel target="1.8">
       <module name="group-client" target="1.7" />
       <module name="group-common" target="1.7" />
+      <module name="group-Im" target="1.7" />
       <module name="group-serialization" target="1.7" />
       <module name="group-serialization-api" target="1.7" />
       <module name="group-serialization-java" target="1.7" />

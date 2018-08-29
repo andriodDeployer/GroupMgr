@@ -1,6 +1,7 @@
 package group.common.util.collection;
 
-import org.jupiter.common.util.Ints;
+
+import group.common.util.Ints;
 
 import java.util.*;
 

@@ -29,7 +29,8 @@
  */
 package group.common.concurrent.collection;
 
-import org.jupiter.common.util.internal.UnsafeUtil;
+
+import group.common.util.internal.UnsafeUtil;
 import sun.misc.Unsafe;
 
 import java.io.IOException;
