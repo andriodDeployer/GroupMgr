@@ -2,68 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e3771e3-318a-4a98-98c2-c1ae451c37c7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-Im/src/main/java/group/im/imclient/DefaultImClient.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-Im/src/main/java/group/im/imclient/ImClient.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im/balance/LoadBalancerFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im/balance/RandomLoadBalancer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im/balance/RoundRobinLoadBalancer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im/consumer/ProxyFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im/consumer/cluster/FailOverClusterInvoker.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im/consumer/cluster/FailSafeClusterInvoker.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im/consumer/future/FailOverInvokeFuture.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im/consumer/future/FailSafeInvokeFuture.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im/consumer/future/InvokeFutureContext.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im/consumer/invoker/AbstractInvoker.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im/consumer/invoker/AsyncGenericInvoker.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im/consumer/invoker/AsyncInvoker.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im/consumer/invoker/ClusterStrategyBridging.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im/consumer/invoker/SyncGenericInvoker.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im/consumer/invoker/SyncInvoker.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/AffinityNettyThreadFactory.java" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_0_13.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_0_13.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-test/src/main/resources/logback.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im/DefaultClient.java" afterPath="$PROJECT_DIR$/group-Im/src/main/java/group/im/DefaultClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im/DefaultFilterChain.java" afterPath="$PROJECT_DIR$/group-Im/src/main/java/group/im/DefaultFilterChain.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im/DefaultServer.java" afterPath="$PROJECT_DIR$/group-Im/src/main/java/group/im/DefaultServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im/JFilterLoader.java" afterPath="$PROJECT_DIR$/group-Im/src/main/java/group/im/JFilterLoader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im/JServer.java" afterPath="$PROJECT_DIR$/group-Im/src/main/java/group/im/JServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im/ServiceProvider.java" afterPath="$PROJECT_DIR$/group-Im/src/main/java/group/im/ServiceProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im/ServiceProviderImpl.java" afterPath="$PROJECT_DIR$/group-Im/src/main/java/group/im/ServiceProviderImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im/balance/LoadBalancer.java" afterPath="$PROJECT_DIR$/group-Im/src/main/java/group/im/balance/LoadBalancer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im/balance/WeightSupport.java" afterPath="$PROJECT_DIR$/group-Im/src/main/java/group/im/balance/WeightSupport.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im/consumer/GenericProxyFactory.java" afterPath="$PROJECT_DIR$/group-Im/src/main/java/group/im/consumer/GenericProxyFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im/consumer/cluster/ClusterInvoker.java" afterPath="$PROJECT_DIR$/group-Im/src/main/java/group/im/consumer/cluster/ClusterInvoker.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im/consumer/cluster/FailFastClusterInvoker.java" afterPath="$PROJECT_DIR$/group-Im/src/main/java/group/im/consumer/cluster/FailFastClusterInvoker.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im/consumer/dispatcher/AbstractDispatcher.java" afterPath="$PROJECT_DIR$/group-Im/src/main/java/group/im/consumer/dispatcher/AbstractDispatcher.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im/consumer/dispatcher/DefaultBroadcastDispatcher.java" afterPath="$PROJECT_DIR$/group-Im/src/main/java/group/im/consumer/dispatcher/DefaultBroadcastDispatcher.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im/consumer/dispatcher/DefaultRoundDispatcher.java" afterPath="$PROJECT_DIR$/group-Im/src/main/java/group/im/consumer/dispatcher/DefaultRoundDispatcher.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im/consumer/dispatcher/Dispatcher.java" afterPath="$PROJECT_DIR$/group-Im/src/main/java/group/im/consumer/dispatcher/Dispatcher.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im/consumer/future/DefaultInvokeFutureGroup.java" afterPath="$PROJECT_DIR$/group-Im/src/main/java/group/im/consumer/future/DefaultInvokeFutureGroup.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im/consumer/processor/ConsumerExecutors.java" afterPath="$PROJECT_DIR$/group-Im/src/main/java/group/im/consumer/processor/ConsumerExecutors.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im/executor/AbstractExecutorFactory.java" afterPath="$PROJECT_DIR$/group-Im/src/main/java/group/im/executor/AbstractExecutorFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im/executor/ExecutorFactory.java" afterPath="$PROJECT_DIR$/group-Im/src/main/java/group/im/executor/ExecutorFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im/executor/ForkJoinPoolExecutorFactory.java" afterPath="$PROJECT_DIR$/group-Im/src/main/java/group/im/executor/ForkJoinPoolExecutorFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im/metadata/ClusterStrategyConfig.java" afterPath="$PROJECT_DIR$/group-Im/src/main/java/group/im/metadata/ClusterStrategyConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im/metric/Metrics.java" afterPath="$PROJECT_DIR$/group-Im/src/main/java/group/im/metric/Metrics.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im/provider/LookupService.java" afterPath="$PROJECT_DIR$/group-Im/src/main/java/group/im/provider/LookupService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im/provider/ProviderInterceptor.java" afterPath="$PROJECT_DIR$/group-Im/src/main/java/group/im/provider/ProviderInterceptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im/tracing/TracingUtil.java" afterPath="$PROJECT_DIR$/group-Im/src/main/java/group/im/tracing/TracingUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-Im/src/main/resources/services/group.im.consumer.processor.ConsumerExecutorFactory" afterPath="$PROJECT_DIR$/group-Im/src/main/resources/services/group.im.consumer.processor.ConsumerExecutorFactory" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-connect/group-connect-default/src/main/java/group/connect/defaultimpl/DefaultRegistry.java" afterPath="$PROJECT_DIR$/group-connect/group-connect-default/src/main/java/group/connect/defaultimpl/DefaultRegistry.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-connect/group-connect-default/src/main/java/group/connect/defaultimpl/DefaultRegistryService.java" afterPath="$PROJECT_DIR$/group-connect/group-connect-default/src/main/java/group/connect/defaultimpl/DefaultRegistryService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-test/src/main/java/client_registry/Client.java" afterPath="$PROJECT_DIR$/group-test/src/main/java/client_registry/Client.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/Heartbeats.java" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/Heartbeats.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/JNettyConnection.java" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/JNettyConnection.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/JNettyTcpAcceptor.java" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/JNettyTcpAcceptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/JNettyTcpConnector.java" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/JNettyTcpConnector.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/alloc/AdaptiveOutputBufAllocator.java" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/alloc/AdaptiveOutputBufAllocator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/estimator/JMessageSizeEstimator.java" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/estimator/JMessageSizeEstimator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/IdleStateChecker.java" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/IdleStateChecker.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/LowCopyProtocolDecoder.java" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/LowCopyProtocolDecoder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/LowCopyProtocolEncoder.java" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/LowCopyProtocolEncoder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/ProtocolDecoder.java" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/ProtocolDecoder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/ProtocolEncoder.java" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/ProtocolEncoder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/acceptor/AcceptorIdleStateTrigger.java" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/acceptor/AcceptorIdleStateTrigger.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/ConnectorIdleStateTrigger.java" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/ConnectorIdleStateTrigger.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im/imclient/DefaultImClient.java" afterPath="$PROJECT_DIR$/group-Im/src/main/java/group/im/imclient/DefaultImClient.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-test/group-test.iml" afterPath="$PROJECT_DIR$/group-test/group-test.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-test/pom.xml" afterPath="$PROJECT_DIR$/group-test/pom.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/group-Im/src/main/resources/services/group.im.consumer.processor.ConsumerExecutorFactory" afterPath="$PROJECT_DIR$/group-Im/src/main/resources/META-INF/services/group.im.consumer.processor.ConsumerExecutorFactory" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/group-Im/src/main/resources/services/group.im.provider.processor.ProviderExecutorFactory" afterPath="$PROJECT_DIR$/group-Im/src/main/resources/META-INF/services/group.im.provider.processor.ProviderExecutorFactory" />
     </list>
     <ignored path="GroupMgr.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -103,28 +50,8 @@
       <file leaf-file-name="JServiceLoader.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/JServiceLoader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="98" column="41" selection-start-line="98" selection-start-column="41" selection-end-line="98" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CallerRunsExecutorFactory.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/group-Im/src/main/java/group/im/executor/CallerRunsExecutorFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/group-test/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="104">
+              <caret line="186" column="32" selection-start-line="186" selection-start-column="32" selection-end-line="186" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -133,8 +60,8 @@
       <file leaf-file-name="DefaultImClient.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/group-Im/src/main/java/group/im/imclient/DefaultImClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="538">
+              <caret line="27" column="76" selection-start-line="27" selection-start-column="76" selection-end-line="27" selection-end-column="76" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -142,23 +69,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DefaultConsumerProcessor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/group-Im/src/main/java/group/im/consumer/processor/DefaultConsumerProcessor.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/group-common/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-              <folding>
-                <element signature="e#1259#1260#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="132">
+              <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConsumerExecutors.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/group-Im/src/main/java/group/im/consumer/processor/ConsumerExecutors.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/group-test/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+            <state relative-caret-position="124">
+              <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logback.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/group-test/src/main/resources/logback.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -185,10 +120,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/group-Im/src/main/java/group/im/ImClient.java" />
         <option value="$PROJECT_DIR$/group-test/src/main/java/client_registry/Client.java" />
         <option value="$PROJECT_DIR$/group-Im/src/main/java/group/im/imclient/ImClient.java" />
-        <option value="$PROJECT_DIR$/group-Im/src/main/java/group/im/imclient/DefaultImClient.java" />
         <option value="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/ProtocolEncoder.java" />
         <option value="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/LowCopyProtocolDecoder.java" />
         <option value="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/JNettyTcpAcceptor.java" />
@@ -236,6 +169,8 @@
         <option value="$PROJECT_DIR$/group-Im/src/main/resources/services/group.im.consumer.processor.ConsumerExecutorFactory" />
         <option value="$PROJECT_DIR$/group-common/src/main/java/group/common/util/JServiceLoader.java" />
         <option value="$PROJECT_DIR$/group-Im/src/main/java/group/im/consumer/processor/ConsumerExecutors.java" />
+        <option value="$PROJECT_DIR$/group-Im/src/main/java/group/im/imclient/DefaultImClient.java" />
+        <option value="$PROJECT_DIR$/group-test/pom.xml" />
       </list>
     </option>
   </component>
@@ -429,6 +364,10 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -451,192 +390,6 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client_registry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="group-serialization" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="group-Im" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="group-Im" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="group-Im" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="group-Im" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="im" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="group-Im" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="im" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="consumer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="group-Im" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="im" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="consumer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="processor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -653,7 +406,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="SearchEverywhereHistoryKey" value="CallRun&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-Im/src/main/java/group/im/executor/CallerRunsExecutorFactory.java&#10;callerRuns&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-Im/src/main/java/group/im/executor/CallerRunsExecutorFactory.java&#10;ConsumerExecutorFa&#9;PSI&#9;JAVA://group.im.consumer.processor.ConsumerExecutorFactory&#10;consumerEx&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-Im/src/main/java/group/im/consumer/processor/ConsumerExecutors.java&#10;ThreadPoolExecutorFactory&#9;PSI&#9;JAVA://group.im.executor.ThreadPoolExecutorFactory&#10;Call&#9;PSI&#9;JAVA://group.im.executor.CallerRunsExecutorFactory&#10;As&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-Im/src/main/java/group/im/consumer/invoker/AsyncInvoker.java&#10;Default&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-connect/group-connect-default/src/main/java/group/connect/defaultimpl/DefaultRegistryService.java&#10;checkNo&#9;PSI&#9;JAVA://group.common.util.Preconditions#checkNotNull&#10;DefaultRegistrySer&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-connect/group-connect-default/src/main/java/group/connect/defaultimpl/DefaultRegistryService.java&#10;AbstractRegi&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-connect/group-connect-api/src/main/java/group/connect/AbstractRegistryService.java&#10;MessageEn&#9;PSI&#9;JAVA://group.connect.defaultimpl.DefaultRegistry.MessageEncoder&#10;proto&#9;PSI&#9;JAVA://group.transport.Transporter.Protocol&#10;Transport&#9;PSI&#9;JAVA://group.transport.Transporter&#10;JRequest&#9;PSI&#9;JAVA://group.im.JRequest&#10;AbstractRegistry&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-connect/group-connect-api/src/main/java/group/connect/AbstractRegistryService.java&#10;DefaultClient&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-Im/src/main/java/group/im/DefaultClient.java&#10;providerExecu&#9;PSI&#9;JAVA://group.im.provider.processor.ProviderExecutorFactory&#10;ConsumerExecu&#9;PSI&#9;JAVA://group.im.consumer.processor.ConsumerExecutorFactory&#10;defaulClient&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-Im/src/main/java/group/im/DefaultClient.java&#10;DefaultCl&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-Im/src/main/java/group/im/DefaultClient.java&#10;UnSaf&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-common/src/main/java/group/common/util/internal/UnsafeUtil.java&#10;DefaultCli&#9;PSI&#9;JAVA://group.im.DefaultClient&#10;defaultPro&#9;PSI&#9;JAVA://group.im.provider.processor.DefaultProviderProcessor" />
+    <property name="SearchEverywhereHistoryKey" value="client&#9;PSI&#9;JAVA://client_registry.Client&#10;Client&#9;RUN_CONFIGURATION&#9;Client&#10;CallRun&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-Im/src/main/java/group/im/executor/CallerRunsExecutorFactory.java&#10;callerRuns&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-Im/src/main/java/group/im/executor/CallerRunsExecutorFactory.java&#10;ConsumerExecutorFa&#9;PSI&#9;JAVA://group.im.consumer.processor.ConsumerExecutorFactory&#10;consumerEx&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-Im/src/main/java/group/im/consumer/processor/ConsumerExecutors.java&#10;ThreadPoolExecutorFactory&#9;PSI&#9;JAVA://group.im.executor.ThreadPoolExecutorFactory&#10;Call&#9;PSI&#9;JAVA://group.im.executor.CallerRunsExecutorFactory&#10;As&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-Im/src/main/java/group/im/consumer/invoker/AsyncInvoker.java&#10;Default&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-connect/group-connect-default/src/main/java/group/connect/defaultimpl/DefaultRegistryService.java&#10;checkNo&#9;PSI&#9;JAVA://group.common.util.Preconditions#checkNotNull&#10;DefaultRegistrySer&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-connect/group-connect-default/src/main/java/group/connect/defaultimpl/DefaultRegistryService.java&#10;AbstractRegi&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-connect/group-connect-api/src/main/java/group/connect/AbstractRegistryService.java&#10;MessageEn&#9;PSI&#9;JAVA://group.connect.defaultimpl.DefaultRegistry.MessageEncoder&#10;proto&#9;PSI&#9;JAVA://group.transport.Transporter.Protocol&#10;Transport&#9;PSI&#9;JAVA://group.transport.Transporter&#10;JRequest&#9;PSI&#9;JAVA://group.im.JRequest&#10;AbstractRegistry&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-connect/group-connect-api/src/main/java/group/connect/AbstractRegistryService.java&#10;DefaultClient&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-Im/src/main/java/group/im/DefaultClient.java&#10;providerExecu&#9;PSI&#9;JAVA://group.im.provider.processor.ProviderExecutorFactory&#10;ConsumerExecu&#9;PSI&#9;JAVA://group.im.consumer.processor.ConsumerExecutorFactory&#10;defaulClient&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-Im/src/main/java/group/im/DefaultClient.java&#10;DefaultCl&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-Im/src/main/java/group/im/DefaultClient.java&#10;UnSaf&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-common/src/main/java/group/common/util/internal/UnsafeUtil.java&#10;DefaultCli&#9;PSI&#9;JAVA://group.im.DefaultClient&#10;defaultPro&#9;PSI&#9;JAVA://group.im.provider.processor.DefaultProviderProcessor" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -665,11 +418,11 @@
       <recent name="group.serialization.java" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workRequire\workspace\ideaWorkSpace\GroupMgr\group-test\src\main\resources" />
+      <recent name="D:\workRequire\workspace\ideaWorkSpace\GroupMgr\group-Im\src\main\resources\META-INF\services" />
       <recent name="D:\workRequire\workspace\ideaWorkSpace\GroupMgr\group-Im\src\main\resources" />
       <recent name="D:\workRequire\workspace\ideaWorkSpace\GroupMgr\group-connect\group-connect-default\src\main\java\group\connect\defaultimpl" />
       <recent name="D:\workRequire\workspace\ideaWorkSpace\GroupMgr\group-common\src\main\java\group\common" />
-      <recent name="D:\workRequire\workspace\ideaWorkSpace\GroupMgr\group-common\src\main\java\group\common\util" />
-      <recent name="D:\workRequire\workspace\ideaWorkSpace\GroupMgr\group-connect\group-connect-api\src\main\java\group\connect" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Client">
@@ -1077,12 +830,19 @@
       <option name="project" value="LOCAL" />
       <updated>1535524618645</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="dd">
+      <created>1535529850150</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1535529850150</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="1592" y="-244" width="1936" height="1056" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1092,11 +852,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42269188" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42269188" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24733475" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24733475" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1673774" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -1153,14 +913,8 @@
           <line>129</line>
           <properties />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/group-Im/src/main/java/group/im/consumer/processor/ConsumerExecutors.java</url>
-          <line>45</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1169,54 +923,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/estimator/JMessageSizeEstimator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-765">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/alloc/AdaptiveOutputBufAllocator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-Im/src/main/java/group/im/consumer/dispatcher/Dispatcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-115">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-Im/src/main/java/group/im/consumer/dispatcher/AbstractDispatcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="132" column="45" selection-start-line="132" selection-start-column="45" selection-end-line="132" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-Im/src/main/java/group/im/balance/LoadBalancer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/group-Im/src/main/java/group/im/consumer/invoker/SyncInvoker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="237">
@@ -1537,16 +1243,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/group-test/src/main/java/client_registry/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/group-Im/src/main/java/group/im/executor/ThreadPoolExecutorFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="39">
@@ -1579,27 +1275,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/group-test/pom.xml">
+    <entry file="file://$PROJECT_DIR$/group-Im/src/main/java/group/im/executor/CallerRunsExecutorFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="198">
+          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-Im/src/main/java/group/im/imclient/DefaultImClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/group-Im/src/main/java/group/im/consumer/processor/DefaultConsumerProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
+        <state relative-caret-position="225">
           <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding>
             <element signature="e#1259#1260#0" expanded="true" />
@@ -1610,23 +1296,90 @@
     <entry file="file://$PROJECT_DIR$/group-Im/src/main/java/group/im/consumer/processor/ConsumerExecutors.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="379">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <caret line="45" column="32" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-Im/src/main/resources/META-INF/services/group.im.consumer.processor.ConsumerExecutorFactory">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="43" selection-start-line="0" selection-start-column="43" selection-end-line="0" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-test/src/main/resources/logback.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-Im/src/main/java/group/im/imclient/ImClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-test/src/main/java/client_registry/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/JServiceLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="98" column="41" selection-start-line="98" selection-start-column="41" selection-end-line="98" selection-end-column="41" />
+        <state relative-caret-position="104">
+          <caret line="186" column="32" selection-start-line="186" selection-start-column="32" selection-end-line="186" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/group-Im/src/main/java/group/im/executor/CallerRunsExecutorFactory.java">
+    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/internal/logging/InternalLoggerFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="357">
+          <caret line="86" column="33" selection-start-line="86" selection-start-column="33" selection-end-line="86" selection-end-column="33" />
+          <folding>
+            <element signature="e#3313#3314#0" expanded="true" />
+            <element signature="e#3364#3365#0" expanded="true" />
+            <element signature="e#3503#3504#0" expanded="true" />
+            <element signature="e#3563#3564#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-Im/src/main/java/group/im/imclient/DefaultImClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="27" column="76" selection-start-line="27" selection-start-column="76" selection-end-line="27" selection-end-column="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-test/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
           <folding />
         </state>
       </provider>
@@ -1672,7 +1425,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>group-Im</last-edited>
+          <last-edited>group-common</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

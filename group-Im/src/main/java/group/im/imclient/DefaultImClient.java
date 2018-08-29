@@ -46,7 +46,7 @@ public class DefaultImClient implements ImClient{
                if(i == 2){
                    throw ex;
                }
-               logger.info("connect address [] in [] times.",address,i);
+               logger.warn("connect address ["+address+"] in ["+i+"] times.");
            }
        }
 
