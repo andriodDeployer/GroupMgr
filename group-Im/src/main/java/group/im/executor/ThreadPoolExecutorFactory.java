@@ -16,17 +16,18 @@
 
 package group.im.executor;
 
-import org.jupiter.common.concurrent.RejectedTaskPolicyWithReport;
-import org.jupiter.common.util.SpiMetadata;
-import org.jupiter.common.util.Strings;
-import org.jupiter.common.util.SystemPropertyUtil;
-import org.jupiter.common.util.internal.logging.InternalLogger;
-import org.jupiter.common.util.internal.logging.InternalLoggerFactory;
+
+import group.common.concurrent.RejectedTaskPolicyWithReport;
+import group.common.util.SpiMetadata;
+import group.common.util.Strings;
+import group.common.util.SystemPropertyUtil;
+import group.common.util.internal.logging.InternalLogger;
+import group.common.util.internal.logging.InternalLoggerFactory;
 
 import java.lang.reflect.Constructor;
 import java.util.concurrent.*;
 
-import static org.jupiter.common.util.StackTraceUtil.stackTrace;
+import static group.common.util.StackTraceUtil.stackTrace;
 
 /**
  * Provide a {@link ThreadPoolExecutor} implementation of executor.

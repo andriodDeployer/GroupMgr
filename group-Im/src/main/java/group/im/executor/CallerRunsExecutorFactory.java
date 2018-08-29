@@ -16,7 +16,8 @@
 
 package group.im.executor;
 
-import org.jupiter.common.util.SpiMetadata;
+
+import group.common.util.SpiMetadata;
 
 /**
  * jupiter
