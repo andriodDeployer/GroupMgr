@@ -16,12 +16,7 @@
         <module>group-connect-default</module>
     </modules>
 
-    <dependencies>
-        <dependency>
-            <groupId>com.cd.groupmgr</groupId>
-            <artifactId>group-common</artifactId>
-        </dependency>
-    </dependencies>
+
 
 
 </project>

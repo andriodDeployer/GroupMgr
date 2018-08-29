@@ -16,6 +16,10 @@
 
 package group.transport.netty;
 
+import group.common.util.JConstants;
+import group.common.util.internal.logging.InternalLogger;
+import group.common.util.internal.logging.InternalLoggerFactory;
+import group.transport.JConfigGroup;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelOption;
@@ -24,10 +28,6 @@ import io.netty.channel.WriteBufferWaterMark;
 import io.netty.channel.epoll.EpollEventLoopGroup;
 import io.netty.channel.kqueue.KQueueEventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
-import org.jupiter.common.util.JConstants;
-import org.jupiter.common.util.internal.logging.InternalLogger;
-import org.jupiter.common.util.internal.logging.InternalLoggerFactory;
-import org.jupiter.transport.JConfigGroup;
 
 import java.net.InetSocketAddress;
 import java.net.SocketAddress;

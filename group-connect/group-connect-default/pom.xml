@@ -11,5 +11,30 @@
 
     <artifactId>group-connect-default</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.cd.groupmgr</groupId>
+            <artifactId>group-common</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.cd.groupmgr</groupId>
+            <artifactId>group-serialization-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.cd.groupmgr</groupId>
+            <artifactId>group-transport-netty</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.cd.groupmgr</groupId>
+            <artifactId>group-connect-api</artifactId>
+        </dependency>
+
+
+
+    </dependencies>
+
 
 </project>
