@@ -16,19 +16,20 @@
 
 package group.im;
 
-import org.jupiter.common.util.*;
-import org.jupiter.common.util.internal.logging.InternalLogger;
-import org.jupiter.common.util.internal.logging.InternalLoggerFactory;
-import org.jupiter.registry.RegisterMeta;
-import org.jupiter.registry.RegistryService;
-import org.jupiter.rpc.flow.control.ControlResult;
-import org.jupiter.rpc.flow.control.FlowController;
-import org.jupiter.rpc.model.metadata.ServiceMetadata;
-import org.jupiter.rpc.model.metadata.ServiceWrapper;
-import org.jupiter.rpc.provider.ProviderInterceptor;
-import org.jupiter.rpc.provider.processor.DefaultProviderProcessor;
-import org.jupiter.transport.Directory;
-import org.jupiter.transport.JAcceptor;
+
+import group.common.util.*;
+import group.common.util.internal.logging.InternalLogger;
+import group.common.util.internal.logging.InternalLoggerFactory;
+import group.connect.RegisterMeta;
+import group.connect.RegistryService;
+import group.im.control.ControlResult;
+import group.im.control.FlowController;
+import group.im.metadata.ServiceMetadata;
+import group.im.metadata.ServiceWrapper;
+import group.im.provider.ProviderInterceptor;
+import group.im.provider.processor.DefaultProviderProcessor;
+import group.transport.Directory;
+import group.transport.JAcceptor;
 
 import java.lang.reflect.Method;
 import java.util.Collections;
@@ -37,9 +38,9 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.Executor;
 
-import static org.jupiter.common.util.Preconditions.checkArgument;
-import static org.jupiter.common.util.Preconditions.checkNotNull;
-import static org.jupiter.common.util.StackTraceUtil.stackTrace;
+import static group.common.util.Preconditions.checkArgument;
+import static group.common.util.Preconditions.checkNotNull;
+import static group.common.util.StackTraceUtil.stackTrace;
 
 /**
  * Jupiter默认服务端实现.

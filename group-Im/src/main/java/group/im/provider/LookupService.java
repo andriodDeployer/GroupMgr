@@ -16,8 +16,9 @@
 
 package group.im.provider;
 
-import org.jupiter.rpc.model.metadata.ServiceWrapper;
-import org.jupiter.transport.Directory;
+
+import group.im.metadata.ServiceWrapper;
+import group.transport.Directory;
 
 /**
  * Lookup the service.服务查找者

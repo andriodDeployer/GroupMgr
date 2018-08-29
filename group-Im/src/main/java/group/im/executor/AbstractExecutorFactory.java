@@ -16,10 +16,9 @@
 
 package group.im.executor;
 
-import org.jupiter.common.concurrent.AffinityNamedThreadFactory;
-import org.jupiter.common.concurrent.NamedThreadFactory;
-import org.jupiter.common.util.JConstants;
-import org.jupiter.common.util.SystemPropertyUtil;
+
+import group.common.util.JConstants;
+import group.common.util.SystemPropertyUtil;
 
 import java.util.concurrent.ThreadFactory;
 
@@ -33,11 +32,12 @@ public abstract class AbstractExecutorFactory implements ExecutorFactory {
 
     protected ThreadFactory threadFactory(String name) {
         boolean affinity = SystemPropertyUtil.getBoolean(EXECUTOR_AFFINITY_THREAD, false);
-        if (affinity) {
-            return new AffinityNamedThreadFactory(name);
-        } else {
-            return new NamedThreadFactory(name);
-        }
+//        if (affinity) {
+//            return new AffinityNamedThreadFactory(name);
+//        } else {
+//            return new NamedThreadFactory(name);
+//        }
+        return null;
     }
 
     protected int coreWorkers(Target target) {

@@ -16,9 +16,9 @@
 
 package group.transport.netty.alloc;
 
+import group.common.util.Lists;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.ByteBufAllocator;
-import org.jupiter.common.util.Lists;
 
 import java.util.List;
 

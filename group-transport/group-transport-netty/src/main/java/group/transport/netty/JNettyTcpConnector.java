@@ -16,26 +16,27 @@
 
 package group.transport.netty;
 
+
+import group.common.util.JConstants;
+import group.transport.CodecConfig;
+import group.transport.JConnection;
+import group.transport.JOption;
+import group.transport.UnresolvedAddress;
+import group.transport.channel.JChannelGroup;
+import group.transport.exception.ConnectFailedException;
+import group.transport.netty.handler.*;
+import group.transport.netty.handler.connector.ConnectionWatchdog;
+import group.transport.netty.handler.connector.ConnectorHandler;
+import group.transport.netty.handler.connector.ConnectorIdleStateTrigger;
+import group.transport.processor.ConsumerProcessor;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.*;
-import org.jupiter.common.util.JConstants;
-import org.jupiter.transport.CodecConfig;
-import org.jupiter.transport.JConnection;
-import org.jupiter.transport.JOption;
-import org.jupiter.transport.UnresolvedAddress;
-import org.jupiter.transport.channel.JChannelGroup;
-import org.jupiter.transport.exception.ConnectFailedException;
-import org.jupiter.transport.netty.handler.*;
-import org.jupiter.transport.netty.handler.connector.ConnectionWatchdog;
-import org.jupiter.transport.netty.handler.connector.ConnectorHandler;
-import org.jupiter.transport.netty.handler.connector.ConnectorIdleStateTrigger;
-import org.jupiter.transport.processor.ConsumerProcessor;
 
 import java.net.InetSocketAddress;
 import java.net.SocketAddress;
 import java.util.concurrent.TimeUnit;
 
-import static org.jupiter.common.util.Preconditions.checkNotNull;
+import static group.common.util.Preconditions.checkNotNull;
 
 /**
  * Jupiter tcp connector based on netty.

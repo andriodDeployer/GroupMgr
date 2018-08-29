@@ -16,12 +16,11 @@
 
 package group.im.balance;
 
-import org.jupiter.common.util.SystemClock;
-import org.jupiter.transport.Directory;
-import org.jupiter.transport.channel.CopyOnWriteGroupList;
-import org.jupiter.transport.channel.JChannelGroup;
 
-import static java.lang.Math.min;
+import group.common.util.SystemClock;
+import group.transport.Directory;
+import group.transport.channel.CopyOnWriteGroupList;
+import group.transport.channel.JChannelGroup;
 
 /**
  * jupiter
@@ -145,7 +144,8 @@ final class WeightSupport {
             b += minDeltaOrZero; // sets b to min(old a, b)
             a >>= Integer.numberOfTrailingZeros(a); // divide out all 2s, since 2 doesn't divide b
         }
-        return a << min(aTwos, bTwos);
+        return 0;
+        //return a << min(aTwos, bTwos);
     }
 
     private WeightSupport() {}

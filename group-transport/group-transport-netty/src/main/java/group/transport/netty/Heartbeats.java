@@ -16,9 +16,10 @@
 
 package group.transport.netty;
 
+
+import group.transport.JProtocolHeader;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
-import org.jupiter.transport.JProtocolHeader;
 
 /**
  * Shared heartbeat content.

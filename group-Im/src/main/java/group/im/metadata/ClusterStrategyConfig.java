@@ -16,7 +16,8 @@
 
 package group.im.metadata;
 
-import org.jupiter.rpc.consumer.cluster.ClusterInvoker;
+
+import group.im.consumer.cluster.ClusterInvoker;
 
 import java.io.Serializable;
 

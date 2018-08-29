@@ -43,8 +43,7 @@ public class ConsumerExecutors {
         String factoryName = SystemPropertyUtil.get("jupiter.executor.factory.consumer.factory_name", "callerRuns");
         ExecutorFactory factory;
         try {
-            factory = (ExecutorFactory) JServiceLoader.load(ConsumerExecutorFactory.class)
-                    .find(factoryName);
+            factory = (ExecutorFactory) JServiceLoader.load(ConsumerExecutorFactory.class).find(factoryName);
         } catch (Throwable t) {
             logger.warn("Failed to load consumer's executor factory [{}], cause: {}, " +
                             "[CallerRunsExecutorFactory] will be used as default.", factoryName, stackTrace(t));

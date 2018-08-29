@@ -16,10 +16,11 @@
 
 package group.im.consumer.dispatcher;
 
-import org.jupiter.rpc.JRequest;
-import org.jupiter.rpc.consumer.ConsumerInterceptor;
-import org.jupiter.rpc.consumer.future.InvokeFuture;
-import org.jupiter.rpc.model.metadata.MethodSpecialConfig;
+
+import group.im.JRequest;
+import group.im.consumer.ConsumerInterceptor;
+import group.im.consumer.future.InvokeFuture;
+import group.im.metadata.MethodSpecialConfig;
 
 import java.util.List;
 

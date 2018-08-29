@@ -34,8 +34,6 @@ import static group.common.util.Preconditions.checkNotNull;
 
 
 /**
- * Jupiter默认客户端实现.哈手动阀手动阀
- *
  * jupiter
  * org.jupiter.rpc
  *

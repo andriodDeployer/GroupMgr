@@ -16,35 +16,31 @@
 
 package group.im.consumer;
 
-import org.jupiter.common.util.JConstants;
-import org.jupiter.common.util.Lists;
-import org.jupiter.common.util.Strings;
-import org.jupiter.rpc.DispatchType;
-import org.jupiter.rpc.InvokeType;
-import org.jupiter.rpc.JClient;
-import org.jupiter.rpc.consumer.cluster.ClusterInvoker;
-import org.jupiter.rpc.consumer.dispatcher.DefaultBroadcastDispatcher;
-import org.jupiter.rpc.consumer.dispatcher.DefaultRoundDispatcher;
-import org.jupiter.rpc.consumer.dispatcher.Dispatcher;
-import org.jupiter.rpc.consumer.invoker.AsyncGenericInvoker;
-import org.jupiter.rpc.consumer.invoker.GenericInvoker;
-import org.jupiter.rpc.consumer.invoker.SyncGenericInvoker;
-import org.jupiter.rpc.load.balance.LoadBalancerFactory;
-import org.jupiter.rpc.load.balance.LoadBalancerType;
-import org.jupiter.rpc.model.metadata.ClusterStrategyConfig;
-import org.jupiter.rpc.model.metadata.MethodSpecialConfig;
-import org.jupiter.rpc.model.metadata.ServiceMetadata;
-import org.jupiter.serialization.SerializerType;
-import org.jupiter.transport.Directory;
-import org.jupiter.transport.JConnection;
-import org.jupiter.transport.JConnector;
-import org.jupiter.transport.UnresolvedAddress;
+
+import group.common.util.JConstants;
+import group.common.util.Lists;
+import group.common.util.Strings;
+import group.im.DispatchType;
+import group.im.InvokeType;
+import group.im.JClient;
+import group.im.balance.LoadBalancerType;
+import group.im.consumer.cluster.ClusterInvoker;
+import group.im.consumer.dispatcher.Dispatcher;
+import group.im.consumer.invoker.GenericInvoker;
+import group.im.metadata.ClusterStrategyConfig;
+import group.im.metadata.MethodSpecialConfig;
+import group.im.metadata.ServiceMetadata;
+import group.serialization.SerializerType;
+import group.transport.Directory;
+import group.transport.JConnection;
+import group.transport.JConnector;
+import group.transport.UnresolvedAddress;
 
 import java.util.Collections;
 import java.util.List;
 
-import static org.jupiter.common.util.Preconditions.checkArgument;
-import static org.jupiter.common.util.Preconditions.checkNotNull;
+import static group.common.util.Preconditions.checkArgument;
+import static group.common.util.Preconditions.checkNotNull;
 
 /**
  * 泛化ProxyFactory
@@ -213,24 +209,25 @@ public class GenericProxyFactory {
         ClusterStrategyConfig strategyConfig = ClusterStrategyConfig.of(strategy, retries);
         switch (invokeType) {
             case SYNC:
-                return new SyncGenericInvoker(client.appName(), metadata, dispatcher, strategyConfig, methodSpecialConfigs);
+               // return new SyncGenericInvoker(client.appName(), metadata, dispatcher, strategyConfig, methodSpecialConfigs);
             case ASYNC:
-                return new AsyncGenericInvoker(client.appName(), metadata, dispatcher, strategyConfig, methodSpecialConfigs);
+               // return new AsyncGenericInvoker(client.appName(), metadata, dispatcher, strategyConfig, methodSpecialConfigs);
             default:
                 throw reject("invokeType: " + invokeType);
         }
     }
 
     protected Dispatcher dispatcher() {
-        switch (dispatchType) {
-            case ROUND:
-                return new DefaultRoundDispatcher(
-                        client, LoadBalancerFactory.loadBalancer(loadBalancerType), serializerType);
-            case BROADCAST:
-                return new DefaultBroadcastDispatcher(client, serializerType);
-            default:
-                throw reject("dispatchType: " + dispatchType);
-        }
+//        switch (dispatchType) {
+//            case ROUND:
+//                return new DefaultRoundDispatcher(
+//                        client, LoadBalancerFactory.loadBalancer(loadBalancerType), serializerType);
+//            case BROADCAST:
+//                return new DefaultBroadcastDispatcher(client, serializerType);
+//            default:
+//                throw reject("dispatchType: " + dispatchType);
+//        }
+        return null;
     }
 
     private static UnsupportedOperationException reject(String message) {

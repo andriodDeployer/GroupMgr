@@ -16,9 +16,10 @@
 
 package group.im.balance;
 
-import org.jupiter.transport.Directory;
-import org.jupiter.transport.channel.CopyOnWriteGroupList;
-import org.jupiter.transport.channel.JChannelGroup;
+
+import group.transport.Directory;
+import group.transport.channel.CopyOnWriteGroupList;
+import group.transport.channel.JChannelGroup;
 
 /**
  * Load balancer.

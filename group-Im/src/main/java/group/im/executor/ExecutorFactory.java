@@ -16,8 +16,9 @@
 
 package group.im.executor;
 
-import org.jupiter.rpc.consumer.processor.ConsumerExecutorFactory;
-import org.jupiter.rpc.provider.processor.ProviderExecutorFactory;
+
+import group.im.consumer.processor.ConsumerExecutorFactory;
+import group.im.provider.processor.ProviderExecutorFactory;
 
 /**
  * Executor factory.

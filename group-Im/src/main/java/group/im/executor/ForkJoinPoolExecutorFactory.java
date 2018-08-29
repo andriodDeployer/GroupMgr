@@ -16,16 +16,17 @@
 
 package group.im.executor;
 
-import org.jupiter.common.util.SpiMetadata;
-import org.jupiter.common.util.internal.InternalForkJoinWorkerThread;
-import org.jupiter.common.util.internal.logging.InternalLogger;
-import org.jupiter.common.util.internal.logging.InternalLoggerFactory;
+
+import group.common.util.SpiMetadata;
+import group.common.util.internal.InternalForkJoinWorkerThread;
+import group.common.util.internal.logging.InternalLogger;
+import group.common.util.internal.logging.InternalLoggerFactory;
 
 import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.ForkJoinWorkerThread;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import static org.jupiter.common.util.StackTraceUtil.stackTrace;
+import static group.common.util.StackTraceUtil.stackTrace;
 
 /**
  * Provide a {@link ForkJoinPool} implementation of executor.

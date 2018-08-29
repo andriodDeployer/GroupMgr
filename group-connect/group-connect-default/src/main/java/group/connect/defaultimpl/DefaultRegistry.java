@@ -162,9 +162,9 @@ public final class DefaultRegistry extends NettyTcpConnector {
 
             @Override
             public void setReconnect(boolean reconnect) {
-                if (reconnect) {
-                    watchdog.start();
-                } else {
+                    if (reconnect) {
+                        watchdog.start();
+                    } else {
                     watchdog.stop();
                 }
             }

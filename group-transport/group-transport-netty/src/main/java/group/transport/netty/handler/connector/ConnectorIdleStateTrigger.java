@@ -16,12 +16,13 @@
 
 package group.transport.netty.handler.connector;
 
+
+import group.transport.netty.Heartbeats;
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.handler.timeout.IdleState;
 import io.netty.handler.timeout.IdleStateEvent;
-import org.jupiter.transport.netty.Heartbeats;
 
 /**
  * jupiter

@@ -16,17 +16,21 @@
 
 package group.im.tracing;
 
-import org.jupiter.common.util.*;
-import org.jupiter.common.util.internal.InternalThreadLocal;
-import org.jupiter.common.util.internal.logging.InternalLogger;
-import org.jupiter.common.util.internal.logging.InternalLoggerFactory;
+
+import group.common.util.NetUtil;
+import group.common.util.StringBuilderHelper;
+import group.common.util.SystemClock;
+import group.common.util.SystemPropertyUtil;
+import group.common.util.internal.InternalThreadLocal;
+import group.common.util.internal.logging.InternalLogger;
+import group.common.util.internal.logging.InternalLoggerFactory;
 
 import java.lang.management.ManagementFactory;
 import java.lang.management.RuntimeMXBean;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.atomic.AtomicLong;
 
-import static org.jupiter.common.util.StackTraceUtil.stackTrace;
+import static group.common.util.StackTraceUtil.stackTrace;
 
 /**
  * 链路追踪ID生成的工具类.

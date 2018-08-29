@@ -16,17 +16,17 @@
 
 package group.im.consumer.dispatcher;
 
-import org.jupiter.rpc.DispatchType;
-import org.jupiter.rpc.JClient;
-import org.jupiter.rpc.JRequest;
-import org.jupiter.rpc.consumer.future.InvokeFuture;
-import org.jupiter.rpc.load.balance.LoadBalancer;
-import org.jupiter.rpc.model.metadata.MessageWrapper;
-import org.jupiter.serialization.Serializer;
-import org.jupiter.serialization.SerializerType;
-import org.jupiter.serialization.io.OutputBuf;
-import org.jupiter.transport.CodecConfig;
-import org.jupiter.transport.channel.JChannel;
+import group.im.DispatchType;
+import group.im.JClient;
+import group.im.JRequest;
+import group.im.balance.LoadBalancer;
+import group.im.consumer.future.InvokeFuture;
+import group.im.metadata.MessageWrapper;
+import group.serialization.Serializer;
+import group.serialization.SerializerType;
+import group.serialization.io.OutputBuf;
+import group.transport.CodecConfig;
+import group.transport.channel.JChannel;
 
 /**
  * 单播方式派发消息.

@@ -16,10 +16,10 @@
 
 package group.transport.netty;
 
+import group.transport.JConnection;
+import group.transport.UnresolvedAddress;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelFutureListener;
-import org.jupiter.transport.JConnection;
-import org.jupiter.transport.UnresolvedAddress;
 
 /**
  * jupiter

@@ -16,19 +16,22 @@
 
 package group.connect.defaultimpl;
 
-import org.jupiter.common.util.Maps;
-import org.jupiter.common.util.SpiMetadata;
-import org.jupiter.common.util.Strings;
-import org.jupiter.common.util.internal.logging.InternalLogger;
-import org.jupiter.common.util.internal.logging.InternalLoggerFactory;
-import org.jupiter.transport.JConnection;
-import org.jupiter.transport.UnresolvedAddress;
+
+import group.common.util.Maps;
+import group.common.util.SpiMetadata;
+import group.common.util.Strings;
+import group.common.util.internal.logging.InternalLogger;
+import group.common.util.internal.logging.InternalLoggerFactory;
+import group.connect.AbstractRegistryService;
+import group.connect.RegisterMeta;
+import group.transport.JConnection;
+import group.transport.UnresolvedAddress;
 
 import java.util.Collection;
 import java.util.concurrent.ConcurrentMap;
 
-import static org.jupiter.common.util.Preconditions.checkArgument;
-import static org.jupiter.common.util.Preconditions.checkNotNull;
+import static group.common.util.Preconditions.checkArgument;
+import static group.common.util.Preconditions.checkNotNull;
 
 /**
  * Default registry service.

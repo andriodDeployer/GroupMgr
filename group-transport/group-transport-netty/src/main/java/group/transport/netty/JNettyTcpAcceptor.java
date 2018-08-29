@@ -16,23 +16,23 @@
 
 package group.transport.netty;
 
+import group.common.util.JConstants;
+import group.transport.CodecConfig;
+import group.transport.JConfig;
+import group.transport.JOption;
+import group.transport.netty.handler.*;
+import group.transport.netty.handler.acceptor.AcceptorHandler;
+import group.transport.netty.handler.acceptor.AcceptorIdleStateTrigger;
+import group.transport.processor.ProviderProcessor;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelOutboundHandler;
-import org.jupiter.common.util.JConstants;
-import org.jupiter.transport.CodecConfig;
-import org.jupiter.transport.JConfig;
-import org.jupiter.transport.JOption;
-import org.jupiter.transport.netty.handler.*;
-import org.jupiter.transport.netty.handler.acceptor.AcceptorHandler;
-import org.jupiter.transport.netty.handler.acceptor.AcceptorIdleStateTrigger;
-import org.jupiter.transport.processor.ProviderProcessor;
 
 import java.net.SocketAddress;
 
-import static org.jupiter.common.util.Preconditions.checkNotNull;
+import static group.common.util.Preconditions.checkNotNull;
 
 /**
  * Jupiter tcp acceptor based on netty.

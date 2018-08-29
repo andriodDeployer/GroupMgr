@@ -16,13 +16,14 @@
 
 package group.im;
 
-import org.jupiter.registry.Registry;
-import org.jupiter.registry.RegistryService;
-import org.jupiter.rpc.flow.control.FlowController;
-import org.jupiter.rpc.model.metadata.ServiceWrapper;
-import org.jupiter.rpc.provider.ProviderInterceptor;
-import org.jupiter.transport.Directory;
-import org.jupiter.transport.JAcceptor;
+
+import group.connect.Registry;
+import group.connect.RegistryService;
+import group.im.control.FlowController;
+import group.im.metadata.ServiceWrapper;
+import group.im.provider.ProviderInterceptor;
+import group.transport.Directory;
+import group.transport.JAcceptor;
 
 import java.util.List;
 import java.util.concurrent.Executor;

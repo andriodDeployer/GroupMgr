@@ -16,7 +16,8 @@
 
 package group.im;
 
-import org.jupiter.common.util.JConstants;
+
+import group.common.util.JConstants;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

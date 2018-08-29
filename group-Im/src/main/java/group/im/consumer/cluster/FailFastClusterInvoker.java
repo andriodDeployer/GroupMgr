@@ -16,9 +16,10 @@
 
 package group.im.consumer.cluster;
 
-import org.jupiter.rpc.JRequest;
-import org.jupiter.rpc.consumer.dispatcher.Dispatcher;
-import org.jupiter.rpc.consumer.future.InvokeFuture;
+
+import group.im.JRequest;
+import group.im.consumer.dispatcher.Dispatcher;
+import group.im.consumer.future.InvokeFuture;
 
 /**
  * 快速失败, 只发起一次调用, 失败立即报错(jupiter缺省设置)
@@ -45,7 +46,7 @@ public class FailFastClusterInvoker implements ClusterInvoker {
         return Strategy.FAIL_FAST;
     }
 
-    @Override
+
     public <T> InvokeFuture<T> invoke(JRequest request, Class<T> returnType) throws Exception {
         return dispatcher.dispatch(request, returnType);
     }

@@ -2,8 +2,8 @@ package client_registry;/**
  * Created by DELL on 2018/8/29.
  */
 
-import group.im.DefaultClient;
-import group.im.JClient;
+import group.im.imclient.DefaultImClient;
+import group.im.imclient.ImClient;
 import group.transport.netty.JNettyTcpConnector;
 
 /**
@@ -14,8 +14,9 @@ import group.transport.netty.JNettyTcpConnector;
 public class Client {
 
     public static void main(String[] agrs){
-        JClient client = new DefaultClient().withConnector(new JNettyTcpConnector());
-        client.connectToRegistryServer("127.0.0.1:8888");
+        ImClient client = new DefaultImClient().withConnector(new JNettyTcpConnector());
+
+        client.connectServer("127.0.0.1:8888",true);
 
 
     }

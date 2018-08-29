@@ -16,7 +16,8 @@
 
 package group.im.provider;
 
-import org.jupiter.rpc.tracing.TraceId;
+
+import group.im.tracing.TraceId;
 
 /**
  * jupiter

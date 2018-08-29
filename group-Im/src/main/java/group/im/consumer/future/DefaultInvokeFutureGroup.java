@@ -16,9 +16,10 @@
 
 package group.im.consumer.future;
 
-import org.jupiter.rpc.JListener;
 
-import static org.jupiter.common.util.Preconditions.checkArgument;
+import group.im.JListener;
+
+import static group.common.util.Preconditions.checkArgument;
 
 /**
  * jupiter
