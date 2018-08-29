@@ -27,6 +27,8 @@ public class DefaultImClient implements ImClient{
     private List<JConnection> connections = new ArrayList<>();
     private static final InternalLogger logger = InternalLoggerFactory.getInstance(DefaultImClient.class);
 
+    //private CopyOnWriteArrayList<JConnection>
+
 
     @Override
     public ImClient withConnector(JConnector<JConnection> connector) {
