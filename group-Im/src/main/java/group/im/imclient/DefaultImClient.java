@@ -42,6 +42,7 @@ public class DefaultImClient implements ImClient{
        for(int i=0;i<3;i++){
            try {
                connector.connect(address);
+               return;
            }catch (ConnectFailedException ex){
                if(i == 2){
                    throw ex;
@@ -49,8 +50,6 @@ public class DefaultImClient implements ImClient{
                logger.warn("connect address ["+address+"] in ["+i+"] times.");
            }
        }
-
-
     }
 
     @Override

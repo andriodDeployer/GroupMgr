@@ -17,6 +17,7 @@
 package group.im.executor;
 
 
+import group.common.concurrent.NamedThreadFactory;
 import group.common.util.JConstants;
 import group.common.util.SystemPropertyUtil;
 
@@ -37,7 +38,7 @@ public abstract class AbstractExecutorFactory implements ExecutorFactory {
 //        } else {
 //            return new NamedThreadFactory(name);
 //        }
-        return null;
+        return  new NamedThreadFactory(name);
     }
 
     protected int coreWorkers(Target target) {
