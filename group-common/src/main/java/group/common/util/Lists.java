@@ -18,7 +18,6 @@ package group.common.util;
 
 import java.io.Serializable;
 import java.util.*;
-import java.util.function.Function;
 
 import static group.common.util.Preconditions.checkArgument;
 import static group.common.util.Preconditions.checkNotNull;

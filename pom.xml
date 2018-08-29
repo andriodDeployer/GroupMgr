@@ -14,6 +14,7 @@
         <module>group-transport</module>
         <module>group-serialization</module>
         <module>group-Im</module>
+        <module>group-connect</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -82,6 +83,18 @@
                 <groupId>com.cd.groupmgr</groupId>
                 <artifactId>group-common</artifactId>
                 <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.cd.groupmgr</groupId>
+                <artifactId>group-connect-api</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.cd.groupmgr</groupId>
+                <artifactId>group-connect-default</artifactId>
+                <version>1.0-SNAPSHOT</version>
             </dependency>
 
             <!--thired party         -->

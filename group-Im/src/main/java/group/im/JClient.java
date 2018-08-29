@@ -16,13 +16,15 @@
 
 package group.im;
 
-import org.jupiter.registry.*;
-import org.jupiter.transport.Directory;
-import org.jupiter.transport.JConnection;
-import org.jupiter.transport.JConnector;
-import org.jupiter.transport.UnresolvedAddress;
+
+import group.connect.*;
+import group.transport.Directory;
+import group.transport.JConnection;
+import group.transport.JConnector;
+import group.transport.UnresolvedAddress;
 
 import java.util.Collection;
+
 
 /**
  * The jupiter rpc client.

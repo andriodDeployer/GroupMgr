@@ -16,22 +16,22 @@
 
 package group.transport.netty.handler.acceptor;
 
+import group.common.util.Signal;
+import group.common.util.internal.logging.InternalLogger;
+import group.common.util.internal.logging.InternalLoggerFactory;
+import group.transport.Status;
+import group.transport.channel.JChannel;
+import group.transport.netty.channel.NettyChannel;
+import group.transport.payload.JRequestPayload;
+import group.transport.processor.ProviderProcessor;
 import io.netty.channel.*;
 import io.netty.handler.codec.DecoderException;
 import io.netty.util.ReferenceCountUtil;
-import org.jupiter.common.util.Signal;
-import org.jupiter.common.util.internal.logging.InternalLogger;
-import org.jupiter.common.util.internal.logging.InternalLoggerFactory;
-import org.jupiter.transport.Status;
-import org.jupiter.transport.channel.JChannel;
-import org.jupiter.transport.netty.channel.NettyChannel;
-import org.jupiter.transport.payload.JRequestPayload;
-import org.jupiter.transport.processor.ProviderProcessor;
 
 import java.io.IOException;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import static org.jupiter.common.util.StackTraceUtil.stackTrace;
+import static group.common.util.StackTraceUtil.stackTrace;
 
 /**
  * jupiter

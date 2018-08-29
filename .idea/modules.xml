@@ -6,6 +6,9 @@
       <module fileurl="file://$PROJECT_DIR$/group-Im/group-Im.iml" filepath="$PROJECT_DIR$/group-Im/group-Im.iml" />
       <module fileurl="file://$PROJECT_DIR$/group-client/group-client.iml" filepath="$PROJECT_DIR$/group-client/group-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/group-common/group-common.iml" filepath="$PROJECT_DIR$/group-common/group-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/group-connect/group-connect.iml" filepath="$PROJECT_DIR$/group-connect/group-connect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/group-connect/group-connect-api/group-connect-api.iml" filepath="$PROJECT_DIR$/group-connect/group-connect-api/group-connect-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/group-connect/group-connect-default/group-connect-default.iml" filepath="$PROJECT_DIR$/group-connect/group-connect-default/group-connect-default.iml" />
       <module fileurl="file://$PROJECT_DIR$/group-serialization/group-serialization.iml" filepath="$PROJECT_DIR$/group-serialization/group-serialization.iml" />
       <module fileurl="file://$PROJECT_DIR$/group-serialization/group-serialization-api/group-serialization-api.iml" filepath="$PROJECT_DIR$/group-serialization/group-serialization-api/group-serialization-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/group-serialization/group-serialization-java/group-serialization-java.iml" filepath="$PROJECT_DIR$/group-serialization/group-serialization-java/group-serialization-java.iml" />

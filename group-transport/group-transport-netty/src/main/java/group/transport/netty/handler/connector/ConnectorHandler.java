@@ -16,19 +16,20 @@
 
 package group.transport.netty.handler.connector;
 
+import group.common.util.Signal;
+import group.common.util.internal.logging.InternalLogger;
+import group.common.util.internal.logging.InternalLoggerFactory;
+import group.transport.netty.channel.NettyChannel;
+import group.transport.payload.JResponsePayload;
+import group.transport.processor.ConsumerProcessor;
 import io.netty.channel.*;
 import io.netty.handler.codec.DecoderException;
 import io.netty.util.ReferenceCountUtil;
-import org.jupiter.common.util.Signal;
-import org.jupiter.common.util.internal.logging.InternalLogger;
-import org.jupiter.common.util.internal.logging.InternalLoggerFactory;
-import org.jupiter.transport.netty.channel.NettyChannel;
-import org.jupiter.transport.payload.JResponsePayload;
-import org.jupiter.transport.processor.ConsumerProcessor;
 
 import java.io.IOException;
 
-import static org.jupiter.common.util.StackTraceUtil.stackTrace;
+import static group.common.util.StackTraceUtil.stackTrace;
+
 
 /**
  * jupiter

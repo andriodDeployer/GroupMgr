@@ -16,15 +16,16 @@
 
 package group.transport.channel;
 
-import org.jupiter.common.util.internal.UnsafeUtil;
+///copyOnWrite实现读写分离，进行写时，先将数据复制到一个新的容器中，然后对这个新容器进行写操作，
+// 写完之后，将执行就容器的指针指向新的容器即可。这种容器，不适合多写少读的情况，适合多读少写。
+
+import group.common.util.internal.UnsafeUtil;
 
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.locks.ReentrantLock;
-///copyOnWrite实现读写分离，进行写时，先将数据复制到一个新的容器中，然后对这个新容器进行写操作，
-// 写完之后，将执行就容器的指针指向新的容器即可。这种容器，不适合多写少读的情况，适合多读少写。
 
 /**
  * 相同服务, 不同服务节点的channel group容器,

@@ -16,14 +16,14 @@
 
 package group.transport.netty.channel;
 
+import group.common.atomic.AtomicUpdater;
+import group.common.util.*;
+import group.transport.Directory;
+import group.transport.UnresolvedAddress;
+import group.transport.channel.JChannel;
+import group.transport.channel.JChannelGroup;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelFutureListener;
-import org.jupiter.common.atomic.AtomicUpdater;
-import org.jupiter.common.util.*;
-import org.jupiter.transport.Directory;
-import org.jupiter.transport.UnresolvedAddress;
-import org.jupiter.transport.channel.JChannel;
-import org.jupiter.transport.channel.JChannelGroup;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -37,7 +37,8 @@ import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
-import static org.jupiter.common.util.Preconditions.checkNotNull;
+import static group.common.util.Preconditions.checkNotNull;
+
 
 /**
  * jupiter

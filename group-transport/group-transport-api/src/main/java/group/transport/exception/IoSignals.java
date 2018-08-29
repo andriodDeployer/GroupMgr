@@ -16,7 +16,8 @@
 
 package group.transport.exception;
 
-import org.jupiter.common.util.Signal;
+
+import group.common.util.Signal;
 
 /**
  * {@link Signal} has an empty stack trace, you can throw them just like using goto.

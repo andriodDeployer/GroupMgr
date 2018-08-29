@@ -16,11 +16,12 @@
 
 package group.im.metadata;
 
-import org.jupiter.transport.Directory;
+
+import group.transport.Directory;
 
 import java.io.Serializable;
 
-import static org.jupiter.common.util.Preconditions.checkNotNull;
+import static group.common.util.Preconditions.checkNotNull;
 
 /**
  * Service provider's metadata.

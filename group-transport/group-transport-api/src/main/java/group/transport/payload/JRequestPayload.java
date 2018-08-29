@@ -16,7 +16,8 @@
 
 package group.transport.payload;
 
-import org.jupiter.common.util.LongSequence;
+
+import group.common.util.LongSequence;
 
 /**
  * 请求的消息体bytes/stream载体, 避免在IO线程中序列化/反序列化, jupiter-transport这一层不关注消息体的对象结构.

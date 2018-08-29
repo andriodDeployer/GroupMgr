@@ -42,8 +42,15 @@
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+            <groupId>com.cd.groupmgr</groupId>
+            <artifactId>group-connect-api</artifactId>
+        </dependency>
+
 
     </dependencies>
+
+
 
 
 </project>

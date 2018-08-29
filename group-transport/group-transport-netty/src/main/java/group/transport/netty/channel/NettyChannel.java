@@ -16,6 +16,12 @@
 
 package group.transport.netty.channel;
 
+import group.serialization.io.OutputBuf;
+import group.transport.JProtocolHeader;
+import group.transport.channel.JChannel;
+import group.transport.channel.JFutureListener;
+import group.transport.netty.alloc.AdaptiveOutputBufAllocator;
+import group.transport.netty.handler.connector.ConnectionWatchdog;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.ByteBufAllocator;
 import io.netty.buffer.ByteBufOutputStream;
@@ -24,12 +30,6 @@ import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelFutureListener;
 import io.netty.util.Attribute;
 import io.netty.util.AttributeKey;
-import org.jupiter.serialization.io.OutputBuf;
-import org.jupiter.transport.JProtocolHeader;
-import org.jupiter.transport.channel.JChannel;
-import org.jupiter.transport.channel.JFutureListener;
-import org.jupiter.transport.netty.alloc.AdaptiveOutputBufAllocator;
-import org.jupiter.transport.netty.handler.connector.ConnectionWatchdog;
 
 import java.io.OutputStream;
 import java.net.SocketAddress;

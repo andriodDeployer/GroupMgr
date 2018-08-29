@@ -16,30 +16,31 @@
 
 package group.transport.netty;
 
+import group.common.concurrent.NamedThreadFactory;
+import group.common.util.ClassUtil;
+import group.common.util.JConstants;
+import group.common.util.Maps;
+import group.common.util.internal.logging.InternalLogger;
+import group.common.util.internal.logging.InternalLoggerFactory;
+import group.transport.*;
+import group.transport.channel.CopyOnWriteGroupList;
+import group.transport.channel.DirectoryJChannelGroup;
+import group.transport.channel.JChannelGroup;
+import group.transport.netty.channel.NettyChannelGroup;
+import group.transport.netty.estimator.JMessageSizeEstimator;
+import group.transport.processor.ConsumerProcessor;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.ChannelOption;
 import io.netty.channel.EventLoopGroup;
 import io.netty.util.HashedWheelTimer;
 import io.netty.util.concurrent.DefaultThreadFactory;
-import org.jupiter.common.concurrent.NamedThreadFactory;
-import org.jupiter.common.util.ClassUtil;
-import org.jupiter.common.util.JConstants;
-import org.jupiter.common.util.Maps;
-import org.jupiter.common.util.internal.logging.InternalLogger;
-import org.jupiter.common.util.internal.logging.InternalLoggerFactory;
-import org.jupiter.transport.*;
-import org.jupiter.transport.channel.CopyOnWriteGroupList;
-import org.jupiter.transport.channel.DirectoryJChannelGroup;
-import org.jupiter.transport.channel.JChannelGroup;
-import org.jupiter.transport.netty.channel.NettyChannelGroup;
-import org.jupiter.transport.netty.estimator.JMessageSizeEstimator;
-import org.jupiter.transport.processor.ConsumerProcessor;
 
 import java.util.Collection;
 import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.ThreadFactory;
 
-import static org.jupiter.common.util.Preconditions.checkNotNull;
+import static group.common.util.Preconditions.checkNotNull;
+
 
 /**
  * jupiter

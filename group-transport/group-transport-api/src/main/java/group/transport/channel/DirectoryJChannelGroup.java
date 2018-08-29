@@ -16,8 +16,9 @@
 
 package group.transport.channel;
 
-import org.jupiter.common.util.Maps;
-import org.jupiter.transport.Directory;
+
+import group.common.util.Maps;
+import group.transport.Directory;
 
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;

@@ -16,8 +16,9 @@
 
 package group.transport.channel;
 
-import org.jupiter.transport.Directory;
-import org.jupiter.transport.UnresolvedAddress;
+
+import group.transport.Directory;
+import group.transport.UnresolvedAddress;
 
 import java.util.List;
 

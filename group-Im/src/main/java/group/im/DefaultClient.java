@@ -16,12 +16,12 @@
 
 package group.im;
 
-import org.jupiter.common.util.*;
-import org.jupiter.registry.*;
-import org.jupiter.rpc.consumer.processor.DefaultConsumerProcessor;
-import org.jupiter.rpc.model.metadata.ServiceMetadata;
-import org.jupiter.transport.*;
-import org.jupiter.transport.channel.JChannelGroup;
+import group.common.util.*;
+import group.connect.*;
+import group.im.consumer.processor.DefaultConsumerProcessor;
+import group.im.metadata.ServiceMetadata;
+import group.transport.*;
+import group.transport.channel.JChannelGroup;
 
 import java.util.Collection;
 import java.util.concurrent.TimeUnit;
@@ -30,7 +30,8 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
-import static org.jupiter.common.util.Preconditions.checkNotNull;
+import static group.common.util.Preconditions.checkNotNull;
+
 
 /**
  * Jupiter默认客户端实现.哈手动阀手动阀

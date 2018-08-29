@@ -16,8 +16,9 @@
 
 package group.transport;
 
-import org.jupiter.common.util.AbstractConstant;
-import org.jupiter.common.util.ConstantPool;
+
+import group.common.util.AbstractConstant;
+import group.common.util.ConstantPool;
 
 import java.util.Collections;
 import java.util.HashSet;

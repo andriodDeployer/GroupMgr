@@ -16,7 +16,6 @@
 
 package group.common.util;
 
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -25,7 +24,6 @@ import java.net.URL;
 import java.util.*;
 
 import static group.common.util.Preconditions.checkNotNull;
-
 
 /**
  * A simple service-provider loading facility (SPI).

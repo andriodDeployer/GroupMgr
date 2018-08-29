@@ -16,15 +16,16 @@
 
 package group.im.consumer.processor;
 
-import org.jupiter.common.util.JServiceLoader;
-import org.jupiter.common.util.SystemPropertyUtil;
-import org.jupiter.common.util.internal.logging.InternalLogger;
-import org.jupiter.common.util.internal.logging.InternalLoggerFactory;
-import org.jupiter.rpc.executor.CallerRunsExecutorFactory;
-import org.jupiter.rpc.executor.CloseableExecutor;
-import org.jupiter.rpc.executor.ExecutorFactory;
 
-import static org.jupiter.common.util.StackTraceUtil.stackTrace;
+import group.common.util.JServiceLoader;
+import group.common.util.SystemPropertyUtil;
+import group.common.util.internal.logging.InternalLogger;
+import group.common.util.internal.logging.InternalLoggerFactory;
+import group.im.executor.CallerRunsExecutorFactory;
+import group.im.executor.CloseableExecutor;
+import group.im.executor.ExecutorFactory;
+
+import static group.common.util.StackTraceUtil.stackTrace;
 
 /**
  * jupiter

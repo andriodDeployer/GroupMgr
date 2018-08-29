@@ -16,8 +16,9 @@
 
 package group.transport.processor;
 
-import org.jupiter.transport.channel.JChannel;
-import org.jupiter.transport.payload.JResponsePayload;
+
+import group.transport.channel.JChannel;
+import group.transport.payload.JResponsePayload;
 
 /**
  * Consumer's processor.

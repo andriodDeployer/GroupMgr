@@ -16,12 +16,13 @@
 
 package group.im.consumer.processor;
 
-import org.jupiter.rpc.JResponse;
-import org.jupiter.rpc.consumer.processor.task.MessageTask;
-import org.jupiter.rpc.executor.CloseableExecutor;
-import org.jupiter.transport.channel.JChannel;
-import org.jupiter.transport.payload.JResponsePayload;
-import org.jupiter.transport.processor.ConsumerProcessor;
+
+import group.im.JResponse;
+import group.im.consumer.processor.task.MessageTask;
+import group.im.executor.CloseableExecutor;
+import group.transport.channel.JChannel;
+import group.transport.payload.JResponsePayload;
+import group.transport.processor.ConsumerProcessor;
 
 /**
  * The default implementation of consumer's processor.

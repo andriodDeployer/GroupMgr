@@ -16,10 +16,11 @@
 
 package group.transport;
 
-import org.jupiter.transport.channel.CopyOnWriteGroupList;
-import org.jupiter.transport.channel.DirectoryJChannelGroup;
-import org.jupiter.transport.channel.JChannelGroup;
-import org.jupiter.transport.processor.ConsumerProcessor;
+
+import group.transport.channel.CopyOnWriteGroupList;
+import group.transport.channel.DirectoryJChannelGroup;
+import group.transport.channel.JChannelGroup;
+import group.transport.processor.ConsumerProcessor;
 
 import java.util.Collection;
 

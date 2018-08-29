@@ -16,8 +16,9 @@
 
 package group.transport;
 
-import static org.jupiter.common.util.Preconditions.checkArgument;
-import static org.jupiter.common.util.Preconditions.checkNotNull;
+
+import static group.common.util.Preconditions.checkArgument;
+import static group.common.util.Preconditions.checkNotNull;
 
 /**
  * Unresolved address.

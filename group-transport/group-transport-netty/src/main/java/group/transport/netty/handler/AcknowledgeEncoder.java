@@ -16,12 +16,12 @@
 
 package group.transport.netty.handler;
 
+import group.transport.Acknowledge;
+import group.transport.JProtocolHeader;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.MessageToByteEncoder;
-import org.jupiter.transport.Acknowledge;
-import org.jupiter.transport.JProtocolHeader;
 
 /**
  * ACK encoder.

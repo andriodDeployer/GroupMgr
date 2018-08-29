@@ -24,6 +24,7 @@ import java.security.AccessController;
 import java.security.PrivilegedAction;
 import java.util.regex.Pattern;
 
+import static group.common.util.StackTraceUtil.stackTrace;
 
 /**
  * A collection of utility methods to retrieve and parse the values of the Java system properties.
@@ -87,7 +88,7 @@ public final class SystemPropertyUtil {
             }
         } catch (Exception e) {
             if (logger.isWarnEnabled()) {
-                logger.warn("Unable to retrieve a system property '{}'; default values will be used, {}.", key, StackTraceUtil.stackTrace(e));
+                logger.warn("Unable to retrieve a system property '{}'; default values will be used, {}.", key, stackTrace(e));
             }
         }
 

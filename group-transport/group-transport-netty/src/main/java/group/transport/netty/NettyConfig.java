@@ -16,15 +16,16 @@
 
 package group.transport.netty;
 
-import org.jupiter.common.util.Lists;
-import org.jupiter.transport.JConfig;
-import org.jupiter.transport.JConfigGroup;
-import org.jupiter.transport.JOption;
+
+import group.common.util.Lists;
+import group.transport.JConfig;
+import group.transport.JConfigGroup;
+import group.transport.JOption;
 
 import java.util.Collections;
 import java.util.List;
 
-import static org.jupiter.common.util.Preconditions.checkNotNull;
+import static group.common.util.Preconditions.checkNotNull;
 
 /**
  * Config for netty.
