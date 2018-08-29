@@ -11,5 +11,19 @@
 
     <artifactId>group-transport-api</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.cd.groupmgr</groupId>
+            <artifactId>group-common</artifactId>
+        </dependency>
+
+
+        <dependency>
+            <groupId>com.cd.groupmgr</groupId>
+            <artifactId>group-serialization-api</artifactId>
+        </dependency>
+
+    </dependencies>
+
 
 </project>
