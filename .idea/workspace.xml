@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e3771e3-318a-4a98-98c2-c1ae451c37c7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-Im/src/main/resources/services/group.im.consumer.processor.ConsumerExecutorFactory" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-Im/src/main/resources/services/group.im.provider.processor.ProviderExecutorFactory" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-test/group-test.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-test/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-test/src/main/java/client_registry/Client.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-test/src/main/java/client_registry/Registry.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im/executor/CallerRunsExecutorFactory.java" afterPath="$PROJECT_DIR$/group-Im/src/main/java/group/im/executor/CallerRunsExecutorFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im/executor/ThreadPoolExecutorFactory.java" afterPath="$PROJECT_DIR$/group-Im/src/main/java/group/im/executor/ThreadPoolExecutorFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-connect/group-connect-default/src/main/java/group/connect/defaultimpl/DefaultRegistry.java" afterPath="$PROJECT_DIR$/group-connect/group-connect-default/src/main/java/group/connect/defaultimpl/DefaultRegistry.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/NettyTcpConnector.java" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/NettyTcpConnector.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/ConnectionWatchdog.java" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/ConnectionWatchdog.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="GroupMgr.iws" />
@@ -26,6 +32,8 @@
     <ignored path="$PROJECT_DIR$/group-connect/target/" />
     <ignored path="$PROJECT_DIR$/group-connect/group-connect-api/target/" />
     <ignored path="$PROJECT_DIR$/group-connect/group-connect-default/target/" />
+    <ignored path="$PROJECT_DIR$/untitled/group-test/target/" />
+    <ignored path="$PROJECT_DIR$/group-test/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,8 +53,8 @@
       <file leaf-file-name="DefaultClient.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/group-Im/src/main/java/group/im/DefaultClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="299" column="36" selection-start-line="299" selection-start-column="36" selection-end-line="299" selection-end-column="36" />
+            <state relative-caret-position="346">
+              <caret line="301" column="0" selection-start-line="301" selection-start-column="0" selection-end-line="301" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#12351#12352#0" expanded="true" />
@@ -56,22 +64,66 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/group-connect/group-connect-default/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="202" column="0" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
+            <state relative-caret-position="410">
+              <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Registry.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/group-connect/group-connect-api/src/main/java/group/connect/Registry.java">
+      <file leaf-file-name="DefaultRegistry.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/group-connect/group-connect-default/src/main/java/group/connect/defaultimpl/DefaultRegistry.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
-              <folding />
+            <state relative-caret-position="2763">
+              <caret line="578" column="21" selection-start-line="578" selection-start-column="21" selection-end-line="578" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#5237#5489#0" expanded="true" />
+                <element signature="e#5488#5489#0" expanded="true" />
+                <element signature="e#7795#8602#0" expanded="true" />
+                <element signature="e#8601#8602#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConnectionWatchdog.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/ConnectionWatchdog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="836">
+              <caret line="52" column="32" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NettyTcpConnector.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/NettyTcpConnector.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2151">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3811#3812#0" expanded="true" />
+                <element signature="e#3845#3846#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/group-test/src/main/java/client_registry/Client.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,10 +141,14 @@
       <file leaf-file-name="AbstractRegistryService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/group-connect/group-connect-api/src/main/java/group/connect/AbstractRegistryService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="41" column="74" selection-start-line="41" selection-start-column="74" selection-end-line="41" selection-end-column="74" />
+            <state relative-caret-position="390">
+              <caret line="76" column="31" selection-start-line="76" selection-start-column="31" selection-end-line="76" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2913#4126#0" expanded="true" />
+                <element signature="e#4125#4126#0" expanded="true" />
+                <element signature="e#4173#4851#0" expanded="true" />
+                <element signature="e#4850#4851#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -103,8 +159,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -119,13 +175,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/group-Im/src/main/java/group/im/metadata/ServiceMetadata.java" />
-        <option value="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/channel/JChannelGroup.java" />
-        <option value="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/JConnector.java" />
-        <option value="$PROJECT_DIR$/group-common/src/main/java/group/common/util/Bytes.java" />
-        <option value="$PROJECT_DIR$/group-common/src/main/java/group/common/util/FastMethodAccessor.java" />
-        <option value="$PROJECT_DIR$/group-common/src/main/java/group/common/util/ClassUtil.java" />
-        <option value="$PROJECT_DIR$/group-common/src/main/java/group/common/util/ConstantPool.java" />
         <option value="$PROJECT_DIR$/group-common/src/main/java/group/common/util/IntSequence.java" />
         <option value="$PROJECT_DIR$/group-common/src/main/java/group/common/util/StringBuilderHelper.java" />
         <option value="$PROJECT_DIR$/group-common/src/main/java/group/common/util/ThrowUtil.java" />
@@ -169,7 +218,14 @@
         <option value="$PROJECT_DIR$/group-Im/src/main/resources/services/group.im.consumer.processor.ConsumerExecutorFactory" />
         <option value="$PROJECT_DIR$/group-Im/src/main/resources/services/group.im.provider.processor.ProviderExecutorFactory" />
         <option value="$PROJECT_DIR$/group-Im/src/main/java/group/im/executor/ThreadPoolExecutorFactory.java" />
+        <option value="$PROJECT_DIR$/group-Im/src/test/java/clientTest/JClientTest.java" />
+        <option value="$PROJECT_DIR$/untitled/group-test/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/group-test/pom.xml" />
+        <option value="$PROJECT_DIR$/group-test/src/main/java/client_registry/Client.java" />
+        <option value="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/NettyTcpConnector.java" />
+        <option value="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/ConnectionWatchdog.java" />
+        <option value="$PROJECT_DIR$/group-connect/group-connect-default/src/main/java/group/connect/defaultimpl/DefaultRegistry.java" />
       </list>
     </option>
   </component>
@@ -320,7 +376,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="group-Im" />
+              <option name="myItemId" value="group-test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -334,17 +390,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="group-Im" />
+              <option name="myItemId" value="group-test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -356,7 +408,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="group-Im" />
+              <option name="myItemId" value="group-test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -378,7 +430,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="group-Im" />
+              <option name="myItemId" value="group-test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -394,7 +446,21 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="im" />
+              <option name="myItemId" value="client_registry" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GroupMgr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GroupMgr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="group-Im" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -426,7 +492,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="group-connect-api" />
+              <option name="myItemId" value="group-connect-default" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -444,7 +510,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="group-connect-api" />
+              <option name="myItemId" value="group-connect-default" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -466,7 +532,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="group-connect-api" />
+              <option name="myItemId" value="group-connect-default" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -492,7 +558,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="group-connect-api" />
+              <option name="myItemId" value="group-connect-default" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -508,7 +574,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="connect" />
+              <option name="myItemId" value="defaultimpl" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -527,7 +593,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="SearchEverywhereHistoryKey" value="DefaultClient&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-Im/src/main/java/group/im/DefaultClient.java&#10;ThreadPoolExecutorFactory&#9;PSI&#9;JAVA://group.im.executor.ThreadPoolExecutorFactory&#10;providerExecu&#9;PSI&#9;JAVA://group.im.provider.processor.ProviderExecutorFactory&#10;Call&#9;PSI&#9;JAVA://group.im.executor.CallerRunsExecutorFactory&#10;ConsumerExecu&#9;PSI&#9;JAVA://group.im.consumer.processor.ConsumerExecutorFactory&#10;defaulClient&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-Im/src/main/java/group/im/DefaultClient.java&#10;DefaultCl&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-Im/src/main/java/group/im/DefaultClient.java&#10;UnSaf&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-common/src/main/java/group/common/util/internal/UnsafeUtil.java&#10;DefaultCli&#9;PSI&#9;JAVA://group.im.DefaultClient&#10;defaultPro&#9;PSI&#9;JAVA://group.im.provider.processor.DefaultProviderProcessor" />
+    <property name="SearchEverywhereHistoryKey" value="AbstractRegistry&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-connect/group-connect-api/src/main/java/group/connect/AbstractRegistryService.java&#10;DefaultClient&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-Im/src/main/java/group/im/DefaultClient.java&#10;ThreadPoolExecutorFactory&#9;PSI&#9;JAVA://group.im.executor.ThreadPoolExecutorFactory&#10;providerExecu&#9;PSI&#9;JAVA://group.im.provider.processor.ProviderExecutorFactory&#10;Call&#9;PSI&#9;JAVA://group.im.executor.CallerRunsExecutorFactory&#10;ConsumerExecu&#9;PSI&#9;JAVA://group.im.consumer.processor.ConsumerExecutorFactory&#10;defaulClient&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-Im/src/main/java/group/im/DefaultClient.java&#10;DefaultCl&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-Im/src/main/java/group/im/DefaultClient.java&#10;UnSaf&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-common/src/main/java/group/common/util/internal/UnsafeUtil.java&#10;DefaultCli&#9;PSI&#9;JAVA://group.im.DefaultClient&#10;defaultPro&#9;PSI&#9;JAVA://group.im.provider.processor.DefaultProviderProcessor" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -906,7 +972,14 @@
       <option name="project" value="LOCAL" />
       <updated>1535523237783</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="dd">
+      <created>1535523637985</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1535523637985</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -924,7 +997,7 @@
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32622603" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25746268" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1673774" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -958,101 +1031,12 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/util/HashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="473" column="11" selection-start-line="473" selection-start-column="11" selection-end-line="473" selection-end-column="11" />
-          <folding>
-            <element signature="e#19296#19297#0" expanded="true" />
-            <element signature="e#19379#19380#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/channel/CopyOnWriteGroupList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="100" column="10" selection-start-line="100" selection-start-column="10" selection-end-line="100" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/channel/DirectoryJChannelGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/exception/IoSignals.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/JConnectionManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/JOption.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/UnresolvedAddress.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-369">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/Maps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="89" column="23" selection-start-line="89" selection-start-column="23" selection-end-line="89" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/Reflects.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="93" column="20" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/Lists.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
           <caret line="81" column="8" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="8" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1062,9 +1046,9 @@
         <state relative-caret-position="181">
           <caret line="60" column="13" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2010#2193#0" expanded="true" />
-            <element signature="e#2192#2193#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2010#2193#0" expanded="false" />
+            <element signature="e#2192#2193#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1114,7 +1098,7 @@
         <state relative-caret-position="88">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1124,7 +1108,7 @@
         <state relative-caret-position="220">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1142,9 +1126,9 @@
         <state relative-caret-position="4510">
           <caret line="237" column="20" selection-start-line="237" selection-start-column="8" selection-end-line="237" selection-end-column="20" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3657#3658#0" expanded="true" />
-            <element signature="e#3695#3696#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#3657#3658#0" expanded="false" />
+            <element signature="e#3695#3696#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1154,9 +1138,9 @@
         <state relative-caret-position="4796">
           <caret line="254" column="0" selection-start-line="63" selection-start-column="5" selection-end-line="254" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#7141#7142#0" expanded="true" />
-            <element signature="e#7194#7195#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#7141#7142#0" expanded="false" />
+            <element signature="e#7194#7195#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1205,14 +1189,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/group-connect/group-connect-default/src/main/java/group/connect/defaultimpl/DefaultRegistry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/group-connect/group-connect-default/src/main/java/group/connect/defaultimpl/package-info.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1242,9 +1218,9 @@
         <state relative-caret-position="-704">
           <caret line="45" column="58" selection-start-line="45" selection-start-column="58" selection-end-line="45" selection-end-column="58" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5942#5943#0" expanded="true" />
-            <element signature="e#5976#5977#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#5942#5943#0" expanded="false" />
+            <element signature="e#5976#5977#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1262,19 +1238,19 @@
         <state relative-caret-position="14388">
           <caret line="684" column="92" selection-start-line="684" selection-start-column="82" selection-end-line="684" selection-end-column="92" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5010#5488#0" expanded="true" />
-            <element signature="e#5487#5488#0" expanded="true" />
-            <element signature="e#5753#5948#0" expanded="true" />
-            <element signature="e#5947#5948#0" expanded="true" />
-            <element signature="e#6903#7099#0" expanded="true" />
-            <element signature="e#7098#7099#0" expanded="true" />
-            <element signature="e#7415#7619#0" expanded="true" />
-            <element signature="e#7618#7619#0" expanded="true" />
-            <element signature="e#9023#9626#0" expanded="true" />
-            <element signature="e#9625#9626#0" expanded="true" />
-            <element signature="e#10894#11498#0" expanded="true" />
-            <element signature="e#11497#11498#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#5010#5488#0" expanded="false" />
+            <element signature="e#5487#5488#0" expanded="false" />
+            <element signature="e#5753#5948#0" expanded="false" />
+            <element signature="e#5947#5948#0" expanded="false" />
+            <element signature="e#6903#7099#0" expanded="false" />
+            <element signature="e#7098#7099#0" expanded="false" />
+            <element signature="e#7415#7619#0" expanded="false" />
+            <element signature="e#7618#7619#0" expanded="false" />
+            <element signature="e#9023#9626#0" expanded="false" />
+            <element signature="e#9625#9626#0" expanded="false" />
+            <element signature="e#10894#11498#0" expanded="false" />
+            <element signature="e#11497#11498#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1284,8 +1260,8 @@
         <state relative-caret-position="1364">
           <caret line="76" column="27" selection-start-line="76" selection-start-column="15" selection-end-line="76" selection-end-column="27" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1969#2005#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1969#2005#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1310,14 +1286,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
           <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-connect/group-connect-default/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="22" column="58" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
           <folding />
         </state>
       </provider>
@@ -1384,9 +1352,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="365">
           <caret line="131" column="0" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1398,28 +1364,98 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/group-connect/group-connect-api/src/main/java/group/connect/Registry.java">
+    <entry file="file://$PROJECT_DIR$/group-Im/src/test/java/clientTest/JClientTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+        <state relative-caret-position="242">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/untitled/group-test/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/group-connect/group-connect-api/src/main/java/group/connect/AbstractRegistryService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="41" column="74" selection-start-line="41" selection-start-column="74" selection-end-line="41" selection-end-column="74" />
+        <state relative-caret-position="390">
+          <caret line="76" column="31" selection-start-line="76" selection-start-column="31" selection-end-line="76" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2913#4126#0" expanded="true" />
+            <element signature="e#4125#4126#0" expanded="true" />
+            <element signature="e#4173#4851#0" expanded="true" />
+            <element signature="e#4850#4851#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-connect/group-connect-api/src/main/java/group/connect/Registry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-test/src/main/java/client_registry/Registry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-test/src/main/java/client_registry/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/group-test/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="100" column="24" selection-start-line="100" selection-start-column="24" selection-end-line="100" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-Im/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-transport/group-transport-netty/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/group-Im/src/main/java/group/im/DefaultClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="299" column="36" selection-start-line="299" selection-start-column="36" selection-end-line="299" selection-end-column="36" />
+        <state relative-caret-position="346">
+          <caret line="301" column="0" selection-start-line="301" selection-start-column="0" selection-end-line="301" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#12351#12352#0" expanded="true" />
@@ -1428,11 +1464,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/group-connect/group-connect-default/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="202" column="0" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
+        <state relative-caret-position="410">
+          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/NettyTcpConnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2151">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3811#3812#0" expanded="true" />
+            <element signature="e#3845#3846#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/ConnectionWatchdog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="52" column="32" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-connect/group-connect-default/src/main/java/group/connect/defaultimpl/DefaultRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2763">
+          <caret line="578" column="21" selection-start-line="578" selection-start-column="21" selection-end-line="578" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5237#5489#0" expanded="true" />
+            <element signature="e#5488#5489#0" expanded="true" />
+            <element signature="e#7795#8602#0" expanded="true" />
+            <element signature="e#8601#8602#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

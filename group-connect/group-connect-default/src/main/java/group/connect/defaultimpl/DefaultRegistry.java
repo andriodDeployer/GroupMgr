@@ -16,29 +16,33 @@
 
 package group.connect.defaultimpl;
 
+
+import group.common.util.*;
+import group.common.util.internal.logging.InternalLogger;
+import group.common.util.internal.logging.InternalLoggerFactory;
+import group.connect.AbstractRegistryService;
+import group.connect.RegisterMeta;
+import group.serialization.Serializer;
+import group.serialization.SerializerFactory;
+import group.serialization.SerializerType;
+import group.transport.*;
+import group.transport.exception.ConnectFailedException;
+import group.transport.exception.IoSignals;
+import group.transport.netty.NettyTcpConnector;
+import group.transport.netty.handler.AcknowledgeEncoder;
+import group.transport.netty.handler.IdleStateChecker;
+import group.transport.netty.handler.connector.ConnectionWatchdog;
+import group.transport.netty.handler.connector.ConnectorIdleStateTrigger;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.buffer.ByteBuf;
+import io.netty.channel.*;
 import io.netty.handler.codec.DecoderException;
 import io.netty.handler.codec.MessageToByteEncoder;
 import io.netty.handler.codec.ReplayingDecoder;
 import io.netty.util.Attribute;
 import io.netty.util.AttributeKey;
 import io.netty.util.ReferenceCountUtil;
-import org.jupiter.common.concurrent.collection.ConcurrentSet;
-import org.jupiter.common.util.*;
-import org.jupiter.common.util.internal.logging.InternalLogger;
-import org.jupiter.common.util.internal.logging.InternalLoggerFactory;
-import org.jupiter.serialization.Serializer;
-import org.jupiter.serialization.SerializerFactory;
-import org.jupiter.serialization.SerializerType;
-import org.jupiter.transport.*;
-import org.jupiter.transport.exception.ConnectFailedException;
-import org.jupiter.transport.exception.IoSignals;
-import org.jupiter.transport.netty.NettyTcpConnector;
-import org.jupiter.transport.netty.handler.AcknowledgeEncoder;
-import org.jupiter.transport.netty.handler.IdleStateChecker;
-import org.jupiter.transport.netty.handler.connector.ConnectionWatchdog;
-import org.jupiter.transport.netty.handler.connector.ConnectorIdleStateTrigger;
+import io.netty.util.internal.ConcurrentSet;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
@@ -47,8 +51,8 @@ import java.util.List;
 import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.TimeUnit;
 
-import static org.jupiter.common.util.Preconditions.checkNotNull;
-import static org.jupiter.common.util.StackTraceUtil.stackTrace;
+import static group.common.util.Preconditions.checkNotNull;
+import static group.common.util.StackTraceUtil.stackTrace;
 
 /**
  * The client of registration center.
@@ -430,24 +434,24 @@ public final class DefaultRegistry extends NettyTcpConnector {
                         Pair<RegisterMeta.ServiceMeta, ?> data = (Pair<RegisterMeta.ServiceMeta, ?>) obj.data();
                         Object metaObj = data.getSecond();
 
-                        if (metaObj instanceof List) {
-                            List<RegisterMeta> list = (List<RegisterMeta>) metaObj;
-                            RegisterMeta[] array = new RegisterMeta[list.size()];
-                            list.toArray(array);
-                            registryService.notify(
-                                    data.getFirst(),
-                                    NotifyListener.NotifyEvent.CHILD_ADDED,
-                                    obj.version(),
-                                    array
-                            );
-                        } else if (metaObj instanceof RegisterMeta) {
-                            registryService.notify(
-                                    data.getFirst(),
-                                    NotifyListener.NotifyEvent.CHILD_ADDED,
-                                    obj.version(),
-                                    (RegisterMeta) metaObj
-                            );
-                        }
+//                        if (metaObj instanceof List) {
+//                            List<RegisterMeta> list = (List<RegisterMeta>) metaObj;
+//                            RegisterMeta[] array = new RegisterMeta[list.size()];
+//                            list.toArray(array);
+//                            registryService.notify(
+//                                    data.getFirst(),
+//                                    NotifyListener.NotifyEvent.CHILD_ADDED,
+//                                    obj.version(),
+//                                    array
+//                            );
+//                        } else if (metaObj instanceof RegisterMeta) {
+//                            registryService.notify(
+//                                    data.getFirst(),
+//                                    NotifyListener.NotifyEvent.CHILD_ADDED,
+//                                    obj.version(),
+//                                    (RegisterMeta) metaObj
+//                            );
+//                        }
 
                         ch.writeAndFlush(new Acknowledge(obj.sequence()))  // 回复ACK
                                 .addListener(ChannelFutureListener.FIRE_EXCEPTION_ON_FAILURE);
@@ -460,8 +464,8 @@ public final class DefaultRegistry extends NettyTcpConnector {
                     case JProtocolHeader.PUBLISH_CANCEL_SERVICE: {
                         Pair<RegisterMeta.ServiceMeta, RegisterMeta> data =
                                 (Pair<RegisterMeta.ServiceMeta, RegisterMeta>) obj.data();
-                        registryService.notify(
-                                data.getFirst(), NotifyListener.NotifyEvent.CHILD_REMOVED, obj.version(), data.getSecond());
+//                        registryService.notify(
+//                                data.getFirst(), NotifyListener.NotifyEvent.CHILD_REMOVED, obj.version(), data.getSecond());
 
                         ch.writeAndFlush(new Acknowledge(obj.sequence()))  // 回复ACK
                                 .addListener(ChannelFutureListener.FIRE_EXCEPTION_ON_FAILURE);
@@ -494,40 +498,40 @@ public final class DefaultRegistry extends NettyTcpConnector {
             Channel ch = (channel = ctx.channel());
 
             // 重新订阅
-            for (RegisterMeta.ServiceMeta serviceMeta : registryService.getSubscribeSet()) {
-                // 与doSubscribe()中的write有竞争
-                if (!attachSubscribeEventOnChannel(serviceMeta, ch)) {
-                    continue;
-                }
-
-                Message msg = new Message(serializerType.value());
-                msg.messageCode(JProtocolHeader.SUBSCRIBE_SERVICE);
-                msg.data(serviceMeta);
-
-                ch.writeAndFlush(msg)
-                        .addListener(ChannelFutureListener.FIRE_EXCEPTION_ON_FAILURE);
-
-                MessageNonAck msgNonAck = new MessageNonAck(msg);
-                messagesNonAck.put(msgNonAck.id, msgNonAck);
-            }
+//            for (RegisterMeta.ServiceMeta serviceMeta : registryService.getSubscribeSet()) {
+//                // 与doSubscribe()中的write有竞争
+//                if (!attachSubscribeEventOnChannel(serviceMeta, ch)) {
+//                    continue;
+//                }
+//
+//                Message msg = new Message(serializerType.value());
+//                msg.messageCode(JProtocolHeader.SUBSCRIBE_SERVICE);
+//                msg.data(serviceMeta);
+//
+//                ch.writeAndFlush(msg)
+//                        .addListener(ChannelFutureListener.FIRE_EXCEPTION_ON_FAILURE);
+//
+//                MessageNonAck msgNonAck = new MessageNonAck(msg);
+//                messagesNonAck.put(msgNonAck.id, msgNonAck);
+//            }
 
             // 重新发布服务
-            for (RegisterMeta meta : registryService.getRegisterMetaMap().keySet()) {
-                // 与doRegister()中的write有竞争
-                if (!attachPublishEventOnChannel(meta, ch)) {
-                    continue;
-                }
-
-                Message msg = new Message(serializerType.value());
-                msg.messageCode(JProtocolHeader.PUBLISH_SERVICE);
-                msg.data(meta);
-
-                ch.writeAndFlush(msg)
-                        .addListener(ChannelFutureListener.FIRE_EXCEPTION_ON_FAILURE);
-
-                MessageNonAck msgNonAck = new MessageNonAck(msg);
-                messagesNonAck.put(msgNonAck.id, msgNonAck);
-            }
+//            for (RegisterMeta meta : registryService.getRegisterMetaMap().keySet()) {
+//                // 与doRegister()中的write有竞争
+//                if (!attachPublishEventOnChannel(meta, ch)) {
+//                    continue;
+//                }
+//
+//                Message msg = new Message(serializerType.value());
+//                msg.messageCode(JProtocolHeader.PUBLISH_SERVICE);
+//                msg.data(meta);
+//
+//                ch.writeAndFlush(msg)
+//                        .addListener(ChannelFutureListener.FIRE_EXCEPTION_ON_FAILURE);
+//
+//                MessageNonAck msgNonAck = new MessageNonAck(msg);
+//                messagesNonAck.put(msgNonAck.id, msgNonAck);
+//            }
         }
 
         @Override

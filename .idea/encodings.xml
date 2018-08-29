@@ -12,8 +12,10 @@
     <file url="file://$PROJECT_DIR$/group-serialization/group-serialization-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/group-serialization/group-serialization-java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/group-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/group-test" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/group-transport" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/group-transport/group-transport-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/group-transport/group-transport-netty" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/untitled/group-test" charset="UTF-8" />
   </component>
 </project>

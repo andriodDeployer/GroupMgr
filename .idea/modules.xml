@@ -13,6 +13,7 @@
       <module fileurl="file://$PROJECT_DIR$/group-serialization/group-serialization-api/group-serialization-api.iml" filepath="$PROJECT_DIR$/group-serialization/group-serialization-api/group-serialization-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/group-serialization/group-serialization-java/group-serialization-java.iml" filepath="$PROJECT_DIR$/group-serialization/group-serialization-java/group-serialization-java.iml" />
       <module fileurl="file://$PROJECT_DIR$/group-server/group-server.iml" filepath="$PROJECT_DIR$/group-server/group-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/group-test/group-test.iml" filepath="$PROJECT_DIR$/group-test/group-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/group-transport/group-transport.iml" filepath="$PROJECT_DIR$/group-transport/group-transport.iml" />
       <module fileurl="file://$PROJECT_DIR$/group-transport/group-transport-api/group-transport-api.iml" filepath="$PROJECT_DIR$/group-transport/group-transport-api/group-transport-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/group-transport/group-transport-netty/group-transport-netty.iml" filepath="$PROJECT_DIR$/group-transport/group-transport-netty/group-transport-netty.iml" />

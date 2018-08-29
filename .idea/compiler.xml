@@ -30,6 +30,7 @@
         <module name="group-serialization-api" />
         <module name="group-serialization-java" />
         <module name="group-server" />
+        <module name="group-test" />
         <module name="group-transport-api" />
         <module name="group-transport-netty" />
       </profile>
@@ -45,6 +46,7 @@
       <module name="group-serialization-api" target="1.7" />
       <module name="group-serialization-java" target="1.7" />
       <module name="group-server" target="1.7" />
+      <module name="group-test" target="1.7" />
       <module name="group-transport" target="1.7" />
       <module name="group-transport-api" target="1.7" />
       <module name="group-transport-netty" target="1.7" />
