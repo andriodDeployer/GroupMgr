@@ -15,11 +15,9 @@ import group.transport.processor.Processor;
 public abstract class AbstractProcessor implements Processor{
 
     private static final InternalLogger logger = InternalLoggerFactory.getInstance(AbstractProcessor.class);
-    protected final CloseableExecutor executor; //业务线程
+    protected  CloseableExecutor executor; //业务线程
 
-    public AbstractProcessor(CloseableExecutor executor){
-        this.executor = executor;
-    }
+
 
 
     @Override

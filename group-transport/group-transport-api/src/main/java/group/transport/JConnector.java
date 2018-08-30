@@ -21,6 +21,7 @@ import group.transport.channel.CopyOnWriteGroupList;
 import group.transport.channel.DirectoryJChannelGroup;
 import group.transport.channel.JChannelGroup;
 import group.transport.processor.ConsumerProcessor;
+import group.transport.processor.Processor;
 
 import java.util.Collection;
 
@@ -42,12 +43,14 @@ public interface JConnector<C> extends Transporter {
     /**
      * Returns the rpc processor.
      */
-    ConsumerProcessor processor();
+    //ConsumerProcessor processor();
+    Processor processor();
 
     /**
      * Binds the rpc processor.
      */
     void withProcessor(ConsumerProcessor processor);
+    void withProcessor(Processor processor);
 
     /**
      * Connects to the remote peer.

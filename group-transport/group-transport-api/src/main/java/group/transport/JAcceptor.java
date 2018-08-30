@@ -17,6 +17,7 @@
 package group.transport;
 
 
+import group.transport.processor.Processor;
 import group.transport.processor.ProviderProcessor;
 
 import java.net.SocketAddress;
@@ -51,12 +52,15 @@ public interface JAcceptor extends Transporter {
     /**
      * Returns the rpc processor.
      */
-    ProviderProcessor processor();
+    //ProviderProcessor processor();
+    Processor processor();
+
 
     /**
      * Binds the rpc processor.
      */
     void withProcessor(ProviderProcessor processor);
+    void withProcessor(Processor processor);
 
     /**
      * Start the server and wait until the server socket is closed.

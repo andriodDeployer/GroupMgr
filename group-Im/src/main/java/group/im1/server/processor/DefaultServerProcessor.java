@@ -1,11 +1,12 @@
-package group.im1.imserver.processor;
+package group.im1.server.processor;
 
 import group.common.util.internal.logging.InternalLogger;
 import group.common.util.internal.logging.InternalLoggerFactory;
 import group.im.consumer.processor.AbstractProcessor;
 import group.im.executor.CloseableExecutor;
+import group.im.provider.processor.ProviderExecutors;
 import group.im1.GRequest;
-import group.im1.imserver.processor.task.RequestMessageTask;
+import group.im1.server.processor.task.RequestMessageTask;
 import group.transport.channel.JChannel;
 import group.transport.payload.GRequestPayload;
 import group.transport.payload.GResponsePayload;
@@ -16,8 +17,12 @@ import group.transport.payload.GResponsePayload;
 public class DefaultServerProcessor extends AbstractProcessor{
 
     private final InternalLogger logger = InternalLoggerFactory.getInstance(DefaultServerProcessor.class);
+
+    public DefaultServerProcessor(){
+        this(ProviderExecutors.executor());
+    }
     public DefaultServerProcessor(CloseableExecutor executor) {
-        super(executor);
+        this.executor = executor;
     }
 
     @Override

@@ -1,4 +1,4 @@
-package group.im1.imclient.processor.task;/**
+package group.im1.client.processor.task;/**
  * Created by DELL on 2018/8/30.
  */
 

@@ -1,16 +1,13 @@
-package group.im1.imclient;
+package group.im1.client;
 
 import group.common.util.Strings;
 import group.common.util.internal.logging.InternalLogger;
 import group.common.util.internal.logging.InternalLoggerFactory;
-import group.im.consumer.processor.DefaultConsumerProcessor;
+import group.im1.client.processor.DefaultClientProcessor;
 import group.transport.JConnection;
 import group.transport.JConnector;
 import group.transport.UnresolvedAddress;
 import group.transport.exception.ConnectFailedException;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import static group.common.util.Preconditions.checkNotNull;
 
@@ -26,16 +23,12 @@ import static group.common.util.Preconditions.checkNotNull;
 public class DefaultImClient implements ImClient{
 
     private JConnector<JConnection> connector;
-    private List<JConnection> connections = new ArrayList<>();
     private static final InternalLogger logger = InternalLoggerFactory.getInstance(DefaultImClient.class);
-
-    //private CopyOnWriteArrayList<JConnection>
-
 
     @Override
     public ImClient withConnector(JConnector<JConnection> connector) {
         if(connector.processor() == null){
-            connector.withProcessor(new DefaultConsumerProcessor());
+            connector.withProcessor(new DefaultClientProcessor());
         }
         this.connector = connector;
         return this;

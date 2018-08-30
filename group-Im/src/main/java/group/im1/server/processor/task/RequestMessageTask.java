@@ -1,43 +1,41 @@
-package group.im1.imclient.processor.task;/**
+package group.im1.server.processor.task;/**
  * Created by DELL on 2018/8/30.
  */
 
 import group.common.util.internal.logging.InternalLogger;
 import group.common.util.internal.logging.InternalLoggerFactory;
 import group.im1.GRequest;
-import group.im1.imclient.processor.DefaultClientProcessor;
 import group.im1.message.Message;
 import group.serialization.Serializer;
 import group.serialization.SerializerFactory;
 import group.transport.Status;
 import group.transport.channel.JChannel;
-import group.transport.channel.JFutureListener;
 import group.transport.payload.GRequestPayload;
 import group.transport.payload.JResponsePayload;
-
+import group.transport.processor.Processor;
 
 /**
  * user is lwb
  **/
 
 
-public class RequestMessageTask implements Runnable{
+public class RequestMessageTask implements Runnable {
 
-    private static final InternalLogger logger = InternalLoggerFactory.getInstance(RequestMessageTask.class);
+    private final InternalLogger logger = InternalLoggerFactory.getInstance(RequestMessageTask.class);
     private final JChannel jChannel;
-    private final DefaultClientProcessor processor;
+    private final Processor processor;
     private final GRequest request;
 
-    public RequestMessageTask(DefaultClientProcessor processor, JChannel jChannel, GRequest request){
-        this.processor = processor;
+    public RequestMessageTask(JChannel jChannel, Processor processor, GRequest request) {
         this.jChannel = jChannel;
+        this.processor = processor;
         this.request = request;
     }
 
     @Override
     public void run() {
         // stack copy
-        final DefaultClientProcessor _processor = processor;
+       // final Processor _processor = processor;
         final GRequest _request = request;
         Message msg;
         GRequestPayload payload = _request.payload();
@@ -56,7 +54,7 @@ public class RequestMessageTask implements Runnable{
             return;
         }
 
-        logger.info("client received message {}",msg.toString());
+        logger.info("Server received message {}",msg.toString());
 
         //回复响应
         JResponsePayload responsePayload = new JResponsePayload(payload.requestId());
@@ -65,21 +63,5 @@ public class RequestMessageTask implements Runnable{
         responsePayload.bytes(serializerCode,bytes);
 
         responsePayload.status(Status.OK.value());
-
-    }
-
-    private void writeResponse(final JResponsePayload response) {
-        jChannel.write(response, new JFutureListener<JChannel>() {
-
-            @Override
-            public void operationSuccess(JChannel channel) throws Exception {
-                logger.info("response send success responseId: {}, sender: {}, receiver: {}",request.requestId(),request.message().getSender(),request.message().getReceiver());
-            }
-
-            @Override
-            public void operationFailure(JChannel channel, Throwable cause) throws Exception {
-                logger.info("response send faild responseId: {}, sender: {}, receiver: {}",request.requestId(),request.message().getSender(),request.message().getReceiver());
-            }
-        });
     }
 }

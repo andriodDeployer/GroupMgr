@@ -1,4 +1,4 @@
-package group.im1.imclient;/**
+package group.im1.client;/**
  * Created by DELL on 2018/8/29.
  */
 
@@ -14,8 +14,8 @@ import group.transport.UnresolvedAddress;
 public interface ImClient {
 
     ImClient withConnector(JConnector<JConnection> connector);
-    void connectServer(UnresolvedAddress address,boolean async);
-    void connectServer(String address,boolean async);
+    void connectServer(UnresolvedAddress address, boolean async);
+    void connectServer(String address, boolean async);
 
 
 }

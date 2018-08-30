@@ -8,6 +8,7 @@ import group.transport.JAcceptor;
 import group.transport.JConfig;
 import group.transport.JOption;
 import group.transport.netty.estimator.JMessageSizeEstimator;
+import group.transport.processor.Processor;
 import group.transport.processor.ProviderProcessor;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
@@ -40,7 +41,8 @@ public abstract class NettyAcceptor implements JAcceptor {
     private EventLoopGroup boss;
     private EventLoopGroup worker;
 
-    private ProviderProcessor processor;
+    private ProviderProcessor processor_1;
+    private Processor processor;
 
     public NettyAcceptor(Protocol protocol, SocketAddress localAddress) {
         this(protocol, localAddress, JConstants.AVAILABLE_PROCESSORS << 1);
@@ -92,14 +94,25 @@ public abstract class NettyAcceptor implements JAcceptor {
         return ((InetSocketAddress) localAddress).getPort();
     }
 
+   // @Override
+//    public ProviderProcessor processor() {
+//        return processor;
+//    }
+
+
     @Override
-    public ProviderProcessor processor() {
+    public Processor processor() {
         return processor;
     }
 
     @Override
     public void withProcessor(ProviderProcessor processor) {
-        setProcessor(this.processor = processor);
+        setProcessor(this.processor_1 = processor);
+    }
+
+    @Override
+    public void withProcessor(Processor processor) {
+        setProcessor(processor);
     }
 
     @Override
@@ -157,6 +170,9 @@ public abstract class NettyAcceptor implements JAcceptor {
      */
     @SuppressWarnings("unused")
     protected void setProcessor(ProviderProcessor processor) {
+        // the default implementation does nothing
+    }
+    protected void setProcessor(Processor processor) {
         // the default implementation does nothing
     }
 
