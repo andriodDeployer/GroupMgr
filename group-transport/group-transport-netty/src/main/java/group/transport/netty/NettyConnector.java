@@ -29,6 +29,7 @@ import group.transport.channel.JChannelGroup;
 import group.transport.netty.channel.NettyChannelGroup;
 import group.transport.netty.estimator.JMessageSizeEstimator;
 import group.transport.processor.ConsumerProcessor;
+import group.transport.processor.Processor;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.ChannelOption;
 import io.netty.channel.EventLoopGroup;
@@ -69,7 +70,8 @@ public abstract class NettyConnector implements JConnector<JConnection> {
     private EventLoopGroup worker;
     private int nWorkers;
 
-    private ConsumerProcessor processor;
+    private ConsumerProcessor processor_1;
+    private Processor processor;
 
     public NettyConnector(Protocol protocol) {
         this(protocol, JConstants.AVAILABLE_PROCESSORS << 1);
@@ -103,14 +105,25 @@ public abstract class NettyConnector implements JConnector<JConnection> {
         return protocol;
     }
 
+//    @Override
+//    public ConsumerProcessor processor() {
+//        return processor;
+//    }
+
+
     @Override
-    public ConsumerProcessor processor() {
+    public Processor processor() {
         return processor;
     }
 
     @Override
     public void withProcessor(ConsumerProcessor processor) {
-        setProcessor(this.processor = processor);
+        setProcessor(this.processor_1 = processor);
+    }
+
+    @Override
+    public void withProcessor(Processor processor) {
+        this.processor = processor;
     }
 
     @Override

@@ -39,6 +39,7 @@ public class ConnectorIdleStateTrigger extends ChannelInboundHandlerAdapter {
             IdleState state = ((IdleStateEvent) evt).state();
             if (state == IdleState.WRITER_IDLE) {
                 // write heartbeat to server
+                System.out.println("客户端发送心跳");
                 ctx.writeAndFlush(Heartbeats.heartbeatContent());
             }
         } else {

@@ -1,4 +1,5 @@
-package group.transport.netty.handler.connector;/**
+package group.transport.netty.handler.connector;
+/**
  * Created by DELL on 2018/8/30.
  */
 
@@ -7,6 +8,7 @@ import group.transport.payload.GRequestPayload;
 import group.transport.payload.GResponsePayload;
 import group.transport.payload.PayloadHolder;
 import io.netty.buffer.ByteBuf;
+import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.MessageToByteEncoder;
 
@@ -17,6 +19,7 @@ import io.netty.handler.codec.MessageToByteEncoder;
 /**
  * 发送消息 编码
  */
+@ChannelHandler.Sharable
 public class IMMessageEncoder extends MessageToByteEncoder<PayloadHolder>{
 
 

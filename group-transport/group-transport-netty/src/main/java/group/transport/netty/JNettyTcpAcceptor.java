@@ -21,8 +21,9 @@ import group.transport.CodecConfig;
 import group.transport.JConfig;
 import group.transport.JOption;
 import group.transport.netty.handler.*;
-import group.transport.netty.handler.acceptor.AcceptorHandler;
 import group.transport.netty.handler.acceptor.AcceptorIdleStateTrigger;
+import group.transport.netty.handler.acceptor.IMAcceptorHandler;
+import group.transport.processor.Processor;
 import group.transport.processor.ProviderProcessor;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.Channel;
@@ -89,7 +90,10 @@ public class JNettyTcpAcceptor extends NettyTcpAcceptor {
     private final AcceptorIdleStateTrigger idleStateTrigger = new AcceptorIdleStateTrigger();
     private final ChannelOutboundHandler encoder =
             CodecConfig.isCodecLowCopy() ? new LowCopyProtocolEncoder() : new ProtocolEncoder();
-    private final AcceptorHandler handler = new AcceptorHandler();
+   // private final AcceptorHandler handler = new AcceptorHandler();
+
+    private final IMAcceptorHandler handler = new IMAcceptorHandler();
+
 
     public JNettyTcpAcceptor() {
         super(DEFAULT_ACCEPTOR_PORT);
@@ -167,6 +171,10 @@ public class JNettyTcpAcceptor extends NettyTcpAcceptor {
 
     @Override
     protected void setProcessor(ProviderProcessor processor) {
-        handler.processor(checkNotNull(processor, "processor"));
+        //handler.processor(checkNotNull(processor, "processor"));
+    }
+
+    public void setProcessor(Processor processor){
+        handler.processor(checkNotNull(processor,"processor"));
     }
 }

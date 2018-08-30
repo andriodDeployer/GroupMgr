@@ -98,6 +98,7 @@ public class ProtocolDecoder extends ReplayingDecoder<ProtocolDecoder.State> {
             case BODY:
                 switch (header.messageCode()) {
                     case JProtocolHeader.HEARTBEAT:
+                        System.out.println("服务端收到心跳");
                         break;
                     case JProtocolHeader.REQUEST: {
                         int length = checkBodySize(header.bodySize());

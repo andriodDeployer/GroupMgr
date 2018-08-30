@@ -102,6 +102,7 @@ public class LowCopyProtocolDecoder extends ReplayingDecoder<LowCopyProtocolDeco
             case BODY:
                 switch (header.messageCode()) {
                     case JProtocolHeader.HEARTBEAT:
+                        System.out.println("asdfasdfasdfadfsd服务端收到心跳");
                         break;
                     case JProtocolHeader.REQUEST: {
                         int length = checkBodySize(header.bodySize());

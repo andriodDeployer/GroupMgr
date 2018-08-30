@@ -3,8 +3,9 @@ package client_registry;
  * Created by DELL on 2018/8/29.
  */
 
-import group.im1.imclient.DefaultImClient;
-import group.im1.imclient.ImClient;
+
+import group.im1.client.DefaultImClient;
+import group.im1.client.ImClient;
 import group.transport.netty.JNettyTcpConnector;
 
 /**

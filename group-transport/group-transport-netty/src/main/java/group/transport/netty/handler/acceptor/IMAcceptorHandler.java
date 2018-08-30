@@ -12,6 +12,8 @@ import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 /**
  * user is lwb
  **/
@@ -21,6 +23,11 @@ public class IMAcceptorHandler extends ChannelInboundHandlerAdapter{
 
     private static final InternalLogger logger = InternalLoggerFactory.getInstance(IMAcceptorHandler.class);
     private Processor processor;
+    private static final AtomicInteger channelCounter = new AtomicInteger(0);
+
+    public void processor(Processor processor){
+        this.processor = processor;
+    }
 
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
@@ -32,7 +39,25 @@ public class IMAcceptorHandler extends ChannelInboundHandlerAdapter{
         }else{
             logger.warn("Unexcepted message type received: {},channel: {}",msg.getClass(),channel);
         }
+    }
 
 
+    @Override
+    public void channelActive(ChannelHandlerContext ctx) throws Exception {
+        int count = channelCounter.incrementAndGet();
+
+        logger.info("Connects with {} as the {}th channel.", ctx.channel(), count);
+
+        super.channelActive(ctx);
+    }
+
+
+    @Override
+    public void channelInactive(ChannelHandlerContext ctx) throws Exception {
+        int count = channelCounter.getAndDecrement();
+
+        logger.warn("Disconnects with {} as the {}th channel.", ctx.channel(), count);
+
+        super.channelInactive(ctx);
     }
 }

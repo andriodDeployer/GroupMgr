@@ -25,10 +25,7 @@ import group.transport.UnresolvedAddress;
 import group.transport.channel.JChannelGroup;
 import group.transport.exception.ConnectFailedException;
 import group.transport.netty.handler.*;
-import group.transport.netty.handler.connector.ConnectionWatchdog;
-import group.transport.netty.handler.connector.ConnectorHandler;
-import group.transport.netty.handler.connector.ConnectorIdleStateTrigger;
-import group.transport.netty.handler.connector.IMMessageEncoder;
+import group.transport.netty.handler.connector.*;
 import group.transport.processor.ConsumerProcessor;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.*;
@@ -156,6 +153,7 @@ public class JNettyTcpConnector extends NettyTcpConnector {
                         idleStateTrigger,
                         CodecConfig.isCodecLowCopy() ? new LowCopyProtocolDecoder() : new ProtocolDecoder(),
                         encoder,
+                        new TestHandler(),
                         handler
                 };
             }
