@@ -1,6 +1,4 @@
-package group.im.imclient;/**
- * Created by DELL on 2018/8/29.
- */
+package group.im1.imclient;
 
 import group.common.util.Strings;
 import group.common.util.internal.logging.InternalLogger;
@@ -15,6 +13,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static group.common.util.Preconditions.checkNotNull;
+
+/**
+ * Created by DELL on 2018/8/29.
+ */
 
 /**
  * user is lwb

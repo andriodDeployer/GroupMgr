@@ -28,6 +28,7 @@ import group.transport.netty.handler.*;
 import group.transport.netty.handler.connector.ConnectionWatchdog;
 import group.transport.netty.handler.connector.ConnectorHandler;
 import group.transport.netty.handler.connector.ConnectorIdleStateTrigger;
+import group.transport.netty.handler.connector.IMMessageEncoder;
 import group.transport.processor.ConsumerProcessor;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.*;
@@ -101,8 +102,9 @@ public class JNettyTcpConnector extends NettyTcpConnector {
 
     // handlers
     private final ConnectorIdleStateTrigger idleStateTrigger = new ConnectorIdleStateTrigger();
-    private final ChannelOutboundHandler encoder =
-            CodecConfig.isCodecLowCopy() ? new LowCopyProtocolEncoder() : new ProtocolEncoder();
+//    private final ChannelOutboundHandler encoder =
+//            CodecConfig.isCodecLowCopy() ? new LowCopyProtocolEncoder() : new ProtocolEncoder();
+    private final ChannelOutboundHandler encoder = new IMMessageEncoder();
     private final ConnectorHandler handler = new ConnectorHandler();
 
     public JNettyTcpConnector() {

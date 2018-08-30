@@ -50,6 +50,10 @@ public class JProtocolHeader {
 
     /** Message Code: 0x01 ~ 0x0f =================================================================================== */
     public static final byte REQUEST                    = 0x01;     // Request
+    public static final byte TEXT                       = 0x03;     // 文本消息
+    public static final byte IMAGE                      = 0x04;     // 图片消息
+    public static final byte FILE                       = 0x05;     // 文件消息
+
     public static final byte RESPONSE                   = 0x02;     // Response
     public static final byte PUBLISH_SERVICE            = 0x03;     // 发布服务
     public static final byte PUBLISH_CANCEL_SERVICE     = 0x04;     // 取消发布服务

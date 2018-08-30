@@ -69,7 +69,7 @@ public class MessageTask implements RejectedRunnable {
 
     private static final boolean METRIC_NEEDED = SystemPropertyUtil.getBoolean("jupiter.metric.needed", false);
 
-    private static final Signal INVOKE_ERROR = null;//Signal.valueOf(MessageTask.class, "INVOKE_ERROR");
+    private static final Signal INVOKE_ERROR = null;//Signal.valueOf(RequestMessageTask.class, "INVOKE_ERROR");
 
     private static final UnsafeIntegerFieldUpdater<TraceId> traceNodeUpdater =
             UnsafeUpdater.newIntegerFieldUpdater(TraceId.class, "node");
@@ -421,7 +421,7 @@ public class MessageTask implements RejectedRunnable {
             MessageWrapper msg = request.message();
 //            Context invokeCtx = (Context) filterCtx;
 //
-//            Object invokeResult = MessageTask.invoke(msg, invokeCtx);
+//            Object invokeResult = RequestMessageTask.invoke(msg, invokeCtx);
 //
 //            invokeCtx.setResult(invokeResult);
         }

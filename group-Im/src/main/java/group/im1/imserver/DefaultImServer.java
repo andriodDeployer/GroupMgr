@@ -1,4 +1,4 @@
-package group.im.imserver;/**
+package group.im1.imserver;/**
  * Created by DELL on 2018/8/29.
  */
 
