@@ -13,6 +13,7 @@ import group.transport.Status;
 import group.transport.channel.JChannel;
 import group.transport.channel.JFutureListener;
 import group.transport.payload.GRequestPayload;
+import group.transport.payload.GResponsePayload;
 import group.transport.payload.JResponsePayload;
 
 
@@ -68,7 +69,7 @@ public class RequestMessageTask implements Runnable{
 
     }
 
-    private void writeResponse(final JResponsePayload response) {
+    private void writeResponse(final GResponsePayload response) {
         jChannel.write(response, new JFutureListener<JChannel>() {
 
             @Override

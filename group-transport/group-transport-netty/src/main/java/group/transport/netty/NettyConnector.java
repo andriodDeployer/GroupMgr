@@ -121,9 +121,10 @@ public abstract class NettyConnector implements JConnector<JConnection> {
         setProcessor(this.processor_1 = processor);
     }
 
+
     @Override
     public void withProcessor(Processor processor) {
-        this.processor = processor;
+        setProcessor(processor);
     }
 
     @Override
@@ -250,6 +251,10 @@ public abstract class NettyConnector implements JConnector<JConnection> {
      */
     @SuppressWarnings("unused")
     protected void setProcessor(ConsumerProcessor processor) {
+        // the default implementation does nothing
+    }
+
+    protected void setProcessor(Processor processor) {
         // the default implementation does nothing
     }
 

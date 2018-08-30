@@ -51,7 +51,7 @@ public class IMMessageEncoder extends MessageToByteEncoder<PayloadHolder>{
     }
 
     private void doEncodeRequest(GRequestPayload request, ByteBuf out) {
-        byte sign = JProtocolHeader.toSign(request.serializerCode(),JProtocolHeader.REQUEST);
+        byte sign = JProtocolHeader.toSign(request.serializerCode(),JProtocolHeader.TEXT);
         long requestId = request.requestId();
         byte[] bytes = request.bytes();
         int length = bytes.length;
@@ -59,7 +59,7 @@ public class IMMessageEncoder extends MessageToByteEncoder<PayloadHolder>{
                 .writeByte(sign)
                 .writeByte(0X00)
                 .writeLong(requestId)
-                .writeLong(length)
+                .writeInt(length)
                 .writeBytes(bytes);
     }
 

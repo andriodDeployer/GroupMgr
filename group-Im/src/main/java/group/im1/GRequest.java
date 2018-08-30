@@ -46,6 +46,10 @@ public class GRequest {
         return message;
     }
 
+    public void bytes(byte serializerCode,byte[] bytes){
+        payload.bytes(serializerCode,bytes);
+    }
+
 
 
 }

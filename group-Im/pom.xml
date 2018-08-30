@@ -19,7 +19,7 @@
 
         <dependency>
             <groupId>com.cd.groupmgr</groupId>
-            <artifactId>group-serialization-api</artifactId>
+            <artifactId>group-serialization-java</artifactId>
         </dependency>
 
         <dependency>

@@ -112,7 +112,7 @@ public abstract class NettyAcceptor implements JAcceptor {
 
     @Override
     public void withProcessor(Processor processor) {
-        setProcessor(processor);
+        setProcessor(this.processor = processor);
     }
 
     @Override

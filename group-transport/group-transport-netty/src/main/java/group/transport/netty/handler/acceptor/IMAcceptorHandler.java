@@ -9,6 +9,7 @@ import group.transport.payload.GRequestPayload;
 import group.transport.payload.GResponsePayload;
 import group.transport.processor.Processor;
 import io.netty.channel.Channel;
+import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 
@@ -18,7 +19,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * user is lwb
  **/
 
-
+@ChannelHandler.Sharable
 public class IMAcceptorHandler extends ChannelInboundHandlerAdapter{
 
     private static final InternalLogger logger = InternalLoggerFactory.getInstance(IMAcceptorHandler.class);

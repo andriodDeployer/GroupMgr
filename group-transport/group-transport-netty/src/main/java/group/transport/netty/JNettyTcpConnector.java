@@ -18,23 +18,21 @@ package group.transport.netty;
 
 
 import group.common.util.JConstants;
-import group.transport.CodecConfig;
 import group.transport.JConnection;
 import group.transport.JOption;
 import group.transport.UnresolvedAddress;
 import group.transport.channel.JChannelGroup;
 import group.transport.exception.ConnectFailedException;
-import group.transport.netty.handler.*;
+import group.transport.netty.handler.IdleStateChecker;
 import group.transport.netty.handler.connector.*;
 import group.transport.processor.ConsumerProcessor;
+import group.transport.processor.Processor;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.*;
 
 import java.net.InetSocketAddress;
 import java.net.SocketAddress;
 import java.util.concurrent.TimeUnit;
-
-import static group.common.util.Preconditions.checkNotNull;
 
 /**
  * Jupiter tcp connector based on netty.
@@ -102,7 +100,9 @@ public class JNettyTcpConnector extends NettyTcpConnector {
 //    private final ChannelOutboundHandler encoder =
 //            CodecConfig.isCodecLowCopy() ? new LowCopyProtocolEncoder() : new ProtocolEncoder();
     private final ChannelOutboundHandler encoder = new IMMessageEncoder();
-    private final ConnectorHandler handler = new ConnectorHandler();
+    private final ChannelInboundHandler decoder = new IMMessageDecoder();
+    //private final ConnectorHandler handler = new ConnectorHandler();
+    private final IMConnectorHandler handler = new IMConnectorHandler();
 
     public JNettyTcpConnector() {
         super();
@@ -129,9 +129,19 @@ public class JNettyTcpConnector extends NettyTcpConnector {
         initChannelFactory();//设置channelfactory
     }
 
+//    @Override
+//    protected void setProcessor(ConsumerProcessor processor) {
+//        handler.processor(checkNotNull(processor, "processor"));
+//    }
+
+
     @Override
     protected void setProcessor(ConsumerProcessor processor) {
-        handler.processor(checkNotNull(processor, "processor"));
+        //handler.processor(processor_);
+    }
+
+    public void setProcessor(Processor processor){
+        handler.processor(processor);
     }
 
     @Override
@@ -151,7 +161,7 @@ public class JNettyTcpConnector extends NettyTcpConnector {
                         this,
                         new IdleStateChecker(timer, 0, JConstants.WRITER_IDLE_TIME_SECONDS, 0),
                         idleStateTrigger,
-                        CodecConfig.isCodecLowCopy() ? new LowCopyProtocolDecoder() : new ProtocolDecoder(),
+                        new IMMessageDecoder(),
                         encoder,
                         new TestHandler(),
                         handler

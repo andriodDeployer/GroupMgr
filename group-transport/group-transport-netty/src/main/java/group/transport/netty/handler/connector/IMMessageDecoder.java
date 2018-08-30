@@ -6,7 +6,7 @@ import group.common.util.Signal;
 import group.transport.JProtocolHeader;
 import group.transport.exception.IoSignals;
 import group.transport.payload.GRequestPayload;
-import group.transport.payload.JResponsePayload;
+import group.transport.payload.GResponsePayload;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.ReplayingDecoder;
@@ -18,15 +18,18 @@ import java.util.List;
 /**
  * user is lwb
  **/
-
-
 public class IMMessageDecoder extends ReplayingDecoder<IMMessageDecoder.State> {
 
     // 协议体最大限制, 默认5M
     private static final int MAX_BODY_SIZE = SystemPropertyUtil.getInt("jupiter.io.decoder.max.body.size", 1024 * 1024 * 5);
+    private static final boolean USE_COMPOSITE_BUF = SystemPropertyUtil.getBoolean("jupiter.io.decoder.composite.buf", false);
+
 
     public IMMessageDecoder(){
         super(State.MAGIC);
+        if (USE_COMPOSITE_BUF) {
+            setCumulator(COMPOSITE_CUMULATOR);
+        }
     }
 
     private final JProtocolHeader header = new JProtocolHeader();
@@ -61,6 +64,7 @@ public class IMMessageDecoder extends ReplayingDecoder<IMMessageDecoder.State> {
                         GRequestPayload request = new GRequestPayload(header.id());
 
                         request.bytes(header.serializerCode(), bytes);
+
                         out.add(request);
                         break;
                     }
@@ -71,14 +75,17 @@ public class IMMessageDecoder extends ReplayingDecoder<IMMessageDecoder.State> {
                         byte[] bytes = new byte[length];
                         in.readBytes(bytes);
 
-                        JResponsePayload response = new JResponsePayload(header.id());
+                        GResponsePayload response = new GResponsePayload(header.id());
                         response.status(header.status());
                         response.bytes(header.serializerCode(), bytes);
                         out.add(response);
                         break;
                     }
+                    default:
+                        throw IoSignals.ILLEGAL_SIGN;
 
                 }
+                checkpoint(State.MAGIC);
 
 
 

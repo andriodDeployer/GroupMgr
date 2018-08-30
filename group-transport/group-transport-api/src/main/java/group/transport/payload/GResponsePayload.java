@@ -23,4 +23,15 @@ public class GResponsePayload extends PayloadHolder {
         return status;
     }
 
+    public void status(byte status) {
+        this.status = status;
+    }
+
+    @Override
+    public String toString() {
+        return "GResponsePayload{" +
+                "responseId=" + responseId +
+                ", status=" + status +
+                '}';
+    }
 }

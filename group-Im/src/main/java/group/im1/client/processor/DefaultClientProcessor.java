@@ -38,7 +38,7 @@ public class DefaultClientProcessor extends AbstractProcessor {
     @Override
     public void handleResonse(JChannel channel, GResponsePayload payload) {
         //直接再io线程中处理
-
+        System.out.println("客户端收到响应： "+payload.toString());
 
     }
 }

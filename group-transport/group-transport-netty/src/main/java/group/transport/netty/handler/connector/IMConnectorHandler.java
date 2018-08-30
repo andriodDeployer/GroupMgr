@@ -9,6 +9,7 @@ import group.transport.payload.GRequestPayload;
 import group.transport.payload.GResponsePayload;
 import group.transport.processor.Processor;
 import io.netty.channel.Channel;
+import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 
@@ -16,12 +17,16 @@ import io.netty.channel.ChannelInboundHandlerAdapter;
  * user is lwb
  **/
 
-
+@ChannelHandler.Sharable
 public class IMConnectorHandler extends ChannelInboundHandlerAdapter {
 
     private static final InternalLogger logger = InternalLoggerFactory.getInstance(IMConnectorHandler.class);
 
     private Processor processor;
+
+    public void processor(Processor processor) {
+        this.processor = processor;
+    }
 
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {

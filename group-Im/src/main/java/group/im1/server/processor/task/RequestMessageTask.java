@@ -10,8 +10,9 @@ import group.serialization.Serializer;
 import group.serialization.SerializerFactory;
 import group.transport.Status;
 import group.transport.channel.JChannel;
+import group.transport.channel.JFutureListener;
 import group.transport.payload.GRequestPayload;
-import group.transport.payload.JResponsePayload;
+import group.transport.payload.GResponsePayload;
 import group.transport.processor.Processor;
 
 /**
@@ -57,11 +58,29 @@ public class RequestMessageTask implements Runnable {
         logger.info("Server received message {}",msg.toString());
 
         //回复响应
-        JResponsePayload responsePayload = new JResponsePayload(payload.requestId());
+        GResponsePayload responsePayload = new GResponsePayload(payload.requestId());
 
         byte[] bytes = serializer.writeObject("ok");
         responsePayload.bytes(serializerCode,bytes);
-
         responsePayload.status(Status.OK.value());
+        writeResponse(responsePayload);
+
+    }
+
+    private void writeResponse(final GResponsePayload response) {
+        jChannel.write(response, new JFutureListener<JChannel>() {
+
+            @Override
+            public void operationSuccess(JChannel channel) throws Exception {
+                logger.info("response send success responseId: {}, sender: {}, receiver: {}",request.requestId(),request.message().getSender(),request.message().getReceiver());
+            }
+
+            @Override
+            public void operationFailure(JChannel channel, Throwable cause) throws Exception {
+
+                logger.info("response send faild responseId: {}, sender: {}, receiver: {}",request.requestId(),request.message().getSender(),request.message().getReceiver());
+                logger.error(cause.getCause());
+            }
+        });
     }
 }

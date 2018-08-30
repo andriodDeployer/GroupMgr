@@ -17,19 +17,17 @@
 package group.transport.netty;
 
 import group.common.util.JConstants;
-import group.transport.CodecConfig;
 import group.transport.JConfig;
 import group.transport.JOption;
-import group.transport.netty.handler.*;
+import group.transport.netty.handler.IdleStateChecker;
 import group.transport.netty.handler.acceptor.AcceptorIdleStateTrigger;
 import group.transport.netty.handler.acceptor.IMAcceptorHandler;
+import group.transport.netty.handler.connector.IMMessageDecoder;
+import group.transport.netty.handler.connector.IMMessageEncoder;
 import group.transport.processor.Processor;
 import group.transport.processor.ProviderProcessor;
 import io.netty.bootstrap.ServerBootstrap;
-import io.netty.channel.Channel;
-import io.netty.channel.ChannelFuture;
-import io.netty.channel.ChannelInitializer;
-import io.netty.channel.ChannelOutboundHandler;
+import io.netty.channel.*;
 
 import java.net.SocketAddress;
 
@@ -88,10 +86,13 @@ public class JNettyTcpAcceptor extends NettyTcpAcceptor {
 
     // handlers
     private final AcceptorIdleStateTrigger idleStateTrigger = new AcceptorIdleStateTrigger();
-    private final ChannelOutboundHandler encoder =
-            CodecConfig.isCodecLowCopy() ? new LowCopyProtocolEncoder() : new ProtocolEncoder();
-   // private final AcceptorHandler handler = new AcceptorHandler();
+//    private final ChannelOutboundHandler encoder =
+//            CodecConfig.isCodecLowCopy() ? new LowCopyProtocolEncoder() : new ProtocolEncoder();
 
+    private final ChannelOutboundHandler encoder = new IMMessageEncoder();
+   // private final ChannelInboundHandler decoder = new IMMessageDecoder();
+
+   // private final AcceptorHandler handler = new AcceptorHandler();
     private final IMAcceptorHandler handler = new IMAcceptorHandler();
 
 
@@ -158,8 +159,8 @@ public class JNettyTcpAcceptor extends NettyTcpAcceptor {
                 ch.pipeline().addLast(
                         new IdleStateChecker(timer, JConstants.READER_IDLE_TIME_SECONDS, 0, 0),
                         idleStateTrigger,
-                        CodecConfig.isCodecLowCopy() ? new LowCopyProtocolDecoder() : new ProtocolDecoder(),
                         encoder,
+                        new IMMessageDecoder(),
                         handler);
             }
         });
