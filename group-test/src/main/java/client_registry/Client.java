@@ -5,7 +5,6 @@ package client_registry;
 
 
 import group.im1.client.DefaultImClient;
-import group.im1.client.ImClient;
 import group.im1.client.MessingSendListener;
 import group.im1.message.Message;
 import group.im1.message.TextMessage;
@@ -19,7 +18,7 @@ import group.transport.netty.JNettyTcpConnector;
 public class Client {
 
     public static void main(String[] agrs){
-        ImClient client = new DefaultImClient().withConnector(new JNettyTcpConnector());
+        DefaultImClient client = new DefaultImClient().withConnector(new JNettyTcpConnector());
 
         client.connectServer("127.0.0.1:8888",true);
         Message text = new TextMessage("sender","receiver","hellowork");

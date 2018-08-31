@@ -2,6 +2,7 @@ package group.im1.server;/**
  * Created by DELL on 2018/8/29.
  */
 
+import group.im1.AbstractEndPoint;
 import group.im1.server.processor.DefaultServerProcessor;
 import group.transport.JAcceptor;
 
@@ -10,7 +11,7 @@ import group.transport.JAcceptor;
  **/
 
 
-public class DefaultImServer implements ImServer {
+public class DefaultImServer extends AbstractEndPoint implements ImServer {
     JAcceptor acceptor;
 
     @Override

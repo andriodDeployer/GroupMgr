@@ -2,7 +2,6 @@ package group.im1.server.processor;
 
 import group.common.util.internal.logging.InternalLogger;
 import group.common.util.internal.logging.InternalLoggerFactory;
-import group.im.consumer.processor.AbstractProcessor;
 import group.im.executor.CloseableExecutor;
 import group.im.provider.processor.ProviderExecutors;
 import group.im1.GRequest;
@@ -14,7 +13,7 @@ import group.transport.payload.GResponsePayload;
 /**
  * Created by DELL on 2018/8/30.
  */
-public class DefaultServerProcessor extends AbstractProcessor{
+public class DefaultServerProcessor extends AbstractServerProcessor{
 
     private final InternalLogger logger = InternalLoggerFactory.getInstance(DefaultServerProcessor.class);
 

@@ -17,9 +17,6 @@ public abstract class AbstractProcessor implements Processor{
     private static final InternalLogger logger = InternalLoggerFactory.getInstance(AbstractProcessor.class);
     protected  CloseableExecutor executor; //业务线程
 
-
-
-
     @Override
     public void shutdown() {
         if (executor != null){

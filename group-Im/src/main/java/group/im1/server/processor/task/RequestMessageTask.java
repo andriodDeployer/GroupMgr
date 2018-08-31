@@ -4,31 +4,36 @@ package group.im1.server.processor.task;/**
 
 import group.common.util.internal.logging.InternalLogger;
 import group.common.util.internal.logging.InternalLoggerFactory;
+import group.im1.AbstractEndPoint;
 import group.im1.GRequest;
+import group.im1.client.MessingSendListener;
 import group.im1.message.Message;
+import group.im1.server.processor.AbstractServerProcessor;
 import group.serialization.Serializer;
 import group.serialization.SerializerFactory;
+import group.transport.JChannelManager;
 import group.transport.JProtocolHeader;
 import group.transport.Status;
 import group.transport.channel.JChannel;
 import group.transport.channel.JFutureListener;
 import group.transport.payload.GRequestPayload;
 import group.transport.payload.GResponsePayload;
-import group.transport.processor.Processor;
+
+import java.util.Map;
 
 /**
  * user is lwb
  **/
 
 
-public class RequestMessageTask implements Runnable {
+public class RequestMessageTask extends AbstractEndPoint implements Runnable {
 
     private final InternalLogger logger = InternalLoggerFactory.getInstance(RequestMessageTask.class);
     private final JChannel jChannel;
-    private final Processor processor;
+    private final AbstractServerProcessor processor;
     private final GRequest request;
 
-    public RequestMessageTask(JChannel jChannel, Processor processor, GRequest request) {
+    public RequestMessageTask(JChannel jChannel, AbstractServerProcessor processor, GRequest request) {
         this.jChannel = jChannel;
         this.processor = processor;
         this.request = request;
@@ -71,13 +76,40 @@ public class RequestMessageTask implements Runnable {
 
     private void process(Message msg) {
         //将消息进行转发
+        JChannelManager jChannelManager = processor.jChannelManager();
 
         if(msg.type() == JProtocolHeader.AUTH){
-            String sender = msg.getSender();
+            final String sender = msg.getSender();
+            jChannelManager.addJChannel(jChannel, sender, new JChannelManager.AddChannelListener() {
+                @Override
+                public void channelExists(Map allchannels, JChannel oldJchannel, JChannel newChnanel) {
+                    oldJchannel.close();
+                    allchannels.put(sender,newChnanel);
+                }
+            });
+        }else if(msg.type() == JProtocolHeader.TEXT){
+            String receiver = msg.getReceiver();
+            JChannel reciverChannel = jChannelManager.getJChannel(receiver);
+            if(reciverChannel == null){
+                //接收者不在线
+
+            }else{
+                //进行转发
+                sentMessage(msg, reciverChannel, new MessingSendListener() {
+                    @Override
+                    public void sendSuccessful() {
+
+                    }
+
+                    @Override
+                    public void sendFailure() {
+
+                    }
+                });
+
+            }
 
         }
-        String receiver = msg.getReceiver();
-
 
 
 

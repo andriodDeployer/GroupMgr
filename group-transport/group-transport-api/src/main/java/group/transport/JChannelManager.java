@@ -18,11 +18,12 @@ public class JChannelManager {
     private static final InternalLogger logger = InternalLoggerFactory.getInstance(JChannelManager.class);
     private final Map<String,JChannel> allChannels = Maps.newConcurrentMap();
 
-    public void addJChannel(JChannel newChannel,String id){
+    public void addJChannel(final JChannel newChannel, final String id){
         addJChannel(newChannel, id, new AddChannelListener() {
             @Override
             public void channelExists(Map allchannels, JChannel oldJchannel, JChannel newChnanel) {
                 oldJchannel.close();
+                allchannels.put(id,newChannel);
             }
         });
     }
@@ -44,7 +45,7 @@ public class JChannelManager {
     }
 
 
-    interface AddChannelListener{
+    public interface AddChannelListener{
         void channelExists(Map allchannels,JChannel oldJchannel,JChannel newChnanel);
     }
 

@@ -4,7 +4,6 @@ package group.transport.netty.handler.acceptor;/**
 
 import group.common.util.internal.logging.InternalLogger;
 import group.common.util.internal.logging.InternalLoggerFactory;
-import group.transport.JAcceptor;
 import group.transport.netty.channel.NettyChannel;
 import group.transport.payload.GRequestPayload;
 import group.transport.payload.GResponsePayload;
@@ -26,9 +25,6 @@ public class IMAcceptorHandler extends ChannelInboundHandlerAdapter{
     private static final InternalLogger logger = InternalLoggerFactory.getInstance(IMAcceptorHandler.class);
     private Processor processor;
     private static final AtomicInteger channelCounter = new AtomicInteger(0);
-
-    private JAcceptor acceptor;
-
 
     public void processor(Processor processor){
         this.processor = processor;
@@ -63,13 +59,5 @@ public class IMAcceptorHandler extends ChannelInboundHandlerAdapter{
 
         super.channelInactive(ctx);
     }
-
-
-    public void withAcceptor(JAcceptor acceptor){
-        this.acceptor = acceptor;
-    }
-
-
-
 
 }

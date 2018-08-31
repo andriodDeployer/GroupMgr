@@ -3,22 +3,15 @@ package group.im1.client;
 import group.common.util.Strings;
 import group.common.util.internal.logging.InternalLogger;
 import group.common.util.internal.logging.InternalLoggerFactory;
-import group.im1.GRequest;
-import group.im1.GResponse;
+import group.im1.AbstractEndPoint;
 import group.im1.client.processor.DefaultClientProcessor;
 import group.im1.message.Message;
-import group.serialization.Serializer;
-import group.serialization.SerializerFactory;
-import group.serialization.SerializerType;
 import group.transport.JConnection;
 import group.transport.JConnector;
-import group.transport.Status;
 import group.transport.UnresolvedAddress;
 import group.transport.channel.JChannel;
 import group.transport.channel.JChannelGroup;
-import group.transport.channel.JFutureListener;
 import group.transport.exception.ConnectFailedException;
-import group.transport.payload.GRequestPayload;
 
 import static group.common.util.Preconditions.checkNotNull;
 
@@ -31,13 +24,13 @@ import static group.common.util.Preconditions.checkNotNull;
  **/
 
 
-public class DefaultImClient implements ImClient{
+public class DefaultImClient extends AbstractEndPoint implements ImClient{
 
     private JConnector<JConnection> connector;
     private static final InternalLogger logger = InternalLoggerFactory.getInstance(DefaultImClient.class);
     private UnresolvedAddress remotAddress;
     @Override
-    public ImClient withConnector(JConnector<JConnection> connector) {
+    public DefaultImClient withConnector(JConnector<JConnection> connector) {
         if(connector.processor() == null){
             connector.withProcessor(new DefaultClientProcessor());
         }
@@ -71,40 +64,10 @@ public class DefaultImClient implements ImClient{
         connectServer(unresolvedAddress,async);
     }
 
-    @Override
-    public void sentMessage(Message message, final MessingSendListener listener) {
+    public void sentMessage(Message message,final MessingSendListener listener) {
         JChannelGroup group = connector.group(remotAddress);
         JChannel channel = group.next();
-        final GRequest request = createRequest(message);
-        final DefaultSendFuture future = DefaultSendFuture.with(request.requestId(),channel);
-        future.addListener(listener);
-        channel.write(request.payload(), new JFutureListener<JChannel>() {
-            @Override
-            public void operationSuccess(JChannel channel) throws Exception {
-                future.markSent();
-            }
-
-            @Override
-            public void operationFailure(JChannel channel, Throwable cause) throws Exception {
-                GResponse response = new GResponse(request.requestId());
-                response.status(Status.CLIENT_ERROR);
-                DefaultSendFuture.fakeReceived(channel,response);
-            }
-        });
-
-
-
+        sentMessage(message,channel,listener);
     }
-
-    private Serializer serializer = SerializerFactory.getSerializer(SerializerType.JAVA.value());;
-
-    private GRequest createRequest(Message message) {
-        GRequest request = new GRequest(new GRequestPayload());
-        byte s_code = serializer.code();
-        byte[] bytes = serializer.writeObject(message);
-        request.bytes(s_code,bytes);
-        return request;
-    }
-
 
 }

@@ -76,15 +76,19 @@ public class DefaultSendFuture {
         byte status = response.status();
         if(status == Status.OK.value()){
             //说明，对端(这个对端只能服务端，不能是另一个客户端，因为在发送消息的时候，另一个客户端可能不在线)
-            listener.sendSuccessful();
+            if(listener != null)
+                listener.sendSuccessful();
         } else {
             handleException(channel,response);
         }
     }
 
     private void handleException(JChannel channel,GResponse response) {
-        logger.warn("exception is {}",response.status());
-        listener.sendFailure();
+        if(response.status() == Status.CLIENT_TIMEOUT.value()){
+            logger.warn("exception is {}","客户端超时");
+        }
+        if(listener != null)
+            listener.sendFailure();
     }
 
     //客户端发送超时的时候调用，响应是客户端自己创建的
