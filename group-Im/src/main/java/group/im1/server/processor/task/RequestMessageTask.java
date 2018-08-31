@@ -65,6 +65,17 @@ public class RequestMessageTask implements Runnable {
         responsePayload.status(Status.OK.value());
         writeResponse(responsePayload);
 
+        process(msg);
+    }
+
+    private void process(Message msg) {
+        //将消息进行转发
+        String receiver = msg.getReceiver();
+
+
+
+
+
     }
 
     private void writeResponse(final GResponsePayload response) {

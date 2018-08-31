@@ -50,6 +50,8 @@ import java.nio.ByteBuffer;
 public class NettyChannel implements JChannel {
 
     private static final AttributeKey<NettyChannel> NETTY_CHANNEL_KEY = AttributeKey.valueOf("netty.channel");
+    private static final AttributeKey<String> CHANNEL_ID_KEY = AttributeKey.valueOf("channel.id");
+
 
     /**
      * Returns the {@link NettyChannel} for given {@link Channel}, this method never return null.
@@ -66,6 +68,14 @@ public class NettyChannel implements JChannel {
             }
         }
         return nChannel;
+    }
+
+    public void attachChannelId(String idKey){
+        Attribute<String> attr = this.channel.attr(CHANNEL_ID_KEY);
+        String id = attr.get();
+        if(id == null){
+            attr.setIfAbsent(idKey);
+        }
     }
 
     private final Channel channel;
@@ -176,6 +186,7 @@ public class NettyChannel implements JChannel {
     public OutputBuf allocOutputBuf() {
         return new NettyOutputBuf(allocHandle, channel.alloc());
     }
+
 
     @Override
     public boolean equals(Object obj) {

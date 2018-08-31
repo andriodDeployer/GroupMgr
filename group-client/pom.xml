@@ -11,5 +11,13 @@
 
     <artifactId>group-client</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.cd.groupmgr</groupId>
+            <artifactId>group-Im</artifactId>
+        </dependency>
+
+    </dependencies>
+
 
 </project>

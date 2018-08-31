@@ -4,6 +4,7 @@ import group.common.util.Strings;
 import group.common.util.internal.logging.InternalLogger;
 import group.common.util.internal.logging.InternalLoggerFactory;
 import group.im1.GRequest;
+import group.im1.GResponse;
 import group.im1.client.processor.DefaultClientProcessor;
 import group.im1.message.Message;
 import group.serialization.Serializer;
@@ -11,6 +12,7 @@ import group.serialization.SerializerFactory;
 import group.serialization.SerializerType;
 import group.transport.JConnection;
 import group.transport.JConnector;
+import group.transport.Status;
 import group.transport.UnresolvedAddress;
 import group.transport.channel.JChannel;
 import group.transport.channel.JChannelGroup;
@@ -73,29 +75,35 @@ public class DefaultImClient implements ImClient{
     public void sentMessage(Message message, final MessingSendListener listener) {
         JChannelGroup group = connector.group(remotAddress);
         JChannel channel = group.next();
-        channel.write(createRequest(message), new JFutureListener<JChannel>() {
+        final GRequest request = createRequest(message);
+        final DefaultSendFuture future = DefaultSendFuture.with(request.requestId(),channel);
+        future.addListener(listener);
+        channel.write(request.payload(), new JFutureListener<JChannel>() {
             @Override
             public void operationSuccess(JChannel channel) throws Exception {
-                listener.sendSuccessful();
+                future.markSent();
             }
 
             @Override
             public void operationFailure(JChannel channel, Throwable cause) throws Exception {
-                listener.sendFailure();
+                GResponse response = new GResponse(request.requestId());
+                response.status(Status.CLIENT_ERROR);
+                DefaultSendFuture.fakeReceived(channel,response);
             }
         });
+
 
 
     }
 
     private Serializer serializer = SerializerFactory.getSerializer(SerializerType.JAVA.value());;
 
-    private GRequestPayload createRequest(Message message) {
+    private GRequest createRequest(Message message) {
         GRequest request = new GRequest(new GRequestPayload());
         byte s_code = serializer.code();
         byte[] bytes = serializer.writeObject(message);
         request.bytes(s_code,bytes);
-        return request.payload();
+        return request;
     }
 
 

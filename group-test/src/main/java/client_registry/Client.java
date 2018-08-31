@@ -26,7 +26,7 @@ public class Client {
         client.sentMessage(text, new MessingSendListener() {
             @Override
             public void sendSuccessful() {
-                System.out.println("发送成功");
+                System.out.println("收到响应，发送成功");
             }
 
             @Override

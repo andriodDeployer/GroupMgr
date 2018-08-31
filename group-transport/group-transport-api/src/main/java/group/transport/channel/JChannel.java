@@ -125,4 +125,6 @@ public interface JChannel {
      * Allocate a {@link OutputBuf}.
      */
     OutputBuf allocOutputBuf();
+
+    void attachChannelId(String idKey);
 }

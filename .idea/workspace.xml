@@ -2,8 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e3771e3-318a-4a98-98c2-c1ae451c37c7" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-Im/src/main/java/group/im1/client/DefaultSendFuture.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/group-client/src/main/java/group/client/ChatManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im1/message/Message.java" afterPath="$PROJECT_DIR$/group-Im/src/main/java/group/im1/message/Message.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im1/GResponse.java" afterPath="$PROJECT_DIR$/group-Im/src/main/java/group/im1/GResponse.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im1/client/DefaultImClient.java" afterPath="$PROJECT_DIR$/group-Im/src/main/java/group/im1/client/DefaultImClient.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im1/client/processor/DefaultClientProcessor.java" afterPath="$PROJECT_DIR$/group-Im/src/main/java/group/im1/client/processor/DefaultClientProcessor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im1/server/processor/DefaultServerProcessor.java" afterPath="$PROJECT_DIR$/group-Im/src/main/java/group/im1/server/processor/DefaultServerProcessor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-Im/src/main/java/group/im1/server/processor/task/RequestMessageTask.java" afterPath="$PROJECT_DIR$/group-Im/src/main/java/group/im1/server/processor/task/RequestMessageTask.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-client/group-client.iml" afterPath="$PROJECT_DIR$/group-client/group-client.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-client/pom.xml" afterPath="$PROJECT_DIR$/group-client/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-test/src/main/java/client_registry/Client.java" afterPath="$PROJECT_DIR$/group-test/src/main/java/client_registry/Client.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/JProtocolHeader.java" afterPath="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/JProtocolHeader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/channel/JChannel.java" afterPath="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/channel/JChannel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/payload/GResponsePayload.java" afterPath="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/payload/GResponsePayload.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/channel/NettyChannel.java" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/channel/NettyChannel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/acceptor/IMAcceptorHandler.java" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/acceptor/IMAcceptorHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/IMMessageDecoder.java" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/IMMessageDecoder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/IMMessageEncoder.java" afterPath="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/IMMessageEncoder.java" />
     </list>
     <ignored path="GroupMgr.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,45 +56,48 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="IMMessageEncoder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/IMMessageEncoder.java">
+      <file leaf-file-name="IMAcceptorHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/acceptor/IMAcceptorHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="61" column="33" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
+            <state relative-caret-position="269">
+              <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1392#1393#0" expanded="true" />
+                <element signature="e#1434#1435#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NettyChannel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/channel/NettyChannel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="445">
+              <caret line="66" column="39" selection-start-line="66" selection-start-column="39" selection-end-line="66" selection-end-column="39" />
+              <folding>
+                <element signature="e#2911#2912#0" expanded="true" />
+                <element signature="e#2949#2950#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JChannel.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/channel/JChannel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="836">
+              <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IMMessageDecoder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/IMMessageDecoder.java">
+      <file leaf-file-name="DefaultClientProcessor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/group-Im/src/main/java/group/im1/client/processor/DefaultClientProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="67" column="30" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IMAcceptorHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/acceptor/IMAcceptorHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="36" column="32" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DefaultServerProcessor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/group-Im/src/main/java/group/im1/server/processor/DefaultServerProcessor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="29" column="48" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
+            <state relative-caret-position="577">
+              <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -87,59 +106,31 @@
       <file leaf-file-name="RequestMessageTask.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/group-Im/src/main/java/group/im1/server/processor/task/RequestMessageTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+            <state relative-caret-position="475">
+              <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Message.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/group-Im/src/main/java/group/im1/message/Message.java">
+      <file leaf-file-name="IMMessageEncoder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/IMMessageEncoder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+            <state relative-caret-position="154">
+              <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TextMessage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/group-Im/src/main/java/group/im1/message/TextMessage.java">
+      <file leaf-file-name="DefaultImClient.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/group-Im/src/main/java/group/im1/client/DefaultImClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GRequest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/group-Im/src/main/java/group/im1/GRequest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Processor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/processor/Processor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConnectorIdleStateTrigger.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/ConnectorIdleStateTrigger.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
-              <folding />
+            <state relative-caret-position="731">
+              <caret line="91" column="13" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -149,8 +140,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -165,14 +156,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/processor/ClientProcessor.java" />
-        <option value="$PROJECT_DIR$/group-Im/src/main/java/group/im/consumer/processor/ClientProcessor.java" />
-        <option value="$PROJECT_DIR$/group-Im/src/main/java/group/im/consumer/processor/AbstractClientProcessor.java" />
-        <option value="$PROJECT_DIR$/group-Im/src/main/java/group/im/consumer/processor/DefaultClientProcessor.java" />
-        <option value="$PROJECT_DIR$/group-Im/src/main/java/group/im/consumer/processor/DefaultServerProcessor.java" />
-        <option value="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/processor/Processor.java" />
-        <option value="$PROJECT_DIR$/group-Im/src/main/java/group/im1/imclient/processor/task/MessageTask.java" />
-        <option value="$PROJECT_DIR$/group-Im/src/main/java/group/im1/imserver/processor/task/MessageTask.java" />
         <option value="$PROJECT_DIR$/group-Im/src/main/java/group/im1/imclient/processor/task/ResponseTask.java" />
         <option value="$PROJECT_DIR$/group-Im/src/main/java/group/im1/MessageTask.java" />
         <option value="$PROJECT_DIR$/group-Im/src/main/java/group/im1/imclient/processor/DefaultClientProcessor.java" />
@@ -183,7 +166,6 @@
         <option value="$PROJECT_DIR$/group-Im/src/main/java/group/im1/server/ImServer1.java" />
         <option value="$PROJECT_DIR$/group-Im/src/main/java/group/im1/server/ImServer.java" />
         <option value="$PROJECT_DIR$/group-Im/src/main/java/group/im/consumer/processor/AbstractProcessor.java" />
-        <option value="$PROJECT_DIR$/group-Im/src/main/java/group/im1/server/processor/DefaultServerProcessor.java" />
         <option value="$PROJECT_DIR$/group-Im/src/main/java/group/im/DefaultClient.java" />
         <option value="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/JConnector.java" />
         <option value="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/JAcceptor.java" />
@@ -198,24 +180,33 @@
         <option value="$PROJECT_DIR$/group-Im/src/main/java/group/im1/client/MessingSendListener.java" />
         <option value="$PROJECT_DIR$/group-Im/src/main/java/group/im1/client/ImClient.java" />
         <option value="$PROJECT_DIR$/group-Im/src/main/java/group/im1/GRequest.java" />
-        <option value="$PROJECT_DIR$/group-test/src/main/java/client_registry/Client.java" />
-        <option value="$PROJECT_DIR$/group-Im/src/main/java/group/im1/client/DefaultImClient.java" />
         <option value="$PROJECT_DIR$/group-Im/src/main/resources/META-INF/services/group.serialization.Serializer" />
         <option value="$PROJECT_DIR$/group-Im/pom.xml" />
         <option value="$PROJECT_DIR$/group-Im/src/main/java/group/im1/message/TextMessage.java" />
-        <option value="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/IMMessageEncoder.java" />
-        <option value="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/acceptor/IMAcceptorHandler.java" />
-        <option value="$PROJECT_DIR$/group-Im/src/main/java/group/im1/client/processor/DefaultClientProcessor.java" />
         <option value="$PROJECT_DIR$/group-Im/src/main/java/group/im1/client/processor/task/RequestMessageTask.java" />
-        <option value="$PROJECT_DIR$/group-Im/src/main/java/group/im1/server/processor/task/RequestMessageTask.java" />
-        <option value="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/payload/GResponsePayload.java" />
         <option value="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/JNettyTcpAcceptor.java" />
         <option value="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/JNettyTcpConnector.java" />
-        <option value="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/IMMessageDecoder.java" />
         <option value="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/NettyConnector.java" />
         <option value="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/NettyAcceptor.java" />
         <option value="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/IMConnectorHandler.java" />
         <option value="$PROJECT_DIR$/group-Im/src/main/java/group/im1/message/Message.java" />
+        <option value="$PROJECT_DIR$/group-client/pom.xml" />
+        <option value="$PROJECT_DIR$/group-client/src/main/java/group/client/ChatManager.java" />
+        <option value="$PROJECT_DIR$/group-client/src/main/java/group/client/DefaultSendFuture.java" />
+        <option value="$PROJECT_DIR$/group-Im/src/main/java/group/im1/GResponse.java" />
+        <option value="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/payload/GResponsePayload.java" />
+        <option value="$PROJECT_DIR$/group-Im/src/main/java/group/im1/client/processor/DefaultClientProcessor.java" />
+        <option value="$PROJECT_DIR$/group-test/src/main/java/client_registry/Client.java" />
+        <option value="$PROJECT_DIR$/group-Im/src/main/java/group/im1/client/DefaultImClient.java" />
+        <option value="$PROJECT_DIR$/group-Im/src/main/java/group/im1/client/DefaultSendFuture.java" />
+        <option value="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/JProtocolHeader.java" />
+        <option value="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/IMMessageDecoder.java" />
+        <option value="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/IMMessageEncoder.java" />
+        <option value="$PROJECT_DIR$/group-Im/src/main/java/group/im1/server/processor/DefaultServerProcessor.java" />
+        <option value="$PROJECT_DIR$/group-Im/src/main/java/group/im1/server/processor/task/RequestMessageTask.java" />
+        <option value="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/acceptor/IMAcceptorHandler.java" />
+        <option value="$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/channel/JChannel.java" />
+        <option value="$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/channel/NettyChannel.java" />
       </list>
     </option>
   </component>
@@ -339,276 +330,7 @@
     </navigator>
     <panes>
       <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="group-transport" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="group-transport" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="group-transport-netty" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="group-transport" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="group-transport-netty" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="group-transport" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="group-transport-netty" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="group-transport" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="group-transport-netty" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netty" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="group-test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="group-test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="group-test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="group-test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client_registry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="group-Im" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="group-Im" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupMgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="group-Im" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
+        <subPane />
       </pane>
       <pane id="Scope" />
       <pane id="Scratches" />
@@ -623,18 +345,18 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="SearchEverywhereHistoryKey" value="IMAcceptor&#9;PSI&#9;JAVA://group.transport.netty.handler.acceptor.IMAcceptorHandler&#10;IMDe&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/IMMessageDecoder.java&#10;Jconnector&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/JNettyTcpConnector.java&#10;Encode&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/IMMessageEncoder.java&#10;Client&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-test/src/main/java/client_registry/Client.java&#10;JClient&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-Im/src/main/java/group/im/JClient.java&#10;NettyAcc&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/NettyAcceptor.java&#10;JConnec&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-api/src/main/java/group/transport/JConnector.java&#10;Decod&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/IMMessageDecoder.java&#10;IMConnectorHandler&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/IMConnectorHandler.java&#10;JnettyTcpAcc&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/JNettyTcpAcceptor.java&#10;JAc&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/JNettyTcpAcceptor.java&#10;JConn&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/JNettyTcpConnector.java&#10;RequestMessageTask&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-Im/src/main/java/group/im1/server/processor/task/RequestMessageTask.java&#10;JConnector&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/JNettyTcpConnector.java&#10;IMMessageDecoder&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/IMMessageDecoder.java&#10;IMConne&#9;PSI&#9;JAVA://group.transport.netty.handler.connector.IMConnectorHandler&#10;defaultClientP&#9;PSI&#9;JAVA://group.im1.client.processor.DefaultClientProcessor&#10;Request&#9;PSI&#9;JAVA://group.im1.server.processor.task.RequestMessageTask&#10;RequestM&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-Im/src/main/java/group/im1/server/processor/task/RequestMessageTask.java&#10;IMAccepto&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/acceptor/IMAcceptorHandler.java&#10;AcceptorHan&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/acceptor/AcceptorHandler.java&#10;ProtocolDe&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/ProtocolDecoder.java&#10;Hear&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/Heartbeats.java&#10;JAcc&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/JNettyTcpAcceptor.java&#10;JNettyTcpAcc&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/JNettyTcpAcceptor.java&#10;Imm&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/IMMessageDecoder.java&#10;Seriali&#9;PSI&#9;JAVA://group.serialization.Serializer&#10;AcceptHan&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/acceptor/IMAcceptorHandler.java&#10;Decoder&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/IMMessageDecoder.java&#10;JConne&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/JNettyTcpConnector.java&#10;JavaSer&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-serialization/group-serialization-java/src/main/java/group/serialization/java/JavaSerializer.java&#10;ImClient&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-Im/src/main/java/group/im1/client/ImClient.java&#10;ConnectorId&#9;PSI&#9;JAVA://group.transport.netty.handler.connector.ConnectorIdleStateTrigger&#10;J&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/JNettyTcpConnector.java&#10;JNetty&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/JNettyTcpConnector.java&#10;JNettyTcpC&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/JNettyTcpConnector.java&#10;JNettyTcpAcceptor&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/JNettyTcpAcceptor.java&#10;JNettyTc&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/JNettyTcpConnector.java&#10;JNettyTcp&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/JNettyTcpAcceptor.java&#10;JNettyTcpAc&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/JNettyTcpAcceptor.java&#10;Connectionwa&#9;PSI&#9;JAVA://group.transport.netty.handler.connector.ConnectionWatchdog&#10;DefaultServer&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-Im/src/main/java/group/im1/server/DefaultImServer.java&#10;DefaultSer&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-Im/src/main/java/group/im1/server/DefaultImServer.java&#10;JAcceptor&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-api/src/main/java/group/transport/JAcceptor.java&#10;DefaultClient&#9;PSI&#9;JAVA://group.im.DefaultClient&#10;DefaultImSer&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-Im/src/main/java/group/im1/server/DefaultImServer.java&#10;DefaultClientP&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-Im/src/main/java/group/im1/client/processor/DefaultClientProcessor.java&#10;DefaultConsumer&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-Im/src/main/java/group/im/consumer/processor/DefaultConsumerProcessor.java&#10;IMClient&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-Im/src/main/java/group/im1/imclient/DefaultImClient.java" />
+    <property name="SearchEverywhereHistoryKey" value="NettyChannel&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/channel/NettyChannel.java&#10;Acceptor&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/acceptor/IMAcceptorHandler.java&#10;Def&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-Im/src/main/java/group/im1/client/DefaultImClient.java&#10;Acc&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/acceptor/IMAcceptorHandler.java&#10;MessageT&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-Im/src/main/java/group/im1/server/processor/task/RequestMessageTask.java&#10;IMEncoder&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/IMMessageEncoder.java&#10;Message&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-Im/src/main/java/group/im1/server/processor/task/RequestMessageTask.java&#10;IMDeco&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/IMMessageDecoder.java&#10;IMConn&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/IMConnectorHandler.java&#10;ClienPro&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-Im/src/main/java/group/im1/client/processor/DefaultClientProcessor.java&#10;ImDe&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/IMMessageDecoder.java&#10;IMAcc&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/acceptor/IMAcceptorHandler.java&#10;DefaultSen&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-Im/src/main/java/group/im1/client/DefaultSendFuture.java&#10;DefaultIm&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-Im/src/main/java/group/im1/client/DefaultImClient.java&#10;DefaultS&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-Im/src/main/java/group/im1/client/DefaultSendFuture.java&#10;Client&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-test/src/main/java/client_registry/Client.java&#10;IMA&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/acceptor/IMAcceptorHandler.java&#10;AcceptorHan&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/acceptor/AcceptorHandler.java&#10;DefaultClientProcessor&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-Im/src/main/java/group/im1/client/processor/DefaultClientProcessor.java&#10;ImConne&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/IMConnectorHandler.java&#10;Default&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-Im/src/main/java/group/im1/client/DefaultImClient.java&#10;GRequest&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-Im/src/main/java/group/im1/GRequest.java&#10;DefaultCl&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-Im/src/main/java/group/im1/client/DefaultImClient.java&#10;IMAcceptor&#9;PSI&#9;JAVA://group.transport.netty.handler.acceptor.IMAcceptorHandler&#10;IMDe&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/IMMessageDecoder.java&#10;Jconnector&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/JNettyTcpConnector.java&#10;Encode&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/IMMessageEncoder.java&#10;JClient&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-Im/src/main/java/group/im/JClient.java&#10;NettyAcc&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/NettyAcceptor.java&#10;JConnec&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-api/src/main/java/group/transport/JConnector.java&#10;Decod&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/IMMessageDecoder.java&#10;IMConnectorHandler&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/IMConnectorHandler.java&#10;JnettyTcpAcc&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/JNettyTcpAcceptor.java&#10;JAc&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/JNettyTcpAcceptor.java&#10;JConn&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/JNettyTcpConnector.java&#10;RequestMessageTask&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-Im/src/main/java/group/im1/server/processor/task/RequestMessageTask.java&#10;JConnector&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/JNettyTcpConnector.java&#10;IMMessageDecoder&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/IMMessageDecoder.java&#10;IMConne&#9;PSI&#9;JAVA://group.transport.netty.handler.connector.IMConnectorHandler&#10;defaultClientP&#9;PSI&#9;JAVA://group.im1.client.processor.DefaultClientProcessor&#10;Request&#9;PSI&#9;JAVA://group.im1.server.processor.task.RequestMessageTask&#10;RequestM&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-Im/src/main/java/group/im1/server/processor/task/RequestMessageTask.java&#10;IMAccepto&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/acceptor/IMAcceptorHandler.java&#10;ProtocolDe&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/ProtocolDecoder.java&#10;Hear&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/Heartbeats.java&#10;JAcc&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/JNettyTcpAcceptor.java&#10;JNettyTcpAcc&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/JNettyTcpAcceptor.java&#10;Imm&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/IMMessageDecoder.java&#10;Seriali&#9;PSI&#9;JAVA://group.serialization.Serializer&#10;AcceptHan&#9;FILE&#9;file://D:/workRequire/workspace/ideaWorkSpace/GroupMgr/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/acceptor/IMAcceptorHandler.java" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="group.transport.netty.handler" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="group.im1.client" />
       <recent name="group.im1.imserver.processor" />
       <recent name="group.im1.imclient.processor" />
       <recent name="group.common.util" />
       <recent name="group.common.util.internal" />
-      <recent name="group.serialization.java" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\workRequire\workspace\ideaWorkSpace\GroupMgr\group-Im\src\main\java\group\im1\server" />
@@ -1141,7 +863,14 @@
       <option name="project" value="LOCAL" />
       <updated>1535624399605</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="dd">
+      <created>1535626180928</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1535626180928</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1165,12 +894,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3570634" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3570634" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925472" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12686567" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22867803" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12686567" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925472" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -1228,26 +957,8 @@
           <properties />
           <option name="timeStamp" value="23" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/IMMessageEncoder.java</url>
-          <line>57</line>
-          <properties />
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/IMMessageDecoder.java</url>
-          <line>38</line>
-          <properties />
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/group-Im/src/main/java/group/im1/server/processor/task/RequestMessageTask.java</url>
-          <line>47</line>
-          <properties />
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="32" />
+      <option name="time" value="33" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1256,83 +967,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.m2/repository/io/netty/netty-transport/4.1.19.Final/netty-transport-4.1.19.Final.jar!/io/netty/channel/ChannelOutboundHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/io/netty/netty-transport/4.1.19.Final/netty-transport-4.1.19.Final.jar!/io/netty/channel/ChannelOutboundInvoker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="47" column="18" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/io/netty/netty-transport/4.1.19.Final/netty-transport-4.1.19.Final-sources.jar!/io/netty/channel/ChannelOutboundInvoker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="27" column="71" selection-start-line="27" selection-start-column="71" selection-end-line="27" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/LowCopyProtocolDecoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="634">
-          <caret line="73" column="11" selection-start-line="73" selection-start-column="11" selection-end-line="73" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/io/netty/netty-transport/4.1.19.Final/netty-transport-4.1.19.Final-sources.jar!/io/netty/channel/ChannelOutboundHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/io/netty/netty-codec/4.1.19.Final/netty-codec-4.1.19.Final-sources.jar!/io/netty/handler/codec/MessageToByteEncoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="101" column="45" selection-start-line="101" selection-start-column="45" selection-end-line="101" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/TestHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/io/netty/netty-transport/4.1.19.Final/netty-transport-4.1.19.Final-sources.jar!/io/netty/channel/AbstractChannelHandlerContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="815" column="45" selection-start-line="815" selection-start-column="45" selection-end-line="815" selection-end-column="45" />
-          <folding>
-            <element signature="e#26510#26511#0" expanded="false" />
-            <element signature="e#26565#26566#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-common/src/main/java/group/common/util/JConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="59" column="57" selection-start-line="59" selection-start-column="57" selection-end-line="59" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/ConnectionWatchdog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="268">
@@ -1353,14 +987,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/channel/JChannel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="107" column="0" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1464,40 +1090,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/acceptor/AcceptorHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="19" column="57" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-Im/src/main/java/group/im1/client/processor/DefaultClientProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="38" column="55" selection-start-line="38" selection-start-column="55" selection-end-line="38" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/group-Im/src/main/java/group/im1/client/processor/task/RequestMessageTask.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="431">
           <caret line="71" column="26" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/payload/GResponsePayload.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-          <folding>
-            <element signature="e#394#395#0" expanded="true" />
-            <element signature="e#423#424#0" expanded="true" />
-            <element signature="e#462#463#0" expanded="true" />
-            <element signature="e#498#499#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1580,26 +1177,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/group-test/src/main/java/client_registry/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-Im/src/main/java/group/im1/client/DefaultImClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/JNettyTcpConnector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
@@ -1608,84 +1185,6 @@
             <element signature="e#5673#5674#0" expanded="true" />
             <element signature="e#5717#5718#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/IMConnectorHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/IMMessageEncoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="61" column="33" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/IMMessageDecoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="67" column="30" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/processor/Processor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/acceptor/IMAcceptorHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="36" column="32" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-Im/src/main/java/group/im1/GRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-Im/src/main/java/group/im1/server/processor/DefaultServerProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="29" column="48" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-Im/src/main/java/group/im1/server/processor/task/RequestMessageTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-Im/src/main/java/group/im1/message/TextMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1699,8 +1198,227 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/ConnectorIdleStateTrigger.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-client/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-Im/src/main/java/group/im1/GRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-client/src/main/java/group/client/DefaultSendFuture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-Im/src/main/java/group/im1/message/TextMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-client/src/main/java/group/client/ChatManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/payload/GResponsePayload.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="e#426#427#0" expanded="true" />
+            <element signature="e#455#456#0" expanded="true" />
+            <element signature="e#495#496#0" expanded="true" />
+            <element signature="e#538#539#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-Im/src/main/java/group/im1/GResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="610">
+          <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#274#275#0" expanded="false" />
+            <element signature="e#337#338#0" expanded="false" />
+            <element signature="e#687#688#0" expanded="false" />
+            <element signature="e#725#726#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/acceptor/AcceptorHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="31" column="49" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="341" column="18" selection-start-line="341" selection-start-column="18" selection-end-line="341" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-test/src/main/java/client_registry/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/Status.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/JProtocolHeader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="42" column="3" selection-start-line="42" selection-start-column="3" selection-end-line="42" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/IMConnectorHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/IMMessageDecoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="55" column="46" selection-start-line="55" selection-start-column="46" selection-end-line="55" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/connector/IMMessageEncoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-Im/src/main/java/group/im1/client/DefaultImClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="91" column="13" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-Im/src/main/java/group/im1/client/processor/DefaultClientProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="577">
+          <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-Im/src/main/java/group/im1/server/processor/task/RequestMessageTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-Im/src/main/java/group/im1/server/processor/DefaultServerProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/processor/Processor.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/channel/NettyChannel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="66" column="39" selection-start-line="66" selection-start-column="39" selection-end-line="66" selection-end-column="39" />
+          <folding>
+            <element signature="e#2911#2912#0" expanded="true" />
+            <element signature="e#2949#2950#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-Im/src/main/java/group/im1/client/DefaultSendFuture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="64" selection-start-line="6" selection-start-column="64" selection-end-line="6" selection-end-column="64" />
+          <folding>
+            <element signature="e#1383#1384#0" expanded="true" />
+            <element signature="e#1423#1424#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-transport/group-transport-netty/src/main/java/group/transport/netty/handler/acceptor/IMAcceptorHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1392#1393#0" expanded="true" />
+            <element signature="e#1434#1435#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-transport/group-transport-api/src/main/java/group/transport/channel/JChannel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding />
         </state>
       </provider>

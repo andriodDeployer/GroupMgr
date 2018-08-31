@@ -2,6 +2,8 @@ package group.transport.payload;/**
  * Created by DELL on 2018/8/30.
  */
 
+import group.transport.Status;
+
 /**
  * user is lwb
  **/
@@ -21,6 +23,10 @@ public class GResponsePayload extends PayloadHolder {
 
     public byte status(){
         return status;
+    }
+
+    public void status(Status status){
+        this.status =status.value();
     }
 
     public void status(byte status) {
