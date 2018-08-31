@@ -70,6 +70,7 @@ public class NettyChannel implements JChannel {
         return nChannel;
     }
 
+    @Override
     public void attachChannelId(String idKey){
         Attribute<String> attr = this.channel.attr(CHANNEL_ID_KEY);
         String id = attr.get();

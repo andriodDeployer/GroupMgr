@@ -8,6 +8,7 @@ import group.im1.GRequest;
 import group.im1.message.Message;
 import group.serialization.Serializer;
 import group.serialization.SerializerFactory;
+import group.transport.JProtocolHeader;
 import group.transport.Status;
 import group.transport.channel.JChannel;
 import group.transport.channel.JFutureListener;
@@ -70,6 +71,11 @@ public class RequestMessageTask implements Runnable {
 
     private void process(Message msg) {
         //将消息进行转发
+
+        if(msg.type() == JProtocolHeader.AUTH){
+            String sender = msg.getSender();
+
+        }
         String receiver = msg.getReceiver();
 
 

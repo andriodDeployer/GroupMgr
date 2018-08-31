@@ -17,6 +17,7 @@
 package group.transport.netty;
 
 import group.common.util.JConstants;
+import group.transport.JChannelManager;
 import group.transport.JConfig;
 import group.transport.JOption;
 import group.transport.netty.handler.IdleStateChecker;
@@ -177,5 +178,10 @@ public class JNettyTcpAcceptor extends NettyTcpAcceptor {
 
     public void setProcessor(Processor processor){
         handler.processor(checkNotNull(processor,"processor"));
+    }
+
+    @Override
+    public JChannelManager channelManager() {
+        return null;
     }
 }

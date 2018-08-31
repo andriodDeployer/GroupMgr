@@ -76,4 +76,6 @@ public interface JAcceptor extends Transporter {
      * Shutdown the server gracefully.
      */
     void shutdownGracefully();
+
+    JChannelManager channelManager();
 }

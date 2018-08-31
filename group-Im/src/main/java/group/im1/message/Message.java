@@ -12,7 +12,7 @@ import java.io.Serializable;
 public class Message implements Serializable{
     public static final int TEXT = 1;
     protected static final int IMAGE = 2;
-    protected int type;
+    protected byte type;
     protected String sender;
     protected String receiver;
     protected String sendTime;
@@ -23,5 +23,9 @@ public class Message implements Serializable{
 
     public String getReceiver() {
         return receiver;
+    }
+
+    public byte type(){
+        return type;
     }
 }

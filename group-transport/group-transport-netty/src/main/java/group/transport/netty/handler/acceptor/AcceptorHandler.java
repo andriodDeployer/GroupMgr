@@ -70,7 +70,7 @@ public class AcceptorHandler extends ChannelInboundHandlerAdapter {
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
         int count = channelCounter.incrementAndGet();
 
-        logger.info("Connects with {} as the {}th channel.", ctx.channel(), count);
+        logger.info("Connects with {} as the {}th channel.", ctx.channel(), count);//对练级不进行管理
 
         super.channelActive(ctx);
     }

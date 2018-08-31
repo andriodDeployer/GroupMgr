@@ -28,16 +28,20 @@ public class IMAcceptorHandler extends ChannelInboundHandlerAdapter{
     private static final InternalLogger logger = InternalLoggerFactory.getInstance(IMAcceptorHandler.class);
     private Processor processor;
     private static final AtomicInteger channelCounter = new AtomicInteger(0);
-    private ConcurrentMap<String, JChannel> allChannel = Maps.newConcurrentMap();
+    private static ConcurrentMap<String, JChannel> allChannel = Maps.newConcurrentMap();
 
-    public void addChannel(String id,JChannel jChannel){
-
+    public static void addChannel(String id,JChannel jChannel){
+        jChannel.attachChannelId(id);
         JChannel channel = allChannel.put(id,jChannel);
         if(channel != null){
-
-        }else{
-
+            //todo 已经在线了,已经在线处理
+            //将已经在线(jchannel)的踢掉
+            channel.close();
         }
+    }
+
+    public static JChannel getReciver(String idKey){
+        return allChannel.get(idKey);
     }
 
 
