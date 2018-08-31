@@ -100,7 +100,6 @@ public class JNettyTcpConnector extends NettyTcpConnector {
 //    private final ChannelOutboundHandler encoder =
 //            CodecConfig.isCodecLowCopy() ? new LowCopyProtocolEncoder() : new ProtocolEncoder();
     private final ChannelOutboundHandler encoder = new IMMessageEncoder();
-    private final ChannelInboundHandler decoder = new IMMessageDecoder();
     //private final ConnectorHandler handler = new ConnectorHandler();
     private final IMConnectorHandler handler = new IMConnectorHandler();
 

@@ -33,7 +33,7 @@ import java.net.SocketAddress;
  * @author jiachun.fjc
  */
 public interface JAcceptor extends Transporter {
-
+    JChannelManager jChannelManager = new JChannelManager();
     /**
      * Local address.
      */
@@ -76,6 +76,4 @@ public interface JAcceptor extends Transporter {
      * Shutdown the server gracefully.
      */
     void shutdownGracefully();
-
-    JChannelManager channelManager();
 }

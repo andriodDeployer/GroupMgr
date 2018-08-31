@@ -17,7 +17,6 @@
 package group.transport.netty;
 
 import group.common.util.JConstants;
-import group.transport.JChannelManager;
 import group.transport.JConfig;
 import group.transport.JOption;
 import group.transport.netty.handler.IdleStateChecker;
@@ -28,7 +27,10 @@ import group.transport.netty.handler.connector.IMMessageEncoder;
 import group.transport.processor.Processor;
 import group.transport.processor.ProviderProcessor;
 import io.netty.bootstrap.ServerBootstrap;
-import io.netty.channel.*;
+import io.netty.channel.Channel;
+import io.netty.channel.ChannelFuture;
+import io.netty.channel.ChannelInitializer;
+import io.netty.channel.ChannelOutboundHandler;
 
 import java.net.SocketAddress;
 
@@ -180,8 +182,4 @@ public class JNettyTcpAcceptor extends NettyTcpAcceptor {
         handler.processor(checkNotNull(processor,"processor"));
     }
 
-    @Override
-    public JChannelManager channelManager() {
-        return null;
-    }
 }

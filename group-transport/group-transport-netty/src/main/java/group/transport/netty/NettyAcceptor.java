@@ -192,4 +192,5 @@ public abstract class NettyAcceptor implements JAcceptor {
      * Create a new instance using the specified number of threads, the given {@link ThreadFactory}.
      */
     protected abstract EventLoopGroup initEventLoopGroup(int nThreads, ThreadFactory tFactory);
+
 }
