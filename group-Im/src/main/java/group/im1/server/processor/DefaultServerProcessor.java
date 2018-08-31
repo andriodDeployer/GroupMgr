@@ -5,6 +5,8 @@ import group.common.util.internal.logging.InternalLoggerFactory;
 import group.im.executor.CloseableExecutor;
 import group.im.provider.processor.ProviderExecutors;
 import group.im1.GRequest;
+import group.im1.GResponse;
+import group.im1.client.DefaultSendFuture;
 import group.im1.server.processor.task.RequestMessageTask;
 import group.transport.channel.JChannel;
 import group.transport.payload.GRequestPayload;
@@ -40,6 +42,7 @@ public class DefaultServerProcessor extends AbstractServerProcessor{
         long id = payload.responseId();
         byte status = payload.status();
         logger.info("server received response id: {},stutus: {}",id,status);
+        DefaultSendFuture.received(channel,new GResponse(payload));
     }
 
 

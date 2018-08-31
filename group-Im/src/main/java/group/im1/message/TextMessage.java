@@ -2,6 +2,8 @@ package group.im1.message;/**
  * Created by DELL on 2018/8/30.
  */
 
+import group.transport.JProtocolHeader;
+
 import java.io.Serializable;
 
 /**
@@ -12,16 +14,13 @@ import java.io.Serializable;
 public class TextMessage extends Message implements Serializable{
 
     private String text;
-    public TextMessage(){
-        this.type = TEXT;
-    }
 
     public TextMessage(String sender,String receiver){
         this(sender,receiver,"");
     }
 
     public TextMessage(String sender,String receiver,String text){
-        this.type = TEXT;
+        this.type = JProtocolHeader.TEXT;
         this.sender = sender;
         this.receiver = receiver;
         this.text = text;

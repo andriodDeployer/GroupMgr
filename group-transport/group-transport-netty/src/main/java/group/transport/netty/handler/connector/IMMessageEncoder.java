@@ -51,8 +51,7 @@ public class IMMessageEncoder extends MessageToByteEncoder<PayloadHolder>{
     }
 
     private void doEncodeRequest(GRequestPayload request, ByteBuf out) {
-        //要根据message的类型确定是否是text
-        byte sign = JProtocolHeader.toSign(request.serializerCode(),JProtocolHeader.TEXT);
+        byte sign = JProtocolHeader.toSign(request.serializerCode(),request.type());
         long requestId = request.requestId();
         byte[] bytes = request.bytes();
         int length = bytes.length;

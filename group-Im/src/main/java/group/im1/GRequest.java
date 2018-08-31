@@ -14,7 +14,6 @@ public class GRequest {
 
     private final GRequestPayload payload;
     private Message message;
-    private int messageType;
 
     public GRequest(){
         this(new GRequestPayload());
@@ -50,6 +49,9 @@ public class GRequest {
         payload.bytes(serializerCode,bytes);
     }
 
+    public void messageType(byte type){
+        this.payload.type(type);
+    }
 
 
 }

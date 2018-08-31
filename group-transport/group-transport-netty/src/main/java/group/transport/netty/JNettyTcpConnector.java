@@ -162,7 +162,6 @@ public class JNettyTcpConnector extends NettyTcpConnector {
                         idleStateTrigger,
                         new IMMessageDecoder(),
                         encoder,
-                        new TestHandler(),
                         handler
                 };
             }

@@ -74,7 +74,7 @@ public class RequestMessageTask extends AbstractEndPoint implements Runnable {
         process(msg);
     }
 
-    private void process(Message msg) {
+    private void process(final Message msg) {
         //将消息进行转发
         JChannelManager jChannelManager = processor.jChannelManager();
 
@@ -87,23 +87,31 @@ public class RequestMessageTask extends AbstractEndPoint implements Runnable {
                     allchannels.put(sender,newChnanel);
                 }
             });
+
+
+
+
+
         }else if(msg.type() == JProtocolHeader.TEXT){
-            String receiver = msg.getReceiver();
+            final String receiver = msg.getReceiver();
             JChannel reciverChannel = jChannelManager.getJChannel(receiver);
             if(reciverChannel == null){
                 //接收者不在线
+                logger.info("receiver: {} is offline ",receiver);
 
             }else{
                 //进行转发
                 sentMessage(msg, reciverChannel, new MessingSendListener() {
                     @Override
                     public void sendSuccessful() {
-
+                        //保存数据库
+                        logger.info("server dispatcher message: {} to {} success.",msg,receiver);
                     }
 
                     @Override
                     public void sendFailure() {
-
+                        //自动重新转发了就需要。
+                        logger.error("server dispatch message: {}  to {}  fail",msg,receiver);
                     }
                 });
 

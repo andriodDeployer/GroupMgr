@@ -2,6 +2,8 @@ package group.im1;/**
  * Created by DELL on 2018/8/31.
  */
 
+import group.common.util.internal.logging.InternalLogger;
+import group.common.util.internal.logging.InternalLoggerFactory;
 import group.im1.client.DefaultSendFuture;
 import group.im1.client.MessingSendListener;
 import group.im1.message.Message;
@@ -18,14 +20,16 @@ import group.transport.payload.GRequestPayload;
  **/
 
 public abstract class AbstractEndPoint implements EndPoint{
+    private final InternalLogger logger = InternalLoggerFactory.getInstance(AbstractEndPoint.class);
     @Override
-    public void sentMessage(Message message, JChannel channel,final MessingSendListener listener) {
+    public void sentMessage(final Message message, JChannel channel, final MessingSendListener listener) {
         final GRequest request = createRequest(message);
         final DefaultSendFuture future = DefaultSendFuture.with(request.requestId(),channel);
         future.addListener(listener);
         channel.write(request.payload(), new JFutureListener<JChannel>() {
             @Override
             public void operationSuccess(JChannel channel) throws Exception {
+                logger.debug("client completed send message：{}",message);
                 future.markSent();
             }
 
@@ -44,6 +48,7 @@ public abstract class AbstractEndPoint implements EndPoint{
         byte s_code = serializer.code();
         byte[] bytes = serializer.writeObject(message);
         request.bytes(s_code,bytes);
+        request.messageType(message.type());
         return request;
     }
 }

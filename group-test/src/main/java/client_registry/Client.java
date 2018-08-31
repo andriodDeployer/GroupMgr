@@ -4,6 +4,8 @@ package client_registry;
  */
 
 
+import group.common.util.internal.logging.InternalLogger;
+import group.common.util.internal.logging.InternalLoggerFactory;
 import group.im1.client.DefaultImClient;
 import group.im1.client.MessingSendListener;
 import group.im1.message.Message;
@@ -18,21 +20,41 @@ import group.transport.netty.JNettyTcpConnector;
 public class Client {
 
     public static void main(String[] agrs){
-        DefaultImClient client = new DefaultImClient().withConnector(new JNettyTcpConnector());
+        final InternalLogger logger = InternalLoggerFactory.getInstance(Client.class);
+        final DefaultImClient client = new DefaultImClient().withConnector(new JNettyTcpConnector());
 
         client.connectServer("127.0.0.1:8888",true);
-        Message text = new TextMessage("sender","receiver","hellowork");
-        client.sentMessage(text, new MessingSendListener() {
+        final String id = "zhangsan";
+        final String receiver = "lisi";
+        client.auth(id, new MessingSendListener() {
             @Override
             public void sendSuccessful() {
-                System.out.println("收到响应，发送成功");
+                logger.info("client: {} login success",id);
+                final Message text = new TextMessage(id,id,"hellowork");
+                client.sentMessage(text, new MessingSendListener() {
+                    @Override
+                    public void sendSuccessful() {
+                        logger.info("message: {} send successfully",text);
+                    }
+
+                    @Override
+                    public void sendFailure() {
+                        logger.error("message: {} send fail",text);
+                    }
+                });
+
+
+
+
             }
 
             @Override
             public void sendFailure() {
-                System.out.println("发送失败");
+
             }
         });
+
+
 
 
     }

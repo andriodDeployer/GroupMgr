@@ -85,8 +85,11 @@ public class DefaultSendFuture {
 
     private void handleException(JChannel channel,GResponse response) {
         if(response.status() == Status.CLIENT_TIMEOUT.value()){
-            logger.warn("exception is {}","客户端超时");
+            logger.warn("exception is {}","client time out");
+        }else if(response.status() == Status.SERVER_TIMEOUT.value()){
+            logger.warn("exception is {}","server time out ");
         }
+
         if(listener != null)
             listener.sendFailure();
     }

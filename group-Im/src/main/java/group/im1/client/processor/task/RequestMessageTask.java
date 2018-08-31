@@ -14,7 +14,6 @@ import group.transport.channel.JChannel;
 import group.transport.channel.JFutureListener;
 import group.transport.payload.GRequestPayload;
 import group.transport.payload.GResponsePayload;
-import group.transport.payload.JResponsePayload;
 
 
 /**
@@ -60,12 +59,12 @@ public class RequestMessageTask implements Runnable{
         logger.info("client received message {}",msg.toString());
 
         //回复响应
-        JResponsePayload responsePayload = new JResponsePayload(payload.requestId());
+        GResponsePayload responsePayload = new GResponsePayload(payload.requestId());
 
         byte[] bytes = serializer.writeObject("ok");
         responsePayload.bytes(serializerCode,bytes);
-
         responsePayload.status(Status.OK.value());
+        writeResponse(responsePayload);
 
     }
 

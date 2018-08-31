@@ -5,6 +5,7 @@ import group.common.util.internal.logging.InternalLogger;
 import group.common.util.internal.logging.InternalLoggerFactory;
 import group.im1.AbstractEndPoint;
 import group.im1.client.processor.DefaultClientProcessor;
+import group.im1.message.AuthMessage;
 import group.im1.message.Message;
 import group.transport.JConnection;
 import group.transport.JConnector;
@@ -62,6 +63,12 @@ public class DefaultImClient extends AbstractEndPoint implements ImClient{
         int port = Integer.parseInt(addressStr[1]);
         UnresolvedAddress unresolvedAddress = new UnresolvedAddress(host, port);
         connectServer(unresolvedAddress,async);
+    }
+
+    public void auth(String id, final MessingSendListener listener){
+        Message msg = new AuthMessage(id);
+        logger.debug("client begin send auth message: {}.",msg);
+        sentMessage(msg, listener);
     }
 
     public void sentMessage(Message message,final MessingSendListener listener) {

@@ -14,6 +14,7 @@ public class GRequestPayload extends PayloadHolder {
     private static final LongSequence sequence = new LongSequence();
     private final long requestId;
     private transient long timestemp;
+    private transient byte type;
     public GRequestPayload(){
         this(sequence.next());
     }
@@ -31,5 +32,11 @@ public class GRequestPayload extends PayloadHolder {
 
     public void timestemp(long timestemp){
         this.timestemp = timestemp;
+    }
+    public void type(byte type){
+        this.type = type;
+    }
+    public byte type(){
+        return type;
     }
 }

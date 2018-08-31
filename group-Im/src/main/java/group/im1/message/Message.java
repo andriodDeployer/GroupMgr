@@ -10,8 +10,6 @@ import java.io.Serializable;
 
 
 public class Message implements Serializable{
-    public static final int TEXT = 1;
-    protected static final int IMAGE = 2;
     protected byte type;
     protected String sender;
     protected String receiver;

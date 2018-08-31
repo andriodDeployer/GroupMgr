@@ -2,6 +2,8 @@ package group.im1.client.processor;/**
  * Created by DELL on 2018/8/30.
  */
 
+import group.common.util.internal.logging.InternalLogger;
+import group.common.util.internal.logging.InternalLoggerFactory;
 import group.im.consumer.processor.ConsumerExecutors;
 import group.im.executor.CloseableExecutor;
 import group.im1.GRequest;
@@ -19,6 +21,7 @@ import group.transport.payload.GResponsePayload;
 
 
 public class DefaultClientProcessor extends AbstractClientProcessor {
+    private final InternalLogger logger = InternalLoggerFactory.getInstance(DefaultClientProcessor.class);
     public DefaultClientProcessor(){
         this(ConsumerExecutors.executor());
     }
@@ -40,7 +43,8 @@ public class DefaultClientProcessor extends AbstractClientProcessor {
     @Override
     public void handleResonse(JChannel channel, GResponsePayload payload) {
         //直接再io线程中处理
-        System.out.println("客户端收到响应： "+payload.toString());
+        logger.info("client recive response id: {}",payload.responseId());
         DefaultSendFuture.received(channel,new GResponse(payload));
+
     }
 }

@@ -56,6 +56,7 @@ public class IMMessageDecoder extends ReplayingDecoder<IMMessageDecoder.State> {
                 switch (header.messageCode()){
                     case JProtocolHeader.HEARTBEAT:
                         break;
+                    case JProtocolHeader.AUTH:
                     case JProtocolHeader.TEXT: {
                         int length = checkBodySize(header.bodySize());
                         byte[] bytes = new byte[length];
@@ -70,10 +71,6 @@ public class IMMessageDecoder extends ReplayingDecoder<IMMessageDecoder.State> {
                     }
                     case JProtocolHeader.IMAGE:
                         break;
-                    case JProtocolHeader.AUTH:
-
-
-
                     case JProtocolHeader.RESPONSE: {
                         int length = checkBodySize(header.bodySize());
                         byte[] bytes = new byte[length];
