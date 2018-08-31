@@ -7,6 +7,7 @@ import group.common.util.internal.logging.InternalLogger;
 import group.common.util.internal.logging.InternalLoggerFactory;
 import group.transport.channel.JChannel;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -17,6 +18,9 @@ import java.util.Map;
 public class JChannelManager {
     private static final InternalLogger logger = InternalLoggerFactory.getInstance(JChannelManager.class);
     private final Map<String,JChannel> allChannels = Maps.newConcurrentMap();
+    private final Map<String,List<JChannel>> groups = Maps.newHashMap();
+    private InitGroupsListener listener;
+
 
     public void addJChannel(final JChannel newChannel, final String id){
         addJChannel(newChannel, id, new AddChannelListener() {
@@ -44,9 +48,16 @@ public class JChannelManager {
         return allChannels.get(idKey);
     }
 
-
     public interface AddChannelListener{
         void channelExists(Map allchannels,JChannel oldJchannel,JChannel newChnanel);
+    }
+
+    public void addInitGroupListener(InitGroupsListener listener){
+        this.listener = listener;
+    }
+
+    public interface InitGroupsListener{
+        void initGroups(Map<String,List<JChannel>> groups);
     }
 
 }
